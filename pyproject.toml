@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "mlda"
+version = "0.1.0"
+description = "Machine learning and data analysis"
+authors = ["askras <askrasnikov@gmail.com>"]
+license = "BSD 3-Clause License"
+readme = "README.md"
+
+
+[tool.poetry.dependencies]
+python = "^3.11"
+notebook = "^7.0.3"
+jupytext = "^1.15.1"
+
+
+[tool.jupytext]
+formats = "ipynb,md"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
