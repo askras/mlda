@@ -8,9 +8,63 @@ readme = "README.md"
 
 
 [tool.poetry.dependencies]
-python = "^3.11"
-notebook = "^7.0.3"
-jupytext = "^1.15.1"
+python = ">=3.11,<3.12"
+
+biblib = "^0.1.3"  # A library to handle BibTeX bibliographic data.
+deap = "^1.4.1"  # Distributed Evolutionary Algorithms in Python
+graphviz = "^0.20.1"  # Simple Python interface for Graphviz
+imageio = "^2.31.3"  # Library for reading and writing a wide range of image, video, scientific, and volumetric data formats.
+itables = "^1.5.4"  # Interactive Tables in Jupyter
+itermplot = "^0.331"  # An awesome iTerm2 backend for Matplotlib, so you can plot directly in your terminal.
+jupyterlab = "^4.0.6"  # JupyterLab computational environment
+jupyterlab-mathjax3 = "^4.3.0"  # MathJax 3 math renderer for JupyterLab
+jupytext = "^1.15.2"  # Jupyter notebooks as Markdown documents, Julia, Python or R scripts
+keras = "^2.13.0"  #  (TensorFlow 2.13.0) Deep learning for humans.
+latex2sympy2 = "^1.9.1"  # Convert latex to sympy with ANTLR and support Matrix, Linear Algebra and CAS functions.
+line-profiler = "^4.1.1"  # Line-by-line profiler.
+matplotlib = "^3.8.0"  # Python plotting package
+memory-profiler = "^0.61.0"  # A module for monitoring memory usage of a python program
+mglearn = "^0.2.0"  # Helper functions for the book 'Introduction to machine learning with Python
+mimesis ="^11.1.0"  # Mimesis: Fake Data Generator.
+mlxtend = "^0.23.0"  # Machine Learning Library Extensions
+networkx = ">=2.5,<3.0" #(manim 0.17.0) # Python package for creating and manipulating graphs and networks.
+notebook = "^7.0.3"  # Jupyter Notebook - A web-based notebook environment for interactive computing
+numpy = ">=1.22,<=1.24.3"  # (ydata-profiling 4.5.1) # Fundamental package for array computing in Python
+opencv-python = "^4.8.0.76"  # Wrapper package for OpenCV python bindings.
+openpyxl = "^3.1.2"  # A Python library to read/write Excel 2010 xlsx/xlsm files
+pandas = ">1.4.0,<2.1"  # (ydata-profiling 4.5.1) Powerful data structures for data analysis, time series, and statistics
+pillow = ">=9.1,<10.0" #(manim 0.17.0) # Python Imaging Library (Fork)
+pybtex = "^0.24.0"  # A BibTeX-compatible bibliography processor in Python.
+pygments = "^2.15.1"  # Pygments is a syntax highlighting package written in Python.
+rise = "^5.7.1"  # Reveal.js - Jupyter/IPython Slideshow Extension
+scikit-image = "^0.21.0"  # Image processing in Python
+scikit-learn = "^1.3.1"  # A set of python modules for machine learning and data mining.
+scipy = "^1.11.2"   # Fundamental algorithms for scientific computing in Python
+seaborn = "^0.12.2"  # seaborn: statistical data visualization.
+sympy = "^1.12.0"  # Computer algebra system (CAS) in Python.
+tensorflow = "^2.14.0"  # TensorFlow is an open source machine learning framework for everyone.
+torch = "^2.0.1"  # Tensors and Dynamic neural networks in Python with strong GPU acceleration
+torchaudio = "^2.0.2"  # An audio package for PyTorch
+tqdm = "^4.65.0"  # Fast, Extensible Progress Meter
+watermark = "^2.4.3"  # IPython magic function to print date/time stamps and various system information.
+xgboost = "^2.0.0"  # XGBoost Python Package
+ydata-profiling = "^4.5.1"  # Generate profile report for pandas DataFrame
+
+
+[tool.poetry.group.dev.dependencies]
+bandit = "^1.7.5"  # A Python utility / library to sort Python imports
+black = {extras = ["jupyter"], version = "^23.7.0"} # The uncompromising code formatter.
+blacken-docs = "^1.15.0"  # Run Black on Python code blocks in documentation files.
+changelog-generator = "^0.3.2"  # Python module to, generate CHANGELOG from git commit history.
+ipython = "^8.14.0"  # IPython: Productive Interactive Computing.
+isort = "^5.12.0"  # A Python utility/library to sort imports alphabetically
+mypy = "^1.4.1"  # Optional static typing for Python
+nbqa = "^1.7.0"  # Run any standard Python code quality tool on a Jupyter Notebook
+poetry-exec-plugin = "^0.3.6"  # A plugin for poetry that allows you to execute scripts defined in your pyproject.toml, just like you can in npm or pipenv.
+pre-commit = "^3.3.3"  # A framework for managing and maintaining multi-language pre-commit hooks.
+pylint = "^2.17.6"  # python code static checker
+pytest = "^7.4.0"  # simple powerful testing with Python
+pyupgrade = "^3.9.0"  # A tool to automatically upgrade syntax for newer versions
 
 
 [tool.jupytext]
