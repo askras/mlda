@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<feature_6 &le; 0.102<br/>gini = 0.467<br/>samples = 455<br/>value = [286, 169]<br/>class = M>, fillcolor="#f4cbae"] ;
+1 [label=<feature_22 &le; 23.35<br/>gini = 0.202<br/>samples = 254<br/>value = [225, 29]<br/>class = M>, fillcolor="#e89153"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<feature_14 &le; 62.9<br/>gini = 0.03<br/>samples = 130<br/>value = [128, 2]<br/>class = M>, fillcolor="#e5833c"] ;
+1 -> 2 ;
+3 [label=<gini = 0.015<br/>samples = 129<br/>value = [128, 1]<br/>class = M>, fillcolor="#e5823b"] ;
+2 -> 3 ;
+4 [label=<gini = 0.0<br/>samples = 1<br/>value = [0, 1]<br/>class = B>, fillcolor="#399de5"] ;
+2 -> 4 ;
+5 [label=<feature_24 &le; 839.6<br/>gini = 0.341<br/>samples = 124<br/>value = [97, 27]<br/>class = M>, fillcolor="#eca470"] ;
+1 -> 5 ;
+6 [label=<gini = 0.095<br/>samples = 100<br/>value = [95, 5]<br/>class = M>, fillcolor="#e68843"] ;
+5 -> 6 ;
+7 [label=<gini = 0.153<br/>samples = 24<br/>value = [2, 22]<br/>class = B>, fillcolor="#4ba6e7"] ;
+5 -> 7 ;
+8 [label=<feature_3 &le; 99.89<br/>gini = 0.423<br/>samples = 201<br/>value = [61, 140]<br/>class = B>, fillcolor="#8fc8f0"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label=<feature_28 &le; 0.142<br/>gini = 0.464<br/>samples = 93<br/>value = [59, 34]<br/>class = M>, fillcolor="#f4caab"] ;
+8 -> 9 ;
+10 [label=<gini = 0.071<br/>samples = 54<br/>value = [52, 2]<br/>class = M>, fillcolor="#e68641"] ;
+9 -> 10 ;
+11 [label=<gini = 0.295<br/>samples = 39<br/>value = [7, 32]<br/>class = B>, fillcolor="#64b2eb"] ;
+9 -> 11 ;
+12 [label=<feature_8 &le; 0.062<br/>gini = 0.036<br/>samples = 108<br/>value = [2, 106]<br/>class = B>, fillcolor="#3d9fe5"] ;
+8 -> 12 ;
+13 [label=<gini = 0.444<br/>samples = 6<br/>value = [2, 4]<br/>class = B>, fillcolor="#9ccef2"] ;
+12 -> 13 ;
+14 [label=<gini = 0.0<br/>samples = 102<br/>value = [0, 102]<br/>class = B>, fillcolor="#399de5"] ;
+12 -> 14 ;
+}
