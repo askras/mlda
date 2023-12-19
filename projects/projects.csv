@@ -1,0 +1,22 @@
+No,type,dataset,dataset_url,method
+1,Классификация,Spambase Data Set,https://archive.ics.uci.edu/ml/datasets/Spambase,Перцептрон
+2,Регрессия,Forest Fires Data Set,https://archive.ics.uci.edu/ml/datasets/Forest+Fires,Надарая-Ватсона
+3,Регрессия,Boston Housing Data Set,https://www.kaggle.com/datasets/schirmerchad/bostonhoustingmlnd,Линейная регрессия
+4,Классификация,Wine Data Set,https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_wine.html#sklearn.datasets.load_wine,k-ближайших соседей
+5,Классификация,Spambase Data Set,https://archive.ics.uci.edu/ml/datasets/Spambase,Перцептрон
+6,Классификация,Wine Data Set,https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_wine.html#sklearn.datasets.load_wine,k-ближайших соседей
+7,Классификация,Wine Data Set,https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_wine.html#sklearn.datasets.load_wine,Перцептрон
+8,Регрессия,Servo Data Set,https://archive.ics.uci.edu/ml/datasets/Servo,Надарая-Ватсона
+9,Классификация,Wine Data Set,https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_wine.html#sklearn.datasets.load_wine,Метод опорных векторов
+10,Регрессия,Boston Housing Data Set,https://www.kaggle.com/datasets/schirmerchad/bostonhoustingmlnd,Перцептрон
+11,Классификация,Wine Data Set,https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_wine.html#sklearn.datasets.load_wine,Метод опорных векторов
+12,Регрессия,Servo Data Set,https://archive.ics.uci.edu/ml/datasets/Servo,Надарая-Ватсона
+13,Регрессия,Diabetes Data Set,https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_diabetes.html#sklearn.datasets.load_diabetes,Метод опорных векторов
+14,Регрессия,Diabetes Data Set,https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_diabetes.html#sklearn.datasets.load_diabetes,Надарая-Ватсона
+15,Регрессия,Diabetes Data Set,https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_diabetes.html#sklearn.datasets.load_diabetes,Надарая-Ватсона
+16,Регрессия,Servo Data Set,https://archive.ics.uci.edu/ml/datasets/Servo,Перцептрон
+17,Регрессия,Forest Fires Data Set,https://archive.ics.uci.edu/ml/datasets/Forest+Fires,Линейная регрессия
+18,Классификация,Wine Data Set,https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_wine.html#sklearn.datasets.load_wine,k-ближайших соседей
+19,Регрессия,Forest Fires Data Set,https://archive.ics.uci.edu/ml/datasets/Forest+Fires,Метод опорных векторов
+20,Регрессия,Servo Data Set,https://archive.ics.uci.edu/ml/datasets/Servo,Перцептрон
+21,Регрессия,Diabetes Data Set,https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_diabetes.html#sklearn.datasets.load_diabetes,Перцептрон
