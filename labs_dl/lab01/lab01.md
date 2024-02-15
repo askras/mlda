@@ -12,27 +12,9 @@ jupyter:
     name: python3
 ---
 
-<!-- #raw -->
-=======
----
-jupyter:
-  jupytext:
-    text_representation:
-      extension: .md
-      format_name: markdown
-      format_version: '1.3'
-      jupytext_version: 1.15.2
-  kernelspec:
-    display_name: Python 3 (ipykernel)
-    language: python
-    name: python3
----
+## Numpy-имплементация многослойной нейронной сети
 
-<!-- #endraw -->
 
-## Numpy-имплементация многослойной нейронной сети 
-
-```python
 ### Цель работы
 
 реализовать нейронную сеть и обучить ее с помощью метода обратного распространения ошибки.
@@ -49,7 +31,7 @@ jupyter:
 Мягкий дедлайн (5 баллов): 29.02.2024
 
 Жесткий дедлайн (2.5 баллов): 14.03.2024
-```
+
 
 ```python
 import numpy as np
