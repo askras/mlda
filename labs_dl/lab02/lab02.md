@@ -441,7 +441,7 @@ def iterate_minibatches(inputs, targets, batchsize, shuffle=False):
         yield inputs[excerpt], targets[excerpt]
 ```
 
-```python id="qS8wn1JzY8yg"
+```python id="qS8wn1JzY8yg" 
 def train(model, optimizer, batchsize=32):
     loss_log = []
     model.train()
