@@ -5,7 +5,7 @@ jupyter:
       extension: .md
       format_name: markdown
       format_version: '1.3'
-      jupytext_version: 1.16.4
+      jupytext_version: 1.17.3
   kernelspec:
     display_name: Python 3 (ipykernel)
     language: python
@@ -13,7 +13,7 @@ jupyter:
 ---
 
 <!-- #region editable=true slideshow={"slide_type": "slide"} -->
-# Лекция 7: Математика в машинном обучении
+# Лекция 5: Математика в машинном обучении
 
 Машинное обучение и анализ данных
 
@@ -21,7 +21,7 @@ jupyter:
 
 Красников Александр Сергеевич
 
-2024
+2024-2025
 <!-- #endregion -->
 
 <!-- #region editable=true slideshow={"slide_type": "slide"} -->
