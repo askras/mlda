@@ -5,7 +5,7 @@ jupyter:
       extension: .md
       format_name: markdown
       format_version: '1.3'
-      jupytext_version: 1.16.4
+      jupytext_version: 1.17.3
   kernelspec:
     display_name: Python 3 (ipykernel)
     language: python
@@ -23,7 +23,7 @@ jupyter:
 
 Красников Александр Сергеевич
 
-2024
+2024-2025
 <!-- #endregion -->
 
 ```python editable=true slideshow={"slide_type": "skip"} tags=["hide-input"]
@@ -378,7 +378,7 @@ from sklearn.datasets import make_swiss_roll
 
 X, color = make_swiss_roll(n_samples=800, random_state=123)
 
-%matplotlib widget
+#%matplotlib widget
 
 fig = plt.figure(figsize=plt.figaspect(0.3)*1)
 
