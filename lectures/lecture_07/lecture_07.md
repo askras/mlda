@@ -5,7 +5,7 @@ jupyter:
       extension: .md
       format_name: markdown
       format_version: '1.3'
-      jupytext_version: 1.16.7
+      jupytext_version: 1.17.3
   kernelspec:
     display_name: Python 3 (ipykernel)
     language: python
@@ -19,11 +19,9 @@ jupyter:
 
 МГТУ им. Н.Э. Баумана
 
-Московский политехнический университет
-
 Красников Александр Сергеевич
 
-2024
+2024-2025
 <!-- #endregion -->
 
 <!-- #region editable=true slideshow={"slide_type": "slide"} -->
@@ -93,7 +91,7 @@ $$
 <!-- #endregion -->
 
 <!-- #region editable=true slideshow={"slide_type": "subslide"} -->
-### Обучение классификатора
+### Обучение регрессора
 
 <img src="./img/linclass_learn.png">
 <!-- #endregion -->
