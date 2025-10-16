@@ -107,7 +107,7 @@ $$L(X,w) = (\hat{y} - y)^\top (\hat{y} - y) = (Xw - y)^\top (Xw - y)$$
 $$\cfrac{\partial L}{\partial w} = 0$$
 
 Тогда 
-$$\cfrac{\partial L}{\partial w} = 2X^\top(Xw-y) = 2X^\top Xw - 2X^\top y,$$
+$$\cfrac{\partial L}{\partial w} = 2X^\top(Xw-y) = 2X^\top Xw - 2X^\top y = 0,$$
 $$ 2X^\top Xw = 2X^\top y,$$
 Следовательно, оптимальные веса $w$ линейной регрессии:
 
@@ -595,7 +595,7 @@ $$
   <li>$x_i = (x_{i1}, x_{i2}, \ldots, x_{id})^\top$ &mdash; вектор из $d$ признаков объекта;</li>
   <li>$y_i = \{0, 1\}$, &mdash; метка класса объекта.</li>
         </ul></li>
-    <li> Модель **логистической регрессии**:
+    <li> Модель логистической регрессии:
 $$\hat{y}_i = \sigma\left(Xw\right),$$ где $\sigma\left(z\right) = \cfrac{1}{1+e^{-z}}$</li>
     <li>$\hat{y}_i = \sigma \left(x_i^\top w\right) = p\left(y=1 | x_i\right)$ &mdash; <strong>вероятность класса 1</strong> для $i$-того класса.</li>
     <li>1 - $\hat{y}_i = 1 - \sigma \left(x_i^\top w\right) = p\left(y=0 | x_i\right)$ &mdash; <strong>вероятность класса 0</strong> для $i$-того класса.</li>
