@@ -13,7 +13,7 @@ jupyter:
 ---
 
 <!-- #region editable=true jupyterlab-deck={"layer": "deck"} slideshow={"slide_type": "slide"} -->
-# Лекция 8: Классификация. Метрики качества
+# Лекция 9: Классификация. Метрики качества
 
 Машинное обучение и анализ данных
 
@@ -23,7 +23,7 @@ jupyter:
 
 Красников Александр Сергеевич
 
-2024 -2025
+2024-2025
 <!-- #endregion -->
 
 ```python editable=true jupyterlab-deck={"layer": "slide"} slideshow={"slide_type": "slide"}
@@ -51,7 +51,7 @@ from sklearn.preprocessing import LabelEncoder, OneHotEncoder
 ![](./img/classic_ml.png)
 <!-- #endregion -->
 
-<!-- #region editable=true jp-MarkdownHeadingCollapsed=true slideshow={"slide_type": "slide"} -->
+<!-- #region editable=true slideshow={"slide_type": "slide"} -->
 ## Постановка задачи классификации
 
 Классификация направлена на предсказание категориальных меток (классов) для входных данных.
