@@ -5,7 +5,7 @@ jupyter:
       extension: .md
       format_name: markdown
       format_version: '1.3'
-      jupytext_version: 1.16.4
+      jupytext_version: 1.18.1
   kernelspec:
     display_name: Python 3 (ipykernel)
     language: python
@@ -19,9 +19,9 @@ jupyter:
 
 Красников Александр Сергеевич
 
-https://github.com/askras/bmstu_machinelearning/
+https://github.com/askras/mlda/
 
-2024
+2024-2025
 <!-- #endregion -->
 
 ```python editable=true slideshow={"slide_type": "slide"}
@@ -170,7 +170,7 @@ $$
 Объекты из разных кластеров должны быть как можно менее &laquo;похожи&raquo; друг на друга, поэтому основная цель &mdash; **максимизировать межкластерное расстояние:**
 
 $$
-\sum\limits_{i=1}^l
+\sum\limits_{i=1}^k
   \sum\limits_{j=1}^l
     \left[
       a(x_i) \ne a(x_j)
@@ -693,7 +693,7 @@ from scipy.stats import randint
 from sklearn.cluster import KMeans
 
 X = img.reshape((-1, 1)) #вытягиваем картинку в вектор
-K = 32
+K = 2
 k_means = MiniBatchKMeans(n_clusters=K)
 k_means.fit(X)
 values = k_means.cluster_centers_
