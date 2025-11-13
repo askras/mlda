@@ -5,7 +5,7 @@ jupyter:
       extension: .md
       format_name: markdown
       format_version: '1.3'
-      jupytext_version: 1.16.7
+      jupytext_version: 1.17.3
   kernelspec:
     display_name: Python 3 (ipykernel)
     language: python
@@ -21,7 +21,7 @@ jupyter:
 
 Красников Александр Сергеевич
 
-2024
+2024-2025
 <!-- #endregion -->
 
 ```python editable=true slideshow={"slide_type": "subslide"}
