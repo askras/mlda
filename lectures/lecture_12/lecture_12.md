@@ -5,7 +5,7 @@ jupyter:
       extension: .md
       format_name: markdown
       format_version: '1.3'
-      jupytext_version: 1.16.7
+      jupytext_version: 1.18.1
   kernelspec:
     display_name: Python 3 (ipykernel)
     language: python
@@ -21,9 +21,9 @@ jupyter:
 
 Красников Александр Сергеевич
 
-https://github.com/askras/bmstu_machinelearning/
+https://github.com/askras/mlda/
 
-2024
+2024-2025
 <!-- #endregion -->
 
 <!-- #region editable=true slideshow={"slide_type": "slide"} -->
@@ -39,7 +39,7 @@ https://github.com/askras/bmstu_machinelearning/
 
 ![](./img/golf_tree.png)
 <!-- #endregion -->
-<!-- #region editable=true slideshow={"slide_type": "slide"} -->
+<!-- #region editable=true slideshow={"slide_type": "slide"} jp-MarkdownHeadingCollapsed=true -->
 ## Дерево принятия решений (Решающее дерево)
 
 Решающее дерево – это бинарное дерево, в котором:
@@ -122,7 +122,7 @@ $$R_r(j ,t) = \{x | x_j \leqslant t\}$$
 
 ![](./img/example_tree_12.png)
 <!-- #endregion -->
-<!-- #region editable=true slideshow={"slide_type": "slide"} -->
+<!-- #region editable=true slideshow={"slide_type": "slide"} jp-MarkdownHeadingCollapsed=true -->
 ## Факторы, влияющие на построение решающего дерева
 
 - Вид предикатов в вершинах
@@ -507,7 +507,7 @@ $$= 1 - \cfrac{4}{8} \cdot 0 - \cfrac{4}{8} \cdot 0 = 1 $$
 ![](./img/example_tree_08.png)
 <!-- #endregion -->
 
-<!-- #region editable=true slideshow={"slide_type": "slide"} -->
+<!-- #region editable=true slideshow={"slide_type": "slide"} jp-MarkdownHeadingCollapsed=true -->
 ## Пропущенные значения
 
 Можно модифицировать процедуру разбиения выборки в вершине дерева так, чтобы была возможность обрабатывать пропущенные значения
@@ -522,7 +522,7 @@ $$= 1 - \cfrac{4}{8} \cdot 0 - \cfrac{4}{8} \cdot 0 = 1 $$
 - Итоговый прогноз $\hat{y}$ - для объекта усредняем:
 $$\hat{y} = \cfrac{|R_l|}{|R|}\cdot \hat{y}_l + \cfrac{|R_r|}{|R|}\cdot \hat{y}_r$$
 <!-- #endregion -->
-<!-- #region editable=true slideshow={"slide_type": "slide"} -->
+<!-- #region editable=true slideshow={"slide_type": "slide"} jp-MarkdownHeadingCollapsed=true -->
 ## Важность признаков
 
 Решающее дерево позволяет оценить вклад каждого входного признака в прогноз
@@ -533,7 +533,7 @@ $$FIM_j = \sum\limits_{node \in T(j)} |R_m| Q(R_m, j, t)$$
 $T(j)$ - все вершины дерева, где предикаты использовали признак $j: \{x_j > t\}$
 <!-- #endregion -->
 
-<!-- #region editable=true slideshow={"slide_type": "slide"} -->
+<!-- #region editable=true slideshow={"slide_type": "slide"} jp-MarkdownHeadingCollapsed=true -->
 ## Методы построения деревьев
 - ID3
   - Энтропийный критерий
@@ -548,7 +548,7 @@ $T(j)$ - все вершины дерева, где предикаты испо�
   - Метод суррогатный предикатов для обработки пропусков
 <!-- #endregion -->
 
-<!-- #region editable=true slideshow={"slide_type": "slide"} -->
+<!-- #region editable=true slideshow={"slide_type": "slide"} jp-MarkdownHeadingCollapsed=true -->
 ## Плюсы решающих деревьев
 - Четкие правила классификации (интерпретируемые предикаты, например, &laquo;возраст > 25&raquo;)
 - Деревья решений легко визуализируются, то есть хорошо интерпретируются
@@ -556,7 +556,7 @@ $T(j)$ - все вершины дерева, где предикаты испо�
 - Малое число параметров
 <!-- #endregion -->
 
-<!-- #region editable=true slideshow={"slide_type": "slide"} -->
+<!-- #region editable=true slideshow={"slide_type": "slide"} jp-MarkdownHeadingCollapsed=true -->
 ## Минусы решающих деревьев
 
 - Очень чувствительны к шумам в данных, модель сильно меняется при небольшом изменении обучающей выборки
@@ -647,7 +647,7 @@ train_model(LogisticRegression())
 train_model(DecisionTreeClassifier())
 ```
 
-<!-- #region editable=true slideshow={"slide_type": "subslide"} -->
+<!-- #region editable=true slideshow={"slide_type": "subslide"} jp-MarkdownHeadingCollapsed=true -->
 ### Переобучение <a name="overfitting"></a>
 
 
@@ -700,7 +700,7 @@ plot_decision_regions(X, y, model)
 plt.show()
 ```
 
-<!-- #region editable=true slideshow={"slide_type": "subslide"} -->
+<!-- #region editable=true slideshow={"slide_type": "subslide"} jp-MarkdownHeadingCollapsed=true -->
 ### Неустойчивость
 
 Как будет меняться структура дерева, если брать для обучения разные 90%-ые подвыборки из исходной?
