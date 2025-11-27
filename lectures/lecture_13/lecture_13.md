@@ -1517,7 +1517,7 @@ from sklearn.metrics import classification_report, confusion_matrix
 
 ```python id="9e73b16e" outputId="02d80dbc-15df-457d-e84b-2a433b8ec811" editable=true slideshow={"slide_type": "fragment"}
 # Загрузка данных
-data = pd.read_csv('https://raw.githubusercontent.com/shalakasaraogi/credit-card-fraud-detection/refs/heads/main/csv%20files/creditcard.csv')
+data = pd.read_csv('creditcard.csv')
 
 # Разделение на признаки и целевую переменную
 X = data.drop('Class', axis=1)
