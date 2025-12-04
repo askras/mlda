@@ -5,7 +5,7 @@ jupyter:
       extension: .md
       format_name: markdown
       format_version: '1.3'
-      jupytext_version: 1.18.1
+      jupytext_version: 1.16.4
   kernelspec:
     display_name: Python 3 (ipykernel)
     language: python
@@ -280,7 +280,7 @@ columns = ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness',
            'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age', 'Outcome']
 
 # Считываем данные
-data = pd.read_csv('pima-indians-diabetes.data.csv',
+data = pd.read_csv('https://raw.githubusercontent.com/jbrownlee/Datasets/master/pima-indians-diabetes.data.csv',
                    names=columns)
 
 # Разделение данных на признаки и целевую переменную
@@ -580,7 +580,7 @@ $
 <!-- #endregion -->
 
 <!-- #region id="e77eb6ae" editable=true slideshow={"slide_type": "subslide"} -->
-### **Пример реализации**
+### **Пример реализации на Python**
 
 Ниже представлен пример реализации градиентного бустинга для задачи регрессии с использованием деревьев решений.
 <!-- #endregion -->
@@ -1517,7 +1517,7 @@ from sklearn.metrics import classification_report, confusion_matrix
 
 ```python id="9e73b16e" outputId="02d80dbc-15df-457d-e84b-2a433b8ec811" editable=true slideshow={"slide_type": "fragment"}
 # Загрузка данных
-data = pd.read_csv('creditcard.csv')
+data = pd.read_csv('https://raw.githubusercontent.com/shalakasaraogi/credit-card-fraud-detection/refs/heads/main/csv%20files/creditcard.csv')
 
 # Разделение на признаки и целевую переменную
 X = data.drop('Class', axis=1)
@@ -1619,4 +1619,8 @@ print(confusion_matrix(y_test_orig, y_pred_res))
 - **Процесс обучения** в стекинге двухэтапный: сначала обучаются базовые модели, затем на их предсказаниях обучается мета-модель.
 
 - **Важность кросс-валидации**: Без неё мета-модель может переобучиться на предсказаниях базовых моделей, которые уже видели эти данные, что снизит способность обобщения на новых данных.
+<!-- #endregion -->
+
+<!-- #region editable=true slideshow={"slide_type": ""} -->
+
 <!-- #endregion -->
