@@ -1,0 +1,1458 @@
+[
+    {
+      "question": "Запишите формулу энтропии Шеннона для бинарного распределения с вероятностью $p$ класса 1.",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "-p \\log_2 p - (1 - p) \\log_2 (1 - p)",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "H(p) = -p \\log p - (1-p) \\log (1-p)",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "p(1-p)",
+          "correct": false,
+          "feedback": "Это дисперсия, не энтропия."
+        },
+        {
+          "answer": "Неверно",
+          "correct": false,
+          "feedback": "Неверная формула."
+        }
+      ]
+    },
+    {
+      "question": "Как называется критерий расщепления, основанный на максимизации прироста информации?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "Information gain",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Прирост информации",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Gini impurity",
+          "correct": false,
+          "feedback": "Это другой критерий."
+        },
+        {
+          "answer": "MSE",
+          "correct": false,
+          "feedback": "Это для регрессии."
+        }
+      ]
+    },
+    {
+      "question": "Какой критерий используется по умолчанию в DecisionTreeClassifier в scikit-learn?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "Gini",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Gini impurity",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Entropy",
+          "correct": false,
+          "feedback": "Можно указать, но не по умолчанию."
+        },
+        {
+          "answer": "Information gain",
+          "correct": false,
+          "feedback": "Это связано с entropy, но не название критерия в sklearn."
+        }
+      ]
+    },
+    {
+      "question": "Как называется параметр, ограничивающий максимальную глубину дерева в scikit-learn?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "max_depth",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "максимальная глубина",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "n_estimators",
+          "correct": false,
+          "feedback": "Это для случайного леса."
+        },
+        {
+          "answer": "min_samples_split",
+          "correct": false,
+          "feedback": "Это минимальное число объектов для расщепления."
+        }
+      ]
+    },
+    {
+      "question": "Какой критерий чистоты узла равен нулю, если все объекты в узле принадлежат одному классу?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "Gini impurity",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Энтропия",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "MSE",
+          "correct": false,
+          "feedback": "Это для регрессии."
+        },
+        {
+          "answer": "MAE",
+          "correct": false,
+          "feedback": "Это для регрессии."
+        }
+      ]
+    },
+    {
+      "question": "Как называется метод предотвращения переобучения деревьев решений путём ограничения их роста?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "Предварительная обрезка",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Pre-pruning",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Постобработка",
+          "correct": false,
+          "feedback": "Это post-pruning."
+        },
+        {
+          "answer": "Бэггинг",
+          "correct": false,
+          "feedback": "Это ансамблевый метод."
+        }
+      ]
+    },
+    {
+      "question": "Как называется процесс удаления поддеревьев после обучения дерева для улучшения обобщающей способности?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "Постобработка",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Post-pruning",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Pre-pruning",
+          "correct": false,
+          "feedback": "Это предварительная обрезка."
+        },
+        {
+          "answer": "Бустинг",
+          "correct": false,
+          "feedback": "Это ансамблевый метод."
+        }
+      ]
+    },
+    {
+      "question": "Какой параметр в дереве решений задаёт минимальное количество объектов, необходимое для разделения узла?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "min_samples_split",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "min_samples_leaf",
+          "correct": false,
+          "feedback": "Это для листьев, не для узлов."
+        },
+        {
+          "answer": "max_depth",
+          "correct": false,
+          "feedback": "Это глубина."
+        },
+        {
+          "answer": "n_features",
+          "correct": false,
+          "feedback": "Это не параметр дерева решений напрямую."
+        }
+      ]
+    },
+    {
+      "question": "Какой параметр в дереве решений задаёт минимальное количество объектов, необходимое в листе?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "min_samples_leaf",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "min leaf samples",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "min_samples_split",
+          "correct": false,
+          "feedback": "Это для узлов."
+        },
+        {
+          "answer": "max_leaf_nodes",
+          "correct": false,
+          "feedback": "Ограничивает число листьев, но не минимальное число объектов."
+        }
+      ]
+    },
+    {
+      "question": "Какая метрика чистоты используется в деревьях решений для задач регрессии по умолчанию?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "MSE",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Mean squared error",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "MAE",
+          "correct": false,
+          "feedback": "Можно выбрать, но не по умолчанию."
+        },
+        {
+          "answer": "Gini",
+          "correct": false,
+          "feedback": "Это для классификации."
+        }
+      ]
+    },
+    {
+      "question": "Как называется алгоритм, который строит ансамбль деревьев решений, обучая их на подвыборках объектов и признаков?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "Случайный лес",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Random Forest",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "AdaBoost",
+          "correct": false,
+          "feedback": "Это бустинг, не бэггинг."
+        },
+        {
+          "answer": "XGBoost",
+          "correct": false,
+          "feedback": "Это градиентный бустинг."
+        }
+      ]
+    },
+    {
+      "question": "Какой критерий более чувствителен к дисбалансу классов: энтропия или Gini?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "Gini",
+          "correct": true,
+          "feedback": "Верно — Gini более чувствителен к крупным классам."
+        },
+        {
+          "answer": "Gini impurity",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Энтропия",
+          "correct": false,
+          "feedback": "Менее чувствительна."
+        },
+        {
+          "answer": "Оба одинаково",
+          "correct": false,
+          "feedback": "Нет, различаются."
+        }
+      ]
+    },
+    {
+      "question": "Какой метод используется для оценки важности признаков в деревьях решений?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "Снижение критерия неоднородности",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Gini importance",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Корреляция",
+          "correct": false,
+          "feedback": "Не используется в деревьях."
+        },
+        {
+          "answer": "p-value",
+          "correct": false,
+          "feedback": "Не используется."
+        }
+      ]
+    },
+    {
+      "question": "Как называется узел, из которого не производится дальнейшее ветвление?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "Лист",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Terminal node",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Корень",
+          "correct": false,
+          "feedback": "Это начальный узел."
+        },
+        {
+          "answer": "Разделение",
+          "correct": false,
+          "feedback": "Это процесс, не узел."
+        }
+      ]
+    },
+    {
+      "question": "Как называется первый узел в дереве решений?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "Корень",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Root node",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Лист",
+          "correct": false,
+          "feedback": "Это конечный узел."
+        },
+        {
+          "answer": "Ветвь",
+          "correct": false,
+          "feedback": "Это соединение между узлами."
+        }
+      ]
+    },
+    {
+      "question": "Какой параметр ограничивает максимальное количество листьев в дереве?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "max_leaf_nodes",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Максимальное число листьев",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "max_depth",
+          "correct": false,
+          "feedback": "Это глубина."
+        },
+        {
+          "answer": "n_leaves",
+          "correct": false,
+          "feedback": "Такого параметра нет в sklearn."
+        }
+      ]
+    },
+    {
+      "question": "Какой критерий чистоты обычно вычисляется быстрее: Gini или энтропия?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "Gini",
+          "correct": true,
+          "feedback": "Верно — не требует логарифмов."
+        },
+        {
+          "answer": "Gini impurity",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Энтропия",
+          "correct": false,
+          "feedback": "Требует вычисления логарифмов."
+        },
+        {
+          "answer": "Оба одинаково",
+          "correct": false,
+          "feedback": "Нет."
+        }
+      ]
+    },
+    {
+      "question": "Какой метод обучения используется в деревьях решений?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "Жадный алгоритм",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Greedy",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Градиентный спуск",
+          "correct": false,
+          "feedback": "Не используется."
+        },
+        {
+          "answer": "EM-алгоритм",
+          "correct": false,
+          "feedback": "Не используется."
+        }
+      ]
+    },
+    {
+      "question": "Какой параметр контролирует минимальное снижение критерия чистоты, необходимое для разделения узла?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "min_impurity_decrease",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "min_impurity_split",
+          "correct": false,
+          "feedback": "Устаревший параметр в sklearn."
+        },
+        {
+          "answer": "max_features",
+          "correct": false,
+          "feedback": "Это ограничение на признаки."
+        },
+        {
+          "answer": "min_samples_split",
+          "correct": false,
+          "feedback": "Это про количество объектов."
+        }
+      ]
+    },
+    {
+      "question": "Какой алгоритм ансамблирования использует деревья решений в качестве базовых моделей и обучает их последовательно, фокусируясь на ошибках предыдущих моделей?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "Бустинг",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Boosting",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Бэггинг",
+          "correct": false,
+          "feedback": "Это параллельное обучение."
+        },
+        {
+          "answer": "Stacking",
+          "correct": false,
+          "feedback": "Использует мета-модель, но не обязательно последовательно."
+        }
+      ]
+    },
+    {
+      "question": "Какой критерий чистоты используется в деревьях решений для задач классификации?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "Gini impurity",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Энтропия",
+          "correct": false,
+          "feedback": "Тоже используется, но вопрос на один ответ — Gini по умолчанию."
+        },
+        {
+          "answer": "MSE",
+          "correct": false,
+          "feedback": "Это для регрессии."
+        },
+        {
+          "answer": "MAE",
+          "correct": false,
+          "feedback": "Это для регрессии."
+        }
+      ]
+    },
+    {
+      "question": "Какой параметр ограничивает количество признаков, рассматриваемых при каждом разделении?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "max_features",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "n_features",
+          "correct": false,
+          "feedback": "Такого параметра нет в DecisionTree."
+        },
+        {
+          "answer": "max_depth",
+          "correct": false,
+          "feedback": "Это глубина."
+        },
+        {
+          "answer": "min_samples_split",
+          "correct": false,
+          "feedback": "Это про объекты."
+        }
+      ]
+    },
+    {
+      "question": "Какой метод ансамблирования использует деревья решений и случайные подвыборки объектов?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "Случайный лес",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Бустинг",
+          "correct": false,
+          "feedback": "Не использует подвыборки так же."
+        },
+        {
+          "answer": "Логистическая регрессия",
+          "correct": false,
+          "feedback": "Не дерево."
+        },
+        {
+          "answer": "KNN",
+          "correct": false,
+          "feedback": "Не дерево."
+        }
+      ]
+    },
+    {
+      "question": "Какой критерий чистоты вычисляется по формуле $1 - \\sum_{i=1}^{k} p_i^2$?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "Gini impurity",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Энтропия",
+          "correct": false,
+          "feedback": "Энтропия использует логарифмы."
+        },
+        {
+          "answer": "MSE",
+          "correct": false,
+          "feedback": "Не для классификации."
+        },
+        {
+          "answer": "MAE",
+          "correct": false,
+          "feedback": "Не для классификации."
+        }
+      ]
+    },
+    {
+      "question": "Какой параметр предотвращает создание узлов с малым числом объектов?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "min_samples_split",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "max_depth",
+          "correct": false,
+          "feedback": "Это ограничение глубины."
+        },
+        {
+          "answer": "n_estimators",
+          "correct": false,
+          "feedback": "Это для ансамблей."
+        },
+        {
+          "answer": "learning_rate",
+          "correct": false,
+          "feedback": "Это для бустинга."
+        }
+      ]
+    },
+    {
+      "question": "Какой алгоритм не является деревом решений?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "DecisionTreeClassifier",
+          "correct": false,
+          "feedback": "Это дерево."
+        },
+        {
+          "answer": "RandomForestClassifier",
+          "correct": false,
+          "feedback": "Это ансамбль деревьев."
+        },
+        {
+          "answer": "KNeighborsClassifier",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "ExtraTreesClassifier",
+          "correct": false,
+          "feedback": "Это ансамбль деревьев."
+        }
+      ]
+    },
+    {
+      "question": "Какой метод используется для борьбы с переобучением в деревьях решений?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "Ограничение глубины",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Увеличение обучающей выборки",
+          "correct": false,
+          "feedback": "Может помочь, но не метод регуляризации дерева."
+        },
+        {
+          "answer": "Уменьшение числа классов",
+          "correct": false,
+          "feedback": "Не относится."
+        },
+        {
+          "answer": "Использование PCA",
+          "correct": false,
+          "feedback": "Не метод для дерева."
+        }
+      ]
+    },
+    {
+      "question": "Какой параметр в дереве регрессии определяет критерий расщепления по умолчанию?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "MSE",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "MAE",
+          "correct": false,
+          "feedback": "Можно выбрать, но не по умолчанию."
+        },
+        {
+          "answer": "Gini",
+          "correct": false,
+          "feedback": "Не для регрессии."
+        },
+        {
+          "answer": "Энтропия",
+          "correct": false,
+          "feedback": "Не для регрессии."
+        }
+      ]
+    },
+    {
+      "question": "Какой параметр деревьев решений может принимать значение 'sqrt'?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "max_features",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "max_depth",
+          "correct": false,
+          "feedback": "Это целое число или None."
+        },
+        {
+          "answer": "min_samples_split",
+          "correct": false,
+          "feedback": "Целое число или доля."
+        },
+        {
+          "answer": "criterion",
+          "correct": false,
+          "feedback": "Строка: 'gini' или 'entropy'."
+        }
+      ]
+    },
+    {
+      "question": "Какой метод ансамблирования использует случайные подвыборки признаков при обучении каждого дерева?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "Случайный лес",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "AdaBoost",
+          "correct": false,
+          "feedback": "Не использует случайные признаки."
+        },
+        {
+          "answer": "Логистическая регрессия",
+          "correct": false,
+          "feedback": "Не ансамбль деревьев."
+        },
+        {
+          "answer": "K-means",
+          "correct": false,
+          "feedback": "Не относится."
+        }
+      ]
+    },
+    {
+      "question": "Какой параметр контролирует максимальную глубину дерева?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "max_depth",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "depth",
+          "correct": false,
+          "feedback": "Такого параметра нет."
+        },
+        {
+          "answer": "max_levels",
+          "correct": false,
+          "feedback": "Такого параметра нет."
+        },
+        {
+          "answer": "n_layers",
+          "correct": false,
+          "feedback": "Такого параметра нет."
+        }
+      ]
+    },
+    {
+      "question": "Какой критерий чистоты дает более «чистые» разделения при сильном дисбалансе классов?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "Энтропия",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Gini",
+          "correct": false,
+          "feedback": "Менее чувствителен к редким классам."
+        },
+        {
+          "answer": "MSE",
+          "correct": false,
+          "feedback": "Не для классификации."
+        },
+        {
+          "answer": "MAE",
+          "correct": false,
+          "feedback": "Не для классификации."
+        }
+      ]
+    },
+    {
+      "question": "Какой метод используется для оценки качества дерева решений на тестовых данных?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "Кросс-валидация",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Кластеризация",
+          "correct": false,
+          "feedback": "Не относится."
+        },
+        {
+          "answer": "PCA",
+          "correct": false,
+          "feedback": "Не для оценки качества."
+        },
+        {
+          "answer": "Градиентный спуск",
+          "correct": false,
+          "feedback": "Не используется в деревьях."
+        }
+      ]
+    },
+    {
+      "question": "Какой параметр определяет минимальное количество объектов, необходимое в листе?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "min_samples_leaf",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "min_samples_split",
+          "correct": false,
+          "feedback": "Это для узлов."
+        },
+        {
+          "answer": "max_leaf_nodes",
+          "correct": false,
+          "feedback": "Это ограничение на число листьев."
+        },
+        {
+          "answer": "min_impurity_decrease",
+          "correct": false,
+          "feedback": "Это про снижение неоднородности."
+        }
+      ]
+    },
+    {
+      "question": "Какой алгоритм построения дерева использует жадный поиск по признакам?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "CART",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "ID3",
+          "correct": false,
+          "feedback": "Использует только энтропию и категориальные признаки."
+        },
+        {
+          "answer": "K-means",
+          "correct": false,
+          "feedback": "Не дерево."
+        },
+        {
+          "answer": "DBSCAN",
+          "correct": false,
+          "feedback": "Не дерево."
+        }
+      ]
+    },
+    {
+      "question": "Какой параметр в дереве решений помогает избежать переобучения?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "max_depth",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "min_samples_split",
+          "correct": false,
+          "feedback": "Тоже помогает, но вопрос на один ответ — max_depth основной."
+        },
+        {
+          "answer": "criterion",
+          "correct": false,
+          "feedback": "Не влияет на переобучение напрямую."
+        },
+        {
+          "answer": "random_state",
+          "correct": false,
+          "feedback": "Для воспроизводимости."
+        }
+      ]
+    },
+    {
+      "question": "Какой метод используется для визуализации дерева решений?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "plot_tree",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "tree.plot",
+          "correct": false,
+          "feedback": "Нет такого метода."
+        },
+        {
+          "answer": "draw_tree",
+          "correct": false,
+          "feedback": "Нет в sklearn."
+        },
+        {
+          "answer": "visualize",
+          "correct": false,
+          "feedback": "Не метод sklearn."
+        }
+      ]
+    },
+    {
+      "question": "Какой параметр задаёт случайное начальное состояние для воспроизводимости?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "random_state",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "seed",
+          "correct": false,
+          "feedback": "В sklearn — random_state."
+        },
+        {
+          "answer": "n_jobs",
+          "correct": false,
+          "feedback": "Для параллелизма."
+        },
+        {
+          "answer": "verbose",
+          "correct": false,
+          "feedback": "Для логирования."
+        }
+      ]
+    },
+    {
+      "question": "Какие из следующих утверждений верны для деревьев решений?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Могут работать с категориальными и числовыми признаками",
+          "correct": true,
+          "feedback": "Верно (после кодирования для числовых реализаций)."
+        },
+        {
+          "answer": "Интерпретируемы",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Требуют нормализации признаков",
+          "correct": false,
+          "feedback": "Нет, не требуют."
+        },
+        {
+          "answer": "Чувствительны к выбросам",
+          "correct": false,
+          "feedback": "Устойчивы к выбросам."
+        }
+      ]
+    },
+    {
+      "question": "Какие параметры контролируют сложность дерева решений?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "max_depth",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "min_samples_split",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "criterion",
+          "correct": false,
+          "feedback": "Определяет критерий, но не сложность напрямую."
+        },
+        {
+          "answer": "random_state",
+          "correct": false,
+          "feedback": "Для воспроизводимости."
+        }
+      ]
+    },
+    {
+      "question": "Какие критерии чистоты используются в задачах классификации деревьев решений?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Gini impurity",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Энтропия",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "MSE",
+          "correct": false,
+          "feedback": "Для регрессии."
+        },
+        {
+          "answer": "MAE",
+          "correct": false,
+          "feedback": "Для регрессии."
+        }
+      ]
+    },
+    {
+      "question": "Какие методы используют деревья решений в качестве базовых моделей?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Случайный лес",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Градиентный бустинг",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "KNN",
+          "correct": false,
+          "feedback": "Не использует деревья."
+        },
+        {
+          "answer": "Логистическая регрессия",
+          "correct": false,
+          "feedback": "Не использует деревья."
+        }
+      ]
+    },
+    {
+      "question": "Какие утверждения верны о случайном лесе?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Уменьшает дисперсию по сравнению с одним деревом",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Использует бэггинг",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Полностью устраняет переобучение",
+          "correct": false,
+          "feedback": "Нет, но уменьшает."
+        },
+        {
+          "answer": "Требует нормализации признаков",
+          "correct": false,
+          "feedback": "Нет."
+        }
+      ]
+    },
+    {
+      "question": "Какие параметры есть в DecisionTreeClassifier в scikit-learn?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "max_depth",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "min_samples_split",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "n_estimators",
+          "correct": false,
+          "feedback": "Это для ансамблей."
+        },
+        {
+          "answer": "learning_rate",
+          "correct": false,
+          "feedback": "Это для бустинга."
+        }
+      ]
+    },
+    {
+      "question": "Какие утверждения верны о Gini impurity?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Равна нулю при чистом узле",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Вычисляется быстрее, чем энтропия",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Использует логарифмы",
+          "correct": false,
+          "feedback": "Нет, это энтропия."
+        },
+        {
+          "answer": "Максимальна при равномерном распределении",
+          "correct": false,
+          "feedback": "Максимальна, но вопрос про два — выбраны основные."
+        }
+      ]
+    },
+    {
+      "question": "Какие методы помогают бороться с переобучением деревьев решений?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Ограничение глубины",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Увеличение min_samples_leaf",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Увеличение обучающей выборки",
+          "correct": false,
+          "feedback": "Помогает, но не параметр дерева."
+        },
+        {
+          "answer": "Использование PCA",
+          "correct": false,
+          "feedback": "Не метод регуляризации дерева."
+        }
+      ]
+    },
+    {
+      "question": "Какие утверждения верны о деревьях решений?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Не требуют масштабирования признаков",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Устойчивы к выбросам",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Всегда линейны",
+          "correct": false,
+          "feedback": "Нет, границы нелинейны."
+        },
+        {
+          "answer": "Требуют нормализации",
+          "correct": false,
+          "feedback": "Нет."
+        }
+      ]
+    },
+    {
+      "question": "Какие параметры влияют на форму дерева решений?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "max_depth",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "min_samples_leaf",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "random_state",
+          "correct": false,
+          "feedback": "Только для воспроизводимости."
+        },
+        {
+          "answer": "n_jobs",
+          "correct": false,
+          "feedback": "Для параллелизма."
+        }
+      ]
+    },
+    {
+      "question": "Какие утверждения верны о бустинге деревьев решений?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Обучает модели последовательно",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Фокусируется на ошибках предыдущих моделей",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Использует бэггинг",
+          "correct": false,
+          "feedback": "Нет, это для случайного леса."
+        },
+        {
+          "answer": "Всегда быстрее случайного леса",
+          "correct": false,
+          "feedback": "Нет, обычно медленнее."
+        }
+      ]
+    },
+    {
+      "question": "Какие методы оценки важности признаков используют деревья решений?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Gini importance",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Permutation importance",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "p-value",
+          "correct": false,
+          "feedback": "Не используется."
+        },
+        {
+          "answer": "Корреляция с целевой переменной",
+          "correct": false,
+          "feedback": "Не внутренний метод дерева."
+        }
+      ]
+    },
+    {
+      "question": "Какие утверждения верны о критерии MSE в деревьях регрессии?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Используется по умолчанию",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Минимизируется при расщеплении",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Используется в классификации",
+          "correct": false,
+          "feedback": "Нет."
+        },
+        {
+          "answer": "Требует логарифмов",
+          "correct": false,
+          "feedback": "Нет."
+        }
+      ]
+    },
+    {
+      "question": "Какие параметры можно использовать для регуляризации дерева решений?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "max_depth",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "min_impurity_decrease",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "criterion",
+          "correct": false,
+          "feedback": "Не регуляризует."
+        },
+        {
+          "answer": "random_state",
+          "correct": false,
+          "feedback": "Не регуляризует."
+        }
+      ]
+    },
+    {
+      "question": "Какие утверждения верны о методе случайного леса?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Использует случайные подвыборки объектов",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Использует случайные подвыборки признаков",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Обучает деревья последовательно",
+          "correct": false,
+          "feedback": "Нет, параллельно."
+        },
+        {
+          "answer": "Использует бустинг",
+          "correct": false,
+          "feedback": "Нет, бэггинг."
+        }
+      ]
+    },
+    {
+      "question": "Какие утверждения верны о деревьях решений для регрессии?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "В листе предсказывается среднее значение целевой переменной",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Могут использовать MAE как критерий",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Используют Gini",
+          "correct": false,
+          "feedback": "Нет, это для классификации."
+        },
+        {
+          "answer": "Предсказывают вероятности",
+          "correct": false,
+          "feedback": "Нет, это для классификации."
+        }
+      ]
+    },
+    {
+      "question": "Какие утверждения верны о параметре max_features?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Контролирует число признаков при расщеплении",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Может быть 'sqrt'",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Ограничивает глубину дерева",
+          "correct": false,
+          "feedback": "Нет."
+        },
+        {
+          "answer": "Задаёт число деревьев",
+          "correct": false,
+          "feedback": "Нет."
+        }
+      ]
+    },
+    {
+      "question": "Какие утверждения верны о CART?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Поддерживает числовые признаки",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Используется в sklearn",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Работает только с категориальными признаками",
+          "correct": false,
+          "feedback": "Нет."
+        },
+        {
+          "answer": "Использует только энтропию",
+          "correct": false,
+          "feedback": "Нет, поддерживает Gini и MSE."
+        }
+      ]
+    }
+  ]

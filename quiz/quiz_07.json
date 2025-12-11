@@ -1,0 +1,1484 @@
+[
+    {
+      "question": "Запишите логистическую функцию (сигмоиду) для аргумента $z$.",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "\\sigma(z) = \\frac{1}{1 + e^{-z}}",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "1 / (1 + exp(-z))",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "\\frac{e^z}{1 + e^z}",
+          "correct": true,
+          "feedback": "Верно — эквивалентная форма."
+        },
+        {
+          "answer": "Неверно",
+          "correct": false,
+          "feedback": "Неверная формула."
+        }
+      ]
+    },
+    {
+      "question": "Какова цель функции потерь в логистической регрессии?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "Минимизация логарифмической функции потерь (log loss)",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Log loss",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "MSE",
+          "correct": false,
+          "feedback": "MSE используется в регрессии, не в классификации."
+        },
+        {
+          "answer": "MAE",
+          "correct": false,
+          "feedback": "MAE не используется в логистической регрессии."
+        }
+      ]
+    },
+    {
+      "question": "Какое значение сигмоиды при $z = 0$?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "0.5",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "1/2",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "0",
+          "correct": false,
+          "feedback": "Неверно."
+        },
+        {
+          "answer": "1",
+          "correct": false,
+          "feedback": "Неверно."
+        }
+      ]
+    },
+    {
+      "question": "Как называется метод, в котором класс объекта определяется по большинству среди $k$ ближайших соседей?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "k-ближайших соседей",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "kNN",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "линейная регрессия",
+          "correct": false,
+          "feedback": "Это другой метод."
+        },
+        {
+          "answer": "дерево решений",
+          "correct": false,
+          "feedback": "Это другой метод."
+        }
+      ]
+    },
+    {
+      "question": "Какой тип задачи решает логистическая регрессия?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "Бинарная классификация",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Классификация",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Регрессия",
+          "correct": false,
+          "feedback": "Несмотря на название, это классификация."
+        },
+        {
+          "answer": "Кластеризация",
+          "correct": false,
+          "feedback": "Нет, это обучение с учителем."
+        }
+      ]
+    },
+    {
+      "question": "Какая функция потерь используется в логистической регрессии?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "Log loss",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Кросс-энтропия",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "MSE",
+          "correct": false,
+          "feedback": "Не используется."
+        },
+        {
+          "answer": "MAE",
+          "correct": false,
+          "feedback": "Не используется."
+        }
+      ]
+    },
+    {
+      "question": "Какое расстояние чаще всего используется в методе kNN для числовых признаков?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "Евклидово расстояние",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "L2-норма",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Манхэттенское расстояние",
+          "correct": false,
+          "feedback": "Иногда, но не чаще всего."
+        },
+        {
+          "answer": "Косинусное расстояние",
+          "correct": false,
+          "feedback": "Используется, но не по умолчанию."
+        }
+      ]
+    },
+    {
+      "question": "Какова выводимая величина логистической регрессии перед применением порога?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "Вероятность принадлежности к классу 1",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Вероятность",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Целое число",
+          "correct": false,
+          "feedback": "Нет, это вероятность из [0,1]."
+        },
+        {
+          "answer": "Расстояние до гиперплоскости",
+          "correct": false,
+          "feedback": "Это промежуточный результат (логит), но вывод — вероятность."
+        }
+      ]
+    },
+    {
+      "question": "Как называется параметр в методе kNN, определяющий количество соседей?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "k",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "k-соседей",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "n_neighbors",
+          "correct": true,
+          "feedback": "Верно — в sklearn."
+        },
+        {
+          "answer": "порог",
+          "correct": false,
+          "feedback": "Это не параметр kNN."
+        }
+      ]
+    },
+    {
+      "question": "Какое значение принимает сигмоида при $z \\to +\\infty$?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "1",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "единица",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "0",
+          "correct": false,
+          "feedback": "Неверно."
+        },
+        {
+          "answer": "0.5",
+          "correct": false,
+          "feedback": "Это при z=0."
+        }
+      ]
+    },
+    {
+      "question": "Какое значение принимает сигмоида при $z \\to -\\infty$?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "0",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "ноль",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "1",
+          "correct": false,
+          "feedback": "Неверно."
+        },
+        {
+          "answer": "0.5",
+          "correct": false,
+          "feedback": "Это при z=0."
+        }
+      ]
+    },
+    {
+      "question": "Какой метод требует масштабирования признаков: логистическая регрессия или kNN?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "kNN",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Метод ближайших соседей",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Логистическая регрессия",
+          "correct": false,
+          "feedback": "Не обязательно, но желательно для интерпретации."
+        },
+        {
+          "answer": "Оба",
+          "correct": false,
+          "feedback": "kNN критически зависит, логистическая регрессия — нет."
+        }
+      ]
+    },
+    {
+      "question": "Как называется линейная комбинация признаков в логистической регрессии?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "Логит",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "z = w^T x + b",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Сигмоида",
+          "correct": false,
+          "feedback": "Сигмоида — это нелинейное преобразование логита."
+        },
+        {
+          "answer": "Ошибка",
+          "correct": false,
+          "feedback": "Нет."
+        }
+      ]
+    },
+    {
+      "question": "Какой метод является параметрическим: логистическая регрессия или kNN?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "Логистическая регрессия",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Logistic regression",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "kNN",
+          "correct": false,
+          "feedback": "kNN — непараметрический метод."
+        },
+        {
+          "answer": "Оба",
+          "correct": false,
+          "feedback": "Нет, только логистическая регрессия."
+        }
+      ]
+    },
+    {
+      "question": "Какой метод является непараметрическим: логистическая регрессия или kNN?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "kNN",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Метод ближайших соседей",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Логистическая регрессия",
+          "correct": false,
+          "feedback": "Это параметрический метод."
+        },
+        {
+          "answer": "Оба",
+          "correct": false,
+          "feedback": "Нет."
+        }
+      ]
+    },
+    {
+      "question": "Какой диапазон значений у сигмоиды?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "(0, 1)",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "от 0 до 1",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "[0, 1]",
+          "correct": false,
+          "feedback": "Асимптотически приближается, но не достигает."
+        },
+        {
+          "answer": "(-\\infty, +\\infty)",
+          "correct": false,
+          "feedback": "Это логит."
+        }
+      ]
+    },
+    {
+      "question": "Какой тип регуляризации по умолчанию используется в LogisticRegression в scikit-learn?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "L2",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Ридж-регуляризация",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "L1",
+          "correct": false,
+          "feedback": "Только если указать penalty='l1'."
+        },
+        {
+          "answer": "Нет регуляризации",
+          "correct": false,
+          "feedback": "По умолчанию есть L2."
+        }
+      ]
+    },
+    {
+      "question": "Какой метрикой качества чаще всего оценивают логистическую регрессию?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "Accuracy",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Log loss",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "MSE",
+          "correct": false,
+          "feedback": "Это для регрессии."
+        },
+        {
+          "answer": "MAE",
+          "correct": false,
+          "feedback": "Это для регрессии."
+        }
+      ]
+    },
+    {
+      "question": "Какой алгоритм не строит явную модель: логистическая регрессия или kNN?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "kNN",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Метод ближайших соседей",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Логистическая регрессия",
+          "correct": false,
+          "feedback": "Логистическая регрессия строит параметрическую модель."
+        },
+        {
+          "answer": "Оба",
+          "correct": false,
+          "feedback": "Нет."
+        }
+      ]
+    },
+    {
+      "question": "Какой порог классификации используется по умолчанию в логистической регрессии?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "0.5",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "0,5",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "0",
+          "correct": false,
+          "feedback": "Неверно."
+        },
+        {
+          "answer": "1",
+          "correct": false,
+          "feedback": "Неверно."
+        }
+      ]
+    },
+    {
+      "question": "Какая из следующих функций используется в логистической регрессии для преобразования линейного предсказания в вероятность?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "Сигмоида",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "ReLU",
+          "correct": false,
+          "feedback": "ReLU используется в нейросетях, не здесь."
+        },
+        {
+          "answer": "Tanh",
+          "correct": false,
+          "feedback": "Tanh — другая функция активации."
+        },
+        {
+          "answer": "Softmax",
+          "correct": false,
+          "feedback": "Softmax — для многоклассовой классификации."
+        }
+      ]
+    },
+    {
+      "question": "Какой из методов чувствителен к дисбалансу классов?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "Логистическая регрессия",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "kNN",
+          "correct": false,
+          "feedback": "Тоже может быть, но вопрос про один ответ."
+        },
+        {
+          "answer": "K-means",
+          "correct": false,
+          "feedback": "Это кластеризация, не классификация."
+        },
+        {
+          "answer": "PCA",
+          "correct": false,
+          "feedback": "Это метод снижения размерности."
+        }
+      ]
+    },
+    {
+      "question": "Какой из методов требует хранения всей обучающей выборки?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "Логистическая регрессия",
+          "correct": false,
+          "feedback": "Нет, она сохраняет только веса."
+        },
+        {
+          "answer": "kNN",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Дерево решений",
+          "correct": false,
+          "feedback": "Нет, оно строит структуру."
+        },
+        {
+          "answer": "Линейная регрессия",
+          "correct": false,
+          "feedback": "Нет."
+        }
+      ]
+    },
+    {
+      "question": "Какой из следующих параметров НЕ является гиперпараметром метода kNN?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "Веса признаков",
+          "correct": true,
+          "feedback": "Верно — это параметры модели, но в kNN их нет."
+        },
+        {
+          "answer": "k",
+          "correct": false,
+          "feedback": "k — гиперпараметр."
+        },
+        {
+          "answer": "Метрика расстояния",
+          "correct": false,
+          "feedback": "Это гиперпараметр."
+        },
+        {
+          "answer": "Веса соседей",
+          "correct": false,
+          "feedback": "Это гиперпараметр (например, 'uniform' или 'distance')."
+        }
+      ]
+    },
+    {
+      "question": "Какой из следующих методов можно использовать для многоклассовой классификации без модификаций?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "Логистическая регрессия",
+          "correct": false,
+          "feedback": "Требует модификации (one-vs-rest и т.п.)."
+        },
+        {
+          "answer": "kNN",
+          "correct": true,
+          "feedback": "Верно — голосование по соседям работает напрямую."
+        },
+        {
+          "answer": "Линейная регрессия",
+          "correct": false,
+          "feedback": "Не для классификации."
+        },
+        {
+          "answer": "PCA",
+          "correct": false,
+          "feedback": "Не классификатор."
+        }
+      ]
+    },
+    {
+      "question": "Какая функция потерь НЕ используется в логистической регрессии?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "Log loss",
+          "correct": false,
+          "feedback": "Используется."
+        },
+        {
+          "answer": "MSE",
+          "correct": true,
+          "feedback": "Верно — не используется."
+        },
+        {
+          "answer": "Кросс-энтропия",
+          "correct": false,
+          "feedback": "Используется."
+        },
+        {
+          "answer": "Hinge loss",
+          "correct": false,
+          "feedback": "Используется в SVM, но не в логистической регрессии."
+        }
+      ]
+    },
+    {
+      "question": "Какой метод быстрее предсказывает на новых данных: логистическая регрессия или kNN?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "Логистическая регрессия",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "kNN",
+          "correct": false,
+          "feedback": "kNN медленнее — нужно сравнивать с каждым объектом."
+        },
+        {
+          "answer": "Одинаково",
+          "correct": false,
+          "feedback": "Нет."
+        },
+        {
+          "answer": "Зависит от данных",
+          "correct": false,
+          "feedback": "В общем случае логистическая регрессия быстрее."
+        }
+      ]
+    },
+    {
+      "question": "Какой метод медленнее обучается: логистическая регрессия или kNN?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "Логистическая регрессия",
+          "correct": false,
+          "feedback": "Обучение быстрое — оптимизация."
+        },
+        {
+          "answer": "kNN",
+          "correct": true,
+          "feedback": "Верно — обучение тривиально, но kNN не обучается в классическом смысле."
+        },
+        {
+          "answer": "Одинаково",
+          "correct": false,
+          "feedback": "Нет."
+        },
+        {
+          "answer": "Зависит от данных",
+          "correct": false,
+          "feedback": "kNN ‘обучается’ мгновенно."
+        }
+      ]
+    },
+    {
+      "question": "Какой метод чувствителен к масштабу признаков?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "Логистическая регрессия",
+          "correct": false,
+          "feedback": "Не критично."
+        },
+        {
+          "answer": "kNN",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Оба",
+          "correct": false,
+          "feedback": "Вопрос на один ответ — kNN критичнее."
+        },
+        {
+          "answer": "Ни один",
+          "correct": false,
+          "feedback": "kNN чувствителен."
+        }
+      ]
+    },
+    {
+      "question": "Какая регуляризация приводит к разреженным весам в логистической регрессии?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "L1",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "L2",
+          "correct": false,
+          "feedback": "L2 не разреживает."
+        },
+        {
+          "answer": "Elastic Net",
+          "correct": false,
+          "feedback": "Может, но вопрос про одну."
+        },
+        {
+          "answer": "Нет регуляризации",
+          "correct": false,
+          "feedback": "Нет."
+        }
+      ]
+    },
+    {
+      "question": "Какой метод лучше работает на малых выборках?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "Логистическая регрессия",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "kNN",
+          "correct": false,
+          "feedback": "kNN требует много данных."
+        },
+        {
+          "answer": "Оба одинаково",
+          "correct": false,
+          "feedback": "Нет."
+        },
+        {
+          "answer": "Зависит от признаков",
+          "correct": false,
+          "feedback": "В среднем логистическая регрессия лучше."
+        }
+      ]
+    },
+    {
+      "question": "Какой метод не делает предположений о распределении данных?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "Логистическая регрессия",
+          "correct": false,
+          "feedback": "Предполагает линейную разделимость в логит-пространстве."
+        },
+        {
+          "answer": "kNN",
+          "correct": true,
+          "feedback": "Верно — непараметрический метод."
+        },
+        {
+          "answer": "Линейная регрессия",
+          "correct": false,
+          "feedback": "Предполагает нормальность ошибок."
+        },
+        {
+          "answer": "Наивный Байес",
+          "correct": false,
+          "feedback": "Предполагает независимость признаков."
+        }
+      ]
+    },
+    {
+      "question": "Какой из следующих параметров контролирует силу регуляризации в логистической регрессии?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "C",
+          "correct": true,
+          "feedback": "Верно: чем меньше C — тем сильнее регуляризация."
+        },
+        {
+          "answer": "k",
+          "correct": false,
+          "feedback": "Это для kNN."
+        },
+        {
+          "answer": "alpha",
+          "correct": false,
+          "feedback": "В sklearn LogisticRegression использует C, а не alpha."
+        },
+        {
+          "answer": "tol",
+          "correct": false,
+          "feedback": "Это точность оптимизации."
+        }
+      ]
+    },
+    {
+      "question": "Какой из следующих методов является ленивым (lazy learner)?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "Логистическая регрессия",
+          "correct": false,
+          "feedback": "Это eager learner."
+        },
+        {
+          "answer": "kNN",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "SVM",
+          "correct": false,
+          "feedback": "Это eager learner."
+        },
+        {
+          "answer": "Решающее дерево",
+          "correct": false,
+          "feedback": "Это eager learner."
+        }
+      ]
+    },
+    {
+      "question": "Какой метод не требует обучения в традиционном смысле?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "Логистическая регрессия",
+          "correct": false,
+          "feedback": "Требует оптимизации."
+        },
+        {
+          "answer": "kNN",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Линейная регрессия",
+          "correct": false,
+          "feedback": "Требует обучения."
+        },
+        {
+          "answer": "Наивный Байес",
+          "correct": false,
+          "feedback": "Требует оценки распределений."
+        }
+      ]
+    },
+    {
+      "question": "Какой из следующих подходов используется для обработки многоклассовой задачи в логистической регрессии?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "One-vs-Rest",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Softmax",
+          "correct": false,
+          "feedback": "Используется в multinomial logistic regression, но не всегда по умолчанию."
+        },
+        {
+          "answer": "kNN",
+          "correct": false,
+          "feedback": "Это другой алгоритм."
+        },
+        {
+          "answer": "LDA",
+          "correct": false,
+          "feedback": "Это другой метод."
+        }
+      ]
+    },
+    {
+      "question": "Какой из методов чувствителен к шуму в данных?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "Логистическая регрессия",
+          "correct": false,
+          "feedback": "Устойчива благодаря регуляризации."
+        },
+        {
+          "answer": "kNN",
+          "correct": true,
+          "feedback": "Верно — особенно при малом k."
+        },
+        {
+          "answer": "PCA",
+          "correct": false,
+          "feedback": "Не классификатор."
+        },
+        {
+          "answer": "K-means",
+          "correct": false,
+          "feedback": "Не относится к задаче."
+        }
+      ]
+    },
+    {
+      "question": "Какой метод использует линейную границу принятия решений?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "Логистическая регрессия",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "kNN",
+          "correct": false,
+          "feedback": "Граница нелинейная."
+        },
+        {
+          "answer": "Оба",
+          "correct": false,
+          "feedback": "Только логистическая регрессия."
+        },
+        {
+          "answer": "Ни один",
+          "correct": false,
+          "feedback": "Логистическая регрессия — да."
+        }
+      ]
+    },
+    {
+      "question": "Какой метод не подходит для больших наборов данных из-за высокой вычислительной сложности предсказания?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "Логистическая регрессия",
+          "correct": false,
+          "feedback": "Быстро предсказывает."
+        },
+        {
+          "answer": "kNN",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Линейная регрессия",
+          "correct": false,
+          "feedback": "Быстро."
+        },
+        {
+          "answer": "Решающий лес",
+          "correct": false,
+          "feedback": "Умеренно быстро."
+        }
+      ]
+    },
+    {
+      "question": "Какие из следующих утверждений верны для логистической регрессии?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Выход интерпретируется как вероятность",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Использует сигмоиду для преобразования линейного предсказания",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Решающая граница всегда нелинейна",
+          "correct": false,
+          "feedback": "Граница линейна."
+        },
+        {
+          "answer": "Требует масштабирования признаков",
+          "correct": false,
+          "feedback": "Не обязательно, хотя рекомендуется."
+        }
+      ]
+    },
+    {
+      "question": "Какие из следующих утверждений верны для метода kNN?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Не строит явную модель",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Требует хранения всей обучающей выборки",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Быстро предсказывает",
+          "correct": false,
+          "feedback": "Медленно на больших данных."
+        },
+        {
+          "answer": "Параметрический метод",
+          "correct": false,
+          "feedback": "Непараметрический."
+        }
+      ]
+    },
+    {
+      "question": "Какие из следующих метрик расстояния можно использовать в kNN?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Евклидово",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Манхэттенское",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Косинусное",
+          "correct": false,
+          "feedback": "Можно, но в данном формате только 2 правильных — выбраны основные."
+        },
+        {
+          "answer": "Хэмминга",
+          "correct": false,
+          "feedback": "Для категориальных данных, но не основные две."
+        }
+      ]
+    },
+    {
+      "question": "Какие из следующих утверждений верны о регуляризации в логистической регрессии?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "L1 может обнулять веса",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "L2 уменьшает веса, но не до нуля",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Регуляризация увеличивает переобучение",
+          "correct": false,
+          "feedback": "Наоборот — уменьшает."
+        },
+        {
+          "answer": "Регуляризация не влияет на обобщающую способность",
+          "correct": false,
+          "feedback": "Влияет — улучшает."
+        }
+      ]
+    },
+    {
+      "question": "Какие из следующих параметров являются гиперпараметрами метода kNN?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "k",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Метрика расстояния",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Веса признаков",
+          "correct": false,
+          "feedback": "Это не гиперпараметр kNN."
+        },
+        {
+          "answer": "Порог классификации",
+          "correct": false,
+          "feedback": "В kNN порог не задаётся явно."
+        }
+      ]
+    },
+    {
+      "question": "Какие из следующих методов являются алгоритмами классификации?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Логистическая регрессия",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "kNN",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Линейная регрессия",
+          "correct": false,
+          "feedback": "Это регрессия."
+        },
+        {
+          "answer": "K-means",
+          "correct": false,
+          "feedback": "Это кластеризация."
+        }
+      ]
+    },
+    {
+      "question": "Какие из следующих утверждений верны о сигмоиде?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Принимает значения в (0, 1)",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Монотонно возрастает",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Линейна",
+          "correct": false,
+          "feedback": "Нелинейна."
+        },
+        {
+          "answer": "Симметрична относительно нуля",
+          "correct": false,
+          "feedback": "Нет, симметрична относительно (0, 0.5)."
+        }
+      ]
+    },
+    {
+      "question": "Какие из следующих утверждений верны о логистической регрессии?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Может быть использована для бинарной классификации",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Минимизирует log loss",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Использует MSE как функцию потерь",
+          "correct": false,
+          "feedback": "Нет."
+        },
+        {
+          "answer": "Всегда даёт точную классификацию",
+          "correct": false,
+          "feedback": "Нет, зависит от данных."
+        }
+      ]
+    },
+    {
+      "question": "Какие из следующих утверждений верны о методе kNN?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Чувствителен к выбросам при малом k",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Не требует этапа обучения",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Параметрический метод",
+          "correct": false,
+          "feedback": "Нет, непараметрический."
+        },
+        {
+          "answer": "Использует линейную решающую границу",
+          "correct": false,
+          "feedback": "Нет, граница нелинейна."
+        }
+      ]
+    },
+    {
+      "question": "Какие из следующих методов требуют нормализации признаков?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "kNN",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Логистическая регрессия с регуляризацией",
+          "correct": true,
+          "feedback": "Верно — для корректной работы регуляризации."
+        },
+        {
+          "answer": "Логистическая регрессия без регуляризации",
+          "correct": false,
+          "feedback": "Не обязательно."
+        },
+        {
+          "answer": "Наивный Байес",
+          "correct": false,
+          "feedback": "Не требует."
+        }
+      ]
+    },
+    {
+      "question": "Какие из следующих утверждений верны о гиперпараметре C в логистической регрессии?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Чем больше C, тем слабее регуляризация",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "C = 1 / \\lambda, где \\lambda — сила регуляризации",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Чем больше C, тем сильнее регуляризация",
+          "correct": false,
+          "feedback": "Наоборот."
+        },
+        {
+          "answer": "C контролирует количество итераций",
+          "correct": false,
+          "feedback": "Нет."
+        }
+      ]
+    },
+    {
+      "question": "Какие из следующих утверждений верны о методе kNN?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Может использоваться для регрессии",
+          "correct": true,
+          "feedback": "Верно — KNeighborsRegressor."
+        },
+        {
+          "answer": "Может использоваться для классификации",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Всегда быстрее логистической регрессии",
+          "correct": false,
+          "feedback": "Нет, медленнее на предсказании."
+        },
+        {
+          "answer": "Требует обучения весов",
+          "correct": false,
+          "feedback": "Нет."
+        }
+      ]
+    },
+    {
+      "question": "Какие из следующих методов являются примерами eager learners?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Логистическая регрессия",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Линейная регрессия",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "kNN",
+          "correct": false,
+          "feedback": "Это lazy learner."
+        },
+        {
+          "answer": "K-means",
+          "correct": false,
+          "feedback": "Не классификатор."
+        }
+      ]
+    },
+    {
+      "question": "Какие из следующих утверждений верны о логистической регрессии?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Решающая функция линейна",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Вероятность нелинейно зависит от признаков",
+          "correct": true,
+          "feedback": "Верно — через сигмоиду."
+        },
+        {
+          "answer": "Гарантирует 100% точность на обучающей выборке",
+          "correct": false,
+          "feedback": "Нет."
+        },
+        {
+          "answer": "Не подходит для линейно неразделимых данных",
+          "correct": false,
+          "feedback": "Может работать, хотя и неидеально."
+        }
+      ]
+    },
+    {
+      "question": "Какие из следующих утверждений верны о методе kNN?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "При k = 1 склонен к переобучению",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "При большом k склонен к недообучению",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Всегда даёт вероятности",
+          "correct": false,
+          "feedback": "Только если использовать soft voting."
+        },
+        {
+          "answer": "Не зависит от масштаба признаков",
+          "correct": false,
+          "feedback": "Сильно зависит."
+        }
+      ]
+    },
+    {
+      "question": "Какие из следующих функций потерь подходят для бинарной классификации?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Log loss",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Hinge loss",
+          "correct": true,
+          "feedback": "Верно — используется в SVM."
+        },
+        {
+          "answer": "MSE",
+          "correct": false,
+          "feedback": "Не оптимален для классификации."
+        },
+        {
+          "answer": "MAE",
+          "correct": false,
+          "feedback": "Не используется."
+        }
+      ]
+    },
+    {
+      "question": "Какие из следующих утверждений верны о сигмоиде и логистической регрессии?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Сигмоида преобразует линейное предсказание в вероятность",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Обратное преобразование сигмоиды — логит",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Сигмоида не дифференцируема",
+          "correct": false,
+          "feedback": "Она гладкая и дифференцируема."
+        },
+        {
+          "answer": "Сигмоида принимает отрицательные значения",
+          "correct": false,
+          "feedback": "Нет, только (0,1)."
+        }
+      ]
+    },
+    {
+      "question": "Какие из следующих утверждений верны о методе kNN?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Может работать с категориальными признаками при использовании подходящей метрики",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Чувствителен к дисбалансу классов",
+          "correct": true,
+          "feedback": "Верно — большой класс может доминировать."
+        },
+        {
+          "answer": "Всегда линейно масштабируется с ростом данных",
+          "correct": false,
+          "feedback": "Предсказание — O(n), медленно."
+        },
+        {
+          "answer": "Не требует меток в обучающей выборке",
+          "correct": false,
+          "feedback": "Требует — обучение с учителем."
+        }
+      ]
+    }
+  ]

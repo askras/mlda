@@ -1,0 +1,1562 @@
+[
+    {
+      "question": "Запишите формулу Mean Absolute Error (MAE).",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "MAE = \\frac{1}{n} \\sum_{i=1}^{n} |y_i - \\hat{y}_i|",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "\\frac{1}{n} \\sum |y_i - \\hat{y}_i|",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Неверно",
+          "correct": false,
+          "feedback": "Неверная формула."
+        },
+        {
+          "answer": "MAE = \\sum (y_i - \\hat{y}_i)^2",
+          "correct": false,
+          "feedback": "Это MSE, а не MAE."
+        }
+      ]
+    },
+    {
+      "question": "Запишите формулу Mean Squared Error (MSE).",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "MSE = \\frac{1}{n} \\sum_{i=1}^{n} (y_i - \\hat{y}_i)^2",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "\\frac{1}{n} \\sum (y_i - \\hat{y}_i)^2",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "MSE = \\frac{1}{n} \\sum |y_i - \\hat{y}_i|",
+          "correct": false,
+          "feedback": "Это MAE."
+        },
+        {
+          "answer": "Неверно",
+          "correct": false,
+          "feedback": "Неверная формула."
+        }
+      ]
+    },
+    {
+      "question": "Запишите формулу Root Mean Squared Error (RMSE).",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "RMSE = \\sqrt{\\frac{1}{n} \\sum_{i=1}^{n} (y_i - \\hat{y}_i)^2}",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "\\sqrt{\\frac{1}{n} \\sum (y_i - \\hat{y}_i)^2}",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "RMSE = \\frac{1}{n} \\sum |y_i - \\hat{y}_i|",
+          "correct": false,
+          "feedback": "Это MAE."
+        },
+        {
+          "answer": "Неверно",
+          "correct": false,
+          "feedback": "Неверная формула."
+        }
+      ]
+    },
+    {
+      "question": "Запишите формулу Mean Absolute Percentage Error (MAPE).",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "MAPE = \\frac{100\\%}{n} \\sum_{i=1}^{n} \\left| \\frac{y_i - \\hat{y}_i}{y_i} \\right|",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "\\frac{100}{n} \\sum \\left| \\frac{y_i - \\hat{y}_i}{y_i} \\right|",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "MAPE = \\frac{1}{n} \\sum (y_i - \\hat{y}_i)^2",
+          "correct": false,
+          "feedback": "Это MSE."
+        },
+        {
+          "answer": "Неверно",
+          "correct": false,
+          "feedback": "Неверная формула."
+        }
+      ]
+    },
+    {
+      "question": "Запишите формулу коэффициента детерминации $R^2$.",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "R^2 = 1 - \\frac{\\sum_{i=1}^{n} (y_i - \\hat{y}_i)^2}{\\sum_{i=1}^{n} (y_i - \\bar{y})^2}",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "1 - \\frac{\\sum (y_i - \\hat{y}_i)^2}{\\sum (y_i - \\bar{y})^2}",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "R^2 = \\frac{\\sum (y_i - \\hat{y}_i)^2}{\\sum (y_i - \\bar{y})^2}",
+          "correct": false,
+          "feedback": "Пропущена единица и знак минус."
+        },
+        {
+          "answer": "Неверно",
+          "correct": false,
+          "feedback": "Неверная формула."
+        }
+      ]
+    },
+    {
+      "question": "Какое значение MAE будет при идеальном предсказании всех значений?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "0",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "ноль",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "1",
+          "correct": false,
+          "feedback": "Неверно."
+        },
+        {
+          "answer": "100",
+          "correct": false,
+          "feedback": "Неверно."
+        }
+      ]
+    },
+    {
+      "question": "Какое значение MSE будет при идеальном предсказании всех значений?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "0",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "ноль",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "1",
+          "correct": false,
+          "feedback": "Неверно."
+        },
+        {
+          "answer": "-1",
+          "correct": false,
+          "feedback": "MSE не может быть отрицательным."
+        }
+      ]
+    },
+    {
+      "question": "Какое значение $R^2$ соответствует модели, которая предсказывает среднее значение целевой переменной?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "0",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "ноль",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "1",
+          "correct": false,
+          "feedback": "Это идеальная модель."
+        },
+        {
+          "answer": "-1",
+          "correct": false,
+          "feedback": "Модель хуже среднего."
+        }
+      ]
+    },
+    {
+      "question": "Какое значение MAPE будет при идеальном предсказании всех значений?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "0",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "0%",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "1",
+          "correct": false,
+          "feedback": "Неверно."
+        },
+        {
+          "answer": "100",
+          "correct": false,
+          "feedback": "Неверно."
+        }
+      ]
+    },
+    {
+      "question": "Какое значение RMSE будет при идеальном предсказании всех значений?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "0",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "ноль",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "1",
+          "correct": false,
+          "feedback": "Неверно."
+        },
+        {
+          "answer": "100",
+          "correct": false,
+          "feedback": "Неверно."
+        }
+      ]
+    },
+    {
+      "question": "Какая метрика чувствительна к выбросам: MAE или MSE?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "MSE",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Mean Squared Error",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "MAE",
+          "correct": false,
+          "feedback": "MAE менее чувствительна."
+        },
+        {
+          "answer": "обе",
+          "correct": false,
+          "feedback": "MSE значительно чувствительнее."
+        }
+      ]
+    },
+    {
+      "question": "В каких единицах измеряется MAE?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "В тех же, что и целевая переменная",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "единицах целевой переменной",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "процентах",
+          "correct": false,
+          "feedback": "Это MAPE."
+        },
+        {
+          "answer": "безразмерная",
+          "correct": false,
+          "feedback": "Нет, MAE имеет размерность целевой переменной."
+        }
+      ]
+    },
+    {
+      "question": "В каких единицах измеряется RMSE?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "В тех же, что и целевая переменная",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "единицах целевой переменной",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "процентах",
+          "correct": false,
+          "feedback": "Это MAPE."
+        },
+        {
+          "answer": "безразмерная",
+          "correct": false,
+          "feedback": "Нет, RMSE имеет размерность целевой переменной."
+        }
+      ]
+    },
+    {
+      "question": "Как интерпретируется значение $R^2 = 1$?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "Модель идеально предсказывает данные",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "идеальная модель",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "модель не лучше среднего",
+          "correct": false,
+          "feedback": "Это при $R^2 = 0$."
+        },
+        {
+          "answer": "модель хуже среднего",
+          "correct": false,
+          "feedback": "Это при отрицательном $R^2$."
+        }
+      ]
+    },
+    {
+      "question": "Как интерпретируется значение $R^2 = 0$?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "Модель не лучше, чем предсказание среднего значения",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "как у среднего",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "идеальная модель",
+          "correct": false,
+          "feedback": "Это при $R^2 = 1$."
+        },
+        {
+          "answer": "модель хуже среднего",
+          "correct": false,
+          "feedback": "Это при отрицательном $R^2$."
+        }
+      ]
+    },
+    {
+      "question": "Запишите формулу Symmetric Mean Absolute Percentage Error (SMAPE).",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "SMAPE = \\frac{100\\%}{n} \\sum_{i=1}^{n} \\frac{|y_i - \\hat{y}_i|}{(|y_i| + |\\hat{y}_i|)/2}",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "\\frac{100}{n} \\sum \\frac{|y_i - \\hat{y}_i|}{(|y_i| + |\\hat{y}_i|)/2}",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "SMAPE = \\frac{1}{n} \\sum |y_i - \\hat{y}_i|",
+          "correct": false,
+          "feedback": "Это MAE."
+        },
+        {
+          "answer": "Неверно",
+          "correct": false,
+          "feedback": "Неверная формула."
+        }
+      ]
+    },
+    {
+      "question": "Какое максимальное значение может принимать MAPE (в теории)?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "\\infty",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "бесконечность",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "100",
+          "correct": false,
+          "feedback": "Нет, MAPE может быть больше 100%."
+        },
+        {
+          "answer": "1",
+          "correct": false,
+          "feedback": "Нет."
+        }
+      ]
+    },
+    {
+      "question": "Почему MAPE не определена при $y_i = 0$?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "Происходит деление на ноль",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "деление на ноль",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "ошибка вычисления",
+          "correct": false,
+          "feedback": "Причина — деление на ноль."
+        },
+        {
+          "answer": "недостаточно данных",
+          "correct": false,
+          "feedback": "Нет, причина — деление на ноль."
+        }
+      ]
+    },
+    {
+      "question": "Какова размерность MSE?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "Квадрат единиц целевой переменной",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "квадрат единиц y",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "единицы целевой переменной",
+          "correct": false,
+          "feedback": "Это у MAE и RMSE."
+        },
+        {
+          "answer": "безразмерная",
+          "correct": false,
+          "feedback": "Нет."
+        }
+      ]
+    },
+    {
+      "question": "Какова размерность $R^2$?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "Безразмерная величина",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "безразмерная",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "проценты",
+          "correct": false,
+          "feedback": "Нет, $R^2$ не в процентах."
+        },
+        {
+          "answer": "единицы y",
+          "correct": false,
+          "feedback": "Нет."
+        }
+      ]
+    },
+    {
+      "question": "Какая из перечисленных метрик чувствительна к выбросам?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "MAE",
+          "correct": false,
+          "feedback": "MAE менее чувствительна к выбросам."
+        },
+        {
+          "answer": "MSE",
+          "correct": true,
+          "feedback": "Верно, MSE чувствительна к выбросам."
+        },
+        {
+          "answer": "MedAE",
+          "correct": false,
+          "feedback": "Медианная абсолютная ошибка устойчива к выбросам."
+        },
+        {
+          "answer": "SMAPE",
+          "correct": false,
+          "feedback": "SMAPE менее чувствительна, чем MSE."
+        }
+      ]
+    },
+    {
+      "question": "Какая метрика имеет ту же размерность, что и целевая переменная?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "MSE",
+          "correct": false,
+          "feedback": "MSE имеет квадрат размерности."
+        },
+        {
+          "answer": "$R^2$",
+          "correct": false,
+          "feedback": "$R^2$ безразмерна."
+        },
+        {
+          "answer": "MAE",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "MAPE",
+          "correct": false,
+          "feedback": "MAPE выражается в процентах."
+        }
+      ]
+    },
+    {
+      "question": "Какая метрика не может быть отрицательной?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "$R^2$",
+          "correct": false,
+          "feedback": "$R^2$ может быть отрицательной."
+        },
+        {
+          "answer": "MAE",
+          "correct": true,
+          "feedback": "Верно, MAE всегда ≥ 0."
+        },
+        {
+          "answer": "Adjusted $R^2$",
+          "correct": false,
+          "feedback": "Adjusted $R^2$ может быть отрицательной."
+        },
+        {
+          "answer": "Ни одна из перечисленных",
+          "correct": false,
+          "feedback": "MAE не может быть отрицательной."
+        }
+      ]
+    },
+    {
+      "question": "Какая метрика выражается в процентах?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "MSE",
+          "correct": false,
+          "feedback": "MSE в квадратах единиц y."
+        },
+        {
+          "answer": "RMSE",
+          "correct": false,
+          "feedback": "RMSE в единицах y."
+        },
+        {
+          "answer": "MAPE",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "MAE",
+          "correct": false,
+          "feedback": "MAE в единицах y."
+        }
+      ]
+    },
+    {
+      "question": "Чему равен $R^2$, если модель предсказывает хуже, чем среднее значение?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "0",
+          "correct": false,
+          "feedback": "Это когда модель как среднее."
+        },
+        {
+          "answer": "1",
+          "correct": false,
+          "feedback": "Это идеальная модель."
+        },
+        {
+          "answer": "Отрицательное число",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Бесконечность",
+          "correct": false,
+          "feedback": "Нет, $R^2$ конечен."
+        }
+      ]
+    },
+    {
+      "question": "Какая метрика минимизируется при обучении модели методом наименьших квадратов?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "MAE",
+          "correct": false,
+          "feedback": "MAE минимизируется при другой оптимизации."
+        },
+        {
+          "answer": "RMSE",
+          "correct": false,
+          "feedback": "Минимизируется MSE, RMSE — его корень."
+        },
+        {
+          "answer": "MSE",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "MAPE",
+          "correct": false,
+          "feedback": "MAPE не используется в МНК."
+        }
+      ]
+    },
+    {
+      "question": "Какая метрика наиболее устойчива к выбросам?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "MSE",
+          "correct": false,
+          "feedback": "MSE чувствительна к выбросам."
+        },
+        {
+          "answer": "RMSE",
+          "correct": false,
+          "feedback": "RMSE чувствительна к выбросам."
+        },
+        {
+          "answer": "MAE",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "$R^2$",
+          "correct": false,
+          "feedback": "$R^2$ также чувствительна через MSE."
+        }
+      ]
+    },
+    {
+      "question": "Какая метрика может принимать отрицательные значения?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "MAE",
+          "correct": false,
+          "feedback": "MAE ≥ 0."
+        },
+        {
+          "answer": "MSE",
+          "correct": false,
+          "feedback": "MSE ≥ 0."
+        },
+        {
+          "answer": "$R^2$",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "MAPE",
+          "correct": false,
+          "feedback": "MAPE ≥ 0."
+        }
+      ]
+    },
+    {
+      "question": "Какая метрика не зависит от масштаба целевой переменной?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "MAE",
+          "correct": false,
+          "feedback": "MAE зависит от масштаба."
+        },
+        {
+          "answer": "MSE",
+          "correct": false,
+          "feedback": "MSE зависит от масштаба."
+        },
+        {
+          "answer": "$R^2$",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "RMSE",
+          "correct": false,
+          "feedback": "RMSE зависит от масштаба."
+        }
+      ]
+    },
+    {
+      "question": "Для какой метрики справедливо: ‘чем меньше — тем лучше’?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "Только для MAE",
+          "correct": false,
+          "feedback": "Не только."
+        },
+        {
+          "answer": "Только для MSE",
+          "correct": false,
+          "feedback": "Не только."
+        },
+        {
+          "answer": "Для всех: MAE, MSE, MAPE",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Только для $R^2$",
+          "correct": false,
+          "feedback": "Для $R^2$ наоборот: чем больше — тем лучше."
+        }
+      ]
+    },
+    {
+      "question": "Какая метрика используется для сравнения моделей на разных масштабах данных?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "MAE",
+          "correct": false,
+          "feedback": "MAE зависит от масштаба."
+        },
+        {
+          "answer": "MSE",
+          "correct": false,
+          "feedback": "MSE зависит от масштаба."
+        },
+        {
+          "answer": "$R^2$",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "RMSE",
+          "correct": false,
+          "feedback": "RMSE зависит от масштаба."
+        }
+      ]
+    },
+    {
+      "question": "Чему равен MAPE, если $y_i = 10$, $\\hat{y}_i = 8$?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "10%",
+          "correct": false,
+          "feedback": "Неверно."
+        },
+        {
+          "answer": "20%",
+          "correct": true,
+          "feedback": "Верно: |10–8|/10 = 0.2 → 20%."
+        },
+        {
+          "answer": "25%",
+          "correct": false,
+          "feedback": "Неверно."
+        },
+        {
+          "answer": "15%",
+          "correct": false,
+          "feedback": "Неверно."
+        }
+      ]
+    },
+    {
+      "question": "Какая метрика эквивалентна среднему значению абсолютных ошибок?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "RMSE",
+          "correct": false,
+          "feedback": "Это корень из среднего квадратов ошибок."
+        },
+        {
+          "answer": "MSE",
+          "correct": false,
+          "feedback": "Это среднее квадратов ошибок."
+        },
+        {
+          "answer": "MAE",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "MAPE",
+          "correct": false,
+          "feedback": "Это средняя процентная ошибка."
+        }
+      ]
+    },
+    {
+      "question": "Какая метрика является квадратным корнем из MSE?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "MAE",
+          "correct": false,
+          "feedback": "Нет."
+        },
+        {
+          "answer": "RMSE",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "MAPE",
+          "correct": false,
+          "feedback": "Нет."
+        },
+        {
+          "answer": "$R^2$",
+          "correct": false,
+          "feedback": "Нет."
+        }
+      ]
+    },
+    {
+      "question": "Какая метрика лучше подходит для интерпретации бизнес-пользователями?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "MSE",
+          "correct": false,
+          "feedback": "Сложно интерпретировать из-за квадратов."
+        },
+        {
+          "answer": "MAPE",
+          "correct": true,
+          "feedback": "Верно: проценты понятны."
+        },
+        {
+          "answer": "$R^2$",
+          "correct": false,
+          "feedback": "Менее интуитивна для бизнеса."
+        },
+        {
+          "answer": "Adjusted $R^2$",
+          "correct": false,
+          "feedback": "Сложна для неспециалистов."
+        }
+      ]
+    },
+    {
+      "question": "Какая метрика не определена, если хотя бы одно истинное значение равно нулю?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "MAE",
+          "correct": false,
+          "feedback": "MAE определена при нулях."
+        },
+        {
+          "answer": "MAPE",
+          "correct": true,
+          "feedback": "Верно: деление на ноль."
+        },
+        {
+          "answer": "MSE",
+          "correct": false,
+          "feedback": "MSE определена."
+        },
+        {
+          "answer": "RMSE",
+          "correct": false,
+          "feedback": "RMSE определена."
+        }
+      ]
+    },
+    {
+      "question": "Какая метрика равна нулю, если все предсказания точны?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "Только MAE",
+          "correct": false,
+          "feedback": "Не только."
+        },
+        {
+          "answer": "Только MSE",
+          "correct": false,
+          "feedback": "Не только."
+        },
+        {
+          "answer": "Все: MAE, MSE, RMSE, MAPE",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Только $R^2$",
+          "correct": false,
+          "feedback": "$R^2 = 1$, а не 0."
+        }
+      ]
+    },
+    {
+      "question": "Какая метрика нечувствительна к сдвигу предсказаний?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "MAE",
+          "correct": false,
+          "feedback": "MAE чувствительна к сдвигу."
+        },
+        {
+          "answer": "MSE",
+          "correct": false,
+          "feedback": "MSE чувствительна к сдвигу."
+        },
+        {
+          "answer": "$R^2$",
+          "correct": true,
+          "feedback": "Верно: $R^2$ инвариантна к сдвигу."
+        },
+        {
+          "answer": "RMSE",
+          "correct": false,
+          "feedback": "RMSE чувствительна к сдвигу."
+        }
+      ]
+    },
+    {
+      "question": "Какая метрика используется в sklearn как метрика по умолчанию для оценки регрессии?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "MAE",
+          "correct": false,
+          "feedback": "Нет."
+        },
+        {
+          "answer": "MSE",
+          "correct": false,
+          "feedback": "Нет."
+        },
+        {
+          "answer": "$R^2$",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "MAPE",
+          "correct": false,
+          "feedback": "MAPE нет в sklearn по умолчанию."
+        }
+      ]
+    },
+    {
+      "question": "Какой из следующих критериев является безразмерным?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "MAE",
+          "correct": false,
+          "feedback": "MAE имеет размерность y."
+        },
+        {
+          "answer": "RMSE",
+          "correct": false,
+          "feedback": "RMSE имеет размерность y."
+        },
+        {
+          "answer": "$R^2$",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "MSE",
+          "correct": false,
+          "feedback": "MSE имеет квадрат размерности y."
+        }
+      ]
+    },
+    {
+      "question": "Какие из следующих метрик имеют ту же размерность, что и целевая переменная?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "MAE",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "RMSE",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "MSE",
+          "correct": false,
+          "feedback": "MSE — квадрат размерности."
+        },
+        {
+          "answer": "$R^2$",
+          "correct": false,
+          "feedback": "$R^2$ безразмерна."
+        }
+      ]
+    },
+    {
+      "question": "Какие метрики могут быть равны нулю при идеальных предсказаниях?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "MAE",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "MSE",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "$R^2$",
+          "correct": false,
+          "feedback": "$R^2 = 1$ при идеальных предсказаниях."
+        },
+        {
+          "answer": "Adjusted $R^2$",
+          "correct": false,
+          "feedback": "Adjusted $R^2 = 1$ при идеальных предсказаниях."
+        }
+      ]
+    },
+    {
+      "question": "Какие из следующих метрик чувствительны к выбросам?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "MAE",
+          "correct": false,
+          "feedback": "MAE устойчива к выбросам."
+        },
+        {
+          "answer": "MSE",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "RMSE",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "MedAE",
+          "correct": false,
+          "feedback": "Медианная ошибка устойчива к выбросам."
+        }
+      ]
+    },
+    {
+      "question": "Какие метрики выражаются в процентах?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "MAE",
+          "correct": false,
+          "feedback": "MAE в единицах y."
+        },
+        {
+          "answer": "MAPE",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "SMAPE",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "RMSE",
+          "correct": false,
+          "feedback": "RMSE в единицах y."
+        }
+      ]
+    },
+    {
+      "question": "Какие метрики являются асимметричными (ошибка переоценки ≠ ошибке недооценки)?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "MAE",
+          "correct": false,
+          "feedback": "MAE симметрична."
+        },
+        {
+          "answer": "MSE",
+          "correct": false,
+          "feedback": "MSE симметрична."
+        },
+        {
+          "answer": "MAPE",
+          "correct": true,
+          "feedback": "Верно: MAPE асимметрична."
+        },
+        {
+          "answer": "SMAPE",
+          "correct": false,
+          "feedback": "SMAPE симметрична по определению."
+        }
+      ]
+    },
+    {
+      "question": "Какие метрики не зависят от масштаба данных?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "$R^2$",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "MAPE",
+          "correct": true,
+          "feedback": "Верно: относительная метрика."
+        },
+        {
+          "answer": "MAE",
+          "correct": false,
+          "feedback": "MAE зависит от масштаба."
+        },
+        {
+          "answer": "MSE",
+          "correct": false,
+          "feedback": "MSE зависит от масштаба."
+        }
+      ]
+    },
+    {
+      "question": "Какие метрики не определены при $y_i = 0$ для хотя бы одного наблюдения?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "MAE",
+          "correct": false,
+          "feedback": "MAE определена."
+        },
+        {
+          "answer": "MAPE",
+          "correct": true,
+          "feedback": "Верно: деление на ноль."
+        },
+        {
+          "answer": "SMAPE",
+          "correct": true,
+          "feedback": "Верно: знаменатель может быть нулём."
+        },
+        {
+          "answer": "RMSE",
+          "correct": false,
+          "feedback": "RMSE определена."
+        }
+      ]
+    },
+    {
+      "question": "Для каких метрик справедливо правило ‘меньше — лучше’?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "MAE",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "MSE",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "$R^2$",
+          "correct": false,
+          "feedback": "Для $R^2$: больше — лучше."
+        },
+        {
+          "answer": "Adjusted $R^2$",
+          "correct": false,
+          "feedback": "Для Adjusted $R^2$: больше — лучше."
+        }
+      ]
+    },
+    {
+      "question": "Какие метрики можно использовать для сравнения моделей на разных наборах данных?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "MAE",
+          "correct": false,
+          "feedback": "MAE зависит от масштаба."
+        },
+        {
+          "answer": "$R^2$",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "MAPE",
+          "correct": true,
+          "feedback": "Верно: относительная метрика."
+        },
+        {
+          "answer": "MSE",
+          "correct": false,
+          "feedback": "MSE зависит от масштаба."
+        }
+      ]
+    },
+    {
+      "question": "Какие метрики основаны на квадрате ошибки?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "MAE",
+          "correct": false,
+          "feedback": "MAE использует модуль ошибки."
+        },
+        {
+          "answer": "MSE",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "RMSE",
+          "correct": true,
+          "feedback": "Верно: корень из MSE."
+        },
+        {
+          "answer": "MAPE",
+          "correct": false,
+          "feedback": "MAPE использует относительную ошибку."
+        }
+      ]
+    },
+    {
+      "question": "Какие метрики являются безразмерными?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "$R^2$",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "MAPE",
+          "correct": true,
+          "feedback": "Верно: выражена в процентах, но безразмерна."
+        },
+        {
+          "answer": "MAE",
+          "correct": false,
+          "feedback": "MAE имеет размерность y."
+        },
+        {
+          "answer": "RMSE",
+          "correct": false,
+          "feedback": "RMSE имеет размерность y."
+        }
+      ]
+    },
+    {
+      "question": "Какие метрики нечувствительны к аддитивному сдвигу предсказаний?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "$R^2$",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Adjusted $R^2$",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "MAE",
+          "correct": false,
+          "feedback": "MAE чувствительна к сдвигу."
+        },
+        {
+          "answer": "MSE",
+          "correct": false,
+          "feedback": "MSE чувствительна к сдвигу."
+        }
+      ]
+    },
+    {
+      "question": "Какие метрики можно интерпретировать как ‘среднюю ошибку’?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "MAE",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "RMSE",
+          "correct": true,
+          "feedback": "Верно: среднеквадратичная ошибка."
+        },
+        {
+          "answer": "MSE",
+          "correct": false,
+          "feedback": "MSE — средний квадрат ошибки, не сама ошибка."
+        },
+        {
+          "answer": "$R^2$",
+          "correct": false,
+          "feedback": "$R^2$ — коэффициент объяснённой дисперсии."
+        }
+      ]
+    },
+    {
+      "question": "Какие из следующих утверждений о MAPE верны?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Она всегда положительна",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Она не определена при $y_i = 0$",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Она симметрична",
+          "correct": false,
+          "feedback": "MAPE асимметрична."
+        },
+        {
+          "answer": "Она имеет ту же размерность, что и $y$",
+          "correct": false,
+          "feedback": "MAPE безразмерна (в процентах)."
+        }
+      ]
+    },
+    {
+      "question": "Какие метрики используют абсолютное значение ошибки?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "MAE",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "MAPE",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "MSE",
+          "correct": false,
+          "feedback": "MSE использует квадрат ошибки."
+        },
+        {
+          "answer": "RMSE",
+          "correct": false,
+          "feedback": "RMSE использует квадрат ошибки."
+        }
+      ]
+    },
+    {
+      "question": "Какие метрики могут принимать отрицательные значения?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "$R^2$",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Adjusted $R^2$",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "MAE",
+          "correct": false,
+          "feedback": "MAE ≥ 0."
+        },
+        {
+          "answer": "MSE",
+          "correct": false,
+          "feedback": "MSE ≥ 0."
+        }
+      ]
+    },
+    {
+      "question": "Какие метрики не подходят для данных с нулями в целевой переменной?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "MAPE",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "SMAPE",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "MAE",
+          "correct": false,
+          "feedback": "MAE подходит."
+        },
+        {
+          "answer": "RMSE",
+          "correct": false,
+          "feedback": "RMSE подходит."
+        }
+      ]
+    },
+    {
+      "question": "Какие метрики минимизируются при обучении линейной регрессии методом наименьших квадратов?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "MSE",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "RMSE",
+          "correct": true,
+          "feedback": "Верно: минимизация MSE эквивалентна минимизации RMSE."
+        },
+        {
+          "answer": "MAE",
+          "correct": false,
+          "feedback": "MAE не минимизируется в МНК."
+        },
+        {
+          "answer": "MAPE",
+          "correct": false,
+          "feedback": "MAPE не используется в МНК."
+        }
+      ]
+    },
+    {
+      "question": "Какие метрики подходят для оценки регрессионных моделей в задачах прогнозирования продаж?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "MAPE",
+          "correct": true,
+          "feedback": "Верно: удобна в бизнес-контексте."
+        },
+        {
+          "answer": "RMSE",
+          "correct": true,
+          "feedback": "Верно: стандартная метрика."
+        },
+        {
+          "answer": "MSE",
+          "correct": false,
+          "feedback": "Менее интерпретируема из-за квадратов."
+        },
+        {
+          "answer": "$R^2$",
+          "correct": false,
+          "feedback": "Менее полезна в бизнес-контексте прогнозирования."
+        }
+      ]
+    },
+    {
+      "question": "Какие из следующих метрик являются робастными (устойчивыми к выбросам)?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "MAE",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "MedAE",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "MSE",
+          "correct": false,
+          "feedback": "MSE чувствительна к выбросам."
+        },
+        {
+          "answer": "RMSE",
+          "correct": false,
+          "feedback": "RMSE чувствительна к выбросам."
+        }
+      ]
+    }
+  ]

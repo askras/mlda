@@ -1,0 +1,1406 @@
+[
+    {
+      "question": "Какой ансамблевый метод основан на обучении множества деревьев решений на случайных подвыборках данных и признаков?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "Случайный лес",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Random Forest",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Бустинг",
+          "correct": false,
+          "feedback": "Нет, это другой метод."
+        },
+        {
+          "answer": "KNN",
+          "correct": false,
+          "feedback": "Не ансамблевый метод деревьев."
+        }
+      ]
+    },
+    {
+      "question": "Какой параметр в Random Forest определяет количество деревьев в ансамбле?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "n_estimators",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "число деревьев",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "max_depth",
+          "correct": false,
+          "feedback": "Это глубина одного дерева."
+        },
+        {
+          "answer": "learning_rate",
+          "correct": false,
+          "feedback": "Это параметр бустинга."
+        }
+      ]
+    },
+    {
+      "question": "Какой метод используется для оценки качества случайного леса без отдельной валидационной выборки?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "Out-of-bag оценка",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "OOB score",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Кросс-валидация",
+          "correct": false,
+          "feedback": "Тоже используется, но OOB — встроенная."
+        },
+        {
+          "answer": "Train score",
+          "correct": false,
+          "feedback": "Это на обучающей выборке."
+        }
+      ]
+    },
+    {
+      "question": "Как называется техника, при которой каждое дерево в случайном лесу обучается на подвыборке объектов с возвращением?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "Bootstrap",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Бутстрап",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Бэггинг",
+          "correct": false,
+          "feedback": "Бэггинг — общий метод, bootstrap — техника выборки."
+        },
+        {
+          "answer": "Subsampling",
+          "correct": false,
+          "feedback": "Обычно без возвращения."
+        }
+      ]
+    },
+    {
+      "question": "Какой параметр ограничивает количество признаков, рассматриваемых при разделении узла в каждом дереве случайного леса?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "max_features",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "максимальное число признаков",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "n_features",
+          "correct": false,
+          "feedback": "Такого параметра нет."
+        },
+        {
+          "answer": "feature_fraction",
+          "correct": false,
+          "feedback": "Это в LightGBM, не в sklearn."
+        }
+      ]
+    },
+    {
+      "question": "Какой метод уменьшает дисперсию по сравнению с одиночным деревом решений?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "Случайный лес",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Random Forest",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Бустинг",
+          "correct": false,
+          "feedback": "Уменьшает смещение."
+        },
+        {
+          "answer": "Логистическая регрессия",
+          "correct": false,
+          "feedback": "Не дерево."
+        }
+      ]
+    },
+    {
+      "question": "Какой тип ансамблирования используется в случайном лесу?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "Бэггинг",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Bagging",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Бустинг",
+          "correct": false,
+          "feedback": "Нет."
+        },
+        {
+          "answer": "Стекинг",
+          "correct": false,
+          "feedback": "Нет."
+        }
+      ]
+    },
+    {
+      "question": "Какой параметр задаёт минимальное количество объектов, необходимое для разделения внутреннего узла дерева в случайном лесу?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "min_samples_split",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "минимальное число объектов для разделения",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "min_samples_leaf",
+          "correct": false,
+          "feedback": "Это для листьев."
+        },
+        {
+          "answer": "max_depth",
+          "correct": false,
+          "feedback": "Это глубина."
+        }
+      ]
+    },
+    {
+      "question": "Какой параметр задаёт минимальное количество объектов, необходимое в листе дерева случайного леса?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "min_samples_leaf",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "минимальное число объектов в листе",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "min_samples_split",
+          "correct": false,
+          "feedback": "Это для узлов."
+        },
+        {
+          "answer": "n_leaves",
+          "correct": false,
+          "feedback": "Такого параметра нет."
+        }
+      ]
+    },
+    {
+      "question": "Какой параметр контролирует максимальную глубину каждого дерева в случайном лесу?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "max_depth",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "максимальная глубина дерева",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "n_estimators",
+          "correct": false,
+          "feedback": "Это число деревьев."
+        },
+        {
+          "answer": "max_features",
+          "correct": false,
+          "feedback": "Это про признаки."
+        }
+      ]
+    },
+    {
+      "question": "Какой параметр в Random Forest помогает избежать переобучения за счёт ограничения сложности деревьев?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "max_depth",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "min_samples_split",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "n_estimators",
+          "correct": false,
+          "feedback": "Увеличение может помочь, но не регуляризует напрямую."
+        },
+        {
+          "answer": "random_state",
+          "correct": false,
+          "feedback": "Для воспроизводимости."
+        }
+      ]
+    },
+    {
+      "question": "Какой метод используется для оценки важности признаков в случайном лесу?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "Среднее снижение неоднородности",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Gini importance",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "p-value",
+          "correct": false,
+          "feedback": "Не используется."
+        },
+        {
+          "answer": "Корреляция",
+          "correct": false,
+          "feedback": "Не внутренний метод."
+        }
+      ]
+    },
+    {
+      "question": "Какой тип предсказания используется в случайном лесу для задачи классификации?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "Голосование по большинству",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Majority voting",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Усреднение вероятностей",
+          "correct": false,
+          "feedback": "Это soft voting, но по умолчанию — majority."
+        },
+        {
+          "answer": "Медиана",
+          "correct": false,
+          "feedback": "Для регрессии — среднее."
+        }
+      ]
+    },
+    {
+      "question": "Какой тип предсказания используется в случайном лесу для задачи регрессии?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "Среднее значение предсказаний деревьев",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Усреднение",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Медиана",
+          "correct": false,
+          "feedback": "Нет, среднее."
+        },
+        {
+          "answer": "Сумма",
+          "correct": false,
+          "feedback": "Нет."
+        }
+      ]
+    },
+    {
+      "question": "Какой параметр в RandomForestClassifier определяет критерий расщепления по умолчанию?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "Gini",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Gini impurity",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Энтропия",
+          "correct": false,
+          "feedback": "Можно выбрать, но не по умолчанию."
+        },
+        {
+          "answer": "MSE",
+          "correct": false,
+          "feedback": "Это для регрессии."
+        }
+      ]
+    },
+    {
+      "question": "Какой параметр в RandomForestRegressor определяет критерий расщепления по умолчанию?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "MSE",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Mean squared error",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "MAE",
+          "correct": false,
+          "feedback": "Можно выбрать, но не по умолчанию."
+        },
+        {
+          "answer": "Gini",
+          "correct": false,
+          "feedback": "Это для классификации."
+        }
+      ]
+    },
+    {
+      "question": "Какой параметр обеспечивает воспроизводимость результатов случайного леса?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "random_state",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "seed",
+          "correct": true,
+          "feedback": "Верно — в других библиотеках."
+        },
+        {
+          "answer": "n_jobs",
+          "correct": false,
+          "feedback": "Для параллелизма."
+        },
+        {
+          "answer": "verbose",
+          "correct": false,
+          "feedback": "Для логирования."
+        }
+      ]
+    },
+    {
+      "question": "Какой метод используется для визуализации важности признаков в случайном лесу?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "feature_importances_",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Важность признаков",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "coef_",
+          "correct": false,
+          "feedback": "Это для линейных моделей."
+        },
+        {
+          "answer": "weights",
+          "correct": false,
+          "feedback": "Не для деревьев."
+        }
+      ]
+    },
+    {
+      "question": "Какой параметр ограничивает максимальное количество листьев в каждом дереве?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "max_leaf_nodes",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "максимальное число листьев",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "max_depth",
+          "correct": false,
+          "feedback": "Это глубина."
+        },
+        {
+          "answer": "n_leaves",
+          "correct": false,
+          "feedback": "Такого параметра нет."
+        }
+      ]
+    },
+    {
+      "question": "Какой параметр в sklearn.RandomForest устанавливает количество признаков для каждого дерева как квадратный корень от общего числа признаков?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "max_features='sqrt'",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "sqrt",
+          "correct": true,
+          "feedback": "Верно — значение параметра."
+        },
+        {
+          "answer": "log2",
+          "correct": false,
+          "feedback": "Другое значение."
+        },
+        {
+          "answer": "all",
+          "correct": false,
+          "feedback": "Все признаки."
+        }
+      ]
+    },
+    {
+      "question": "Какой из следующих параметров НЕ является параметром RandomForest в scikit-learn?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "learning_rate",
+          "correct": true,
+          "feedback": "Верно — это параметр бустинга."
+        },
+        {
+          "answer": "n_estimators",
+          "correct": false,
+          "feedback": "Это параметр RF."
+        },
+        {
+          "answer": "max_depth",
+          "correct": false,
+          "feedback": "Это параметр RF."
+        },
+        {
+          "answer": "max_features",
+          "correct": false,
+          "feedback": "Это параметр RF."
+        }
+      ]
+    },
+    {
+      "question": "Какой метод ансамблирования использует случайный лес?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "Бэггинг",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Бустинг",
+          "correct": false,
+          "feedback": "Нет."
+        },
+        {
+          "answer": "Стекинг",
+          "correct": false,
+          "feedback": "Нет."
+        },
+        {
+          "answer": "Voting",
+          "correct": false,
+          "feedback": "Нет."
+        }
+      ]
+    },
+    {
+      "question": "Какой параметр контролирует количество признаков, рассматриваемых при каждом разделении узла?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "max_features",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "n_features",
+          "correct": false,
+          "feedback": "Такого параметра нет."
+        },
+        {
+          "answer": "n_estimators",
+          "correct": false,
+          "feedback": "Это число деревьев."
+        },
+        {
+          "answer": "min_samples_split",
+          "correct": false,
+          "feedback": "Это про объекты."
+        }
+      ]
+    },
+    {
+      "question": "Какой параметр наиболее сильно влияет на скорость обучения случайного леса?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "n_estimators",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "random_state",
+          "correct": false,
+          "feedback": "Не влияет на скорость."
+        },
+        {
+          "answer": "verbose",
+          "correct": false,
+          "feedback": "Только вывод."
+        },
+        {
+          "answer": "oob_score",
+          "correct": false,
+          "feedback": "Незначительно."
+        }
+      ]
+    },
+    {
+      "question": "Какой параметр помогает уменьшить переобучение в случайном лесу?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "max_depth",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "n_estimators",
+          "correct": false,
+          "feedback": "Увеличивает, но не регуляризует."
+        },
+        {
+          "answer": "bootstrap",
+          "correct": false,
+          "feedback": "Используется всегда, не регуляризует."
+        },
+        {
+          "answer": "random_state",
+          "correct": false,
+          "feedback": "Не влияет."
+        }
+      ]
+    },
+    {
+      "question": "Какой метод используется для оценки качества случайного леса без валидационной выборки?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "Out-of-bag (OOB)",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Кросс-валидация",
+          "correct": false,
+          "feedback": "Требует разделения данных."
+        },
+        {
+          "answer": "Train score",
+          "correct": false,
+          "feedback": "На обучающих данных — переобучение."
+        },
+        {
+          "answer": "Hold-out",
+          "correct": false,
+          "feedback": "Требует отдельной выборки."
+        }
+      ]
+    },
+    {
+      "question": "Какой параметр задаёт минимальное число объектов в листе?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "min_samples_leaf",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "min_samples_split",
+          "correct": false,
+          "feedback": "Это для узлов."
+        },
+        {
+          "answer": "min_impurity_decrease",
+          "correct": false,
+          "feedback": "Про снижение неоднородности."
+        },
+        {
+          "answer": "max_leaf_nodes",
+          "correct": false,
+          "feedback": "Ограничение на число листьев."
+        }
+      ]
+    },
+    {
+      "question": "Какой метод используется для комбинирования предсказаний деревьев в задаче регрессии?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "Усреднение",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Медиана",
+          "correct": false,
+          "feedback": "Нет."
+        },
+        {
+          "answer": "Сумма",
+          "correct": false,
+          "feedback": "Нет."
+        },
+        {
+          "answer": "Голосование",
+          "correct": false,
+          "feedback": "Это для классификации."
+        }
+      ]
+    },
+    {
+      "question": "Какой параметр определяет, использовать ли bootstrap-выборки при обучении деревьев?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "bootstrap",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "max_samples",
+          "correct": false,
+          "feedback": "Определяет размер bootstrap-выборки."
+        },
+        {
+          "answer": "subsample",
+          "correct": false,
+          "feedback": "Это в XGBoost."
+        },
+        {
+          "answer": "sampling",
+          "correct": false,
+          "feedback": "Такого параметра нет."
+        }
+      ]
+    },
+    {
+      "question": "Какой параметр в случайном лесу может принимать значение 'log2'?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "max_features",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "n_estimators",
+          "correct": false,
+          "feedback": "Целое число."
+        },
+        {
+          "answer": "max_depth",
+          "correct": false,
+          "feedback": "Целое число или None."
+        },
+        {
+          "answer": "criterion",
+          "correct": false,
+          "feedback": "Строка: 'gini', 'entropy' и т.д."
+        }
+      ]
+    },
+    {
+      "question": "Какой метод наиболее устойчив к выбросам?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "Случайный лес",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Линейная регрессия",
+          "correct": false,
+          "feedback": "Чувствительна."
+        },
+        {
+          "answer": "AdaBoost",
+          "correct": false,
+          "feedback": "Чувствителен."
+        },
+        {
+          "answer": "Логистическая регрессия",
+          "correct": false,
+          "feedback": "Чувствительна."
+        }
+      ]
+    },
+    {
+      "question": "Какой параметр ограничивает размер bootstrap-выборки?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "max_samples",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "max_features",
+          "correct": false,
+          "feedback": "Про признаки."
+        },
+        {
+          "answer": "min_samples_split",
+          "correct": false,
+          "feedback": "Про узлы."
+        },
+        {
+          "answer": "n_samples",
+          "correct": false,
+          "feedback": "Такого параметра нет."
+        }
+      ]
+    },
+    {
+      "question": "Какой тип задач НЕ решает случайный лес?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "Кластеризация",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Классификация",
+          "correct": false,
+          "feedback": "Решает."
+        },
+        {
+          "answer": "Регрессия",
+          "correct": false,
+          "feedback": "Решает."
+        },
+        {
+          "answer": "Оценка важности признаков",
+          "correct": false,
+          "feedback": "Решает."
+        }
+      ]
+    },
+    {
+      "question": "Какой параметр по умолчанию равен 'gini' в RandomForestClassifier?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "criterion",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "max_features",
+          "correct": false,
+          "feedback": "По умолчанию 'sqrt' или 'n_features'."
+        },
+        {
+          "answer": "n_estimators",
+          "correct": false,
+          "feedback": "По умолчанию 100."
+        },
+        {
+          "answer": "bootstrap",
+          "correct": false,
+          "feedback": "По умолчанию True."
+        }
+      ]
+    },
+    {
+      "question": "Какой параметр в RandomForestRegressor по умолчанию равен 'mse'?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "criterion",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "max_features",
+          "correct": false,
+          "feedback": "Не критерий."
+        },
+        {
+          "answer": "n_estimators",
+          "correct": false,
+          "feedback": "Число деревьев."
+        },
+        {
+          "answer": "max_depth",
+          "correct": false,
+          "feedback": "Глубина."
+        }
+      ]
+    },
+    {
+      "question": "Какой метод используется для борьбы с переобучением в случайном лесу?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "Ограничение глубины деревьев",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Уменьшение числа деревьев",
+          "correct": false,
+          "feedback": "Может ухудшить обобщение."
+        },
+        {
+          "answer": "Увеличение learning_rate",
+          "correct": false,
+          "feedback": "Не используется в RF."
+        },
+        {
+          "answer": "Отключение bootstrap",
+          "correct": false,
+          "feedback": "Может ухудшить."
+        }
+      ]
+    },
+    {
+      "question": "Какой параметр задаёт случайное состояние для воспроизводимости?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "random_state",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "seed",
+          "correct": false,
+          "feedback": "В sklearn — random_state."
+        },
+        {
+          "answer": "state",
+          "correct": false,
+          "feedback": "Нет такого."
+        },
+        {
+          "answer": "init",
+          "correct": false,
+          "feedback": "Нет."
+        }
+      ]
+    },
+    {
+      "question": "Какой параметр не влияет на переобучение случайного леса?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "n_jobs",
+          "correct": true,
+          "feedback": "Верно — только параллелизм."
+        },
+        {
+          "answer": "max_depth",
+          "correct": false,
+          "feedback": "Влияет."
+        },
+        {
+          "answer": "min_samples_leaf",
+          "correct": false,
+          "feedback": "Влияет."
+        },
+        {
+          "answer": "max_features",
+          "correct": false,
+          "feedback": "Влияет."
+        }
+      ]
+    },
+    {
+      "question": "Какие из следующих утверждений верны для случайного леса?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Уменьшает дисперсию по сравнению с одиночным деревом",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Использует бэггинг",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Увеличивает смещение",
+          "correct": false,
+          "feedback": "Нет, смещение почти не меняется."
+        },
+        {
+          "answer": "Требует нормализации признаков",
+          "correct": false,
+          "feedback": "Нет."
+        }
+      ]
+    },
+    {
+      "question": "Какие параметры контролируют сложность деревьев в случайном лесу?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "max_depth",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "min_samples_split",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "n_estimators",
+          "correct": false,
+          "feedback": "Число деревьев, не сложность одного."
+        },
+        {
+          "answer": "random_state",
+          "correct": false,
+          "feedback": "Не влияет."
+        }
+      ]
+    },
+    {
+      "question": "Какие методы оценки качества можно использовать в случайном лесу?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Out-of-bag score",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Кросс-валидация",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Train score",
+          "correct": false,
+          "feedback": "Сильно завышен."
+        },
+        {
+          "answer": "p-value",
+          "correct": false,
+          "feedback": "Не используется."
+        }
+      ]
+    },
+    {
+      "question": "Какие задачи может решать случайный лес?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Классификация",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Регрессия",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Кластеризация",
+          "correct": false,
+          "feedback": "Нет."
+        },
+        {
+          "answer": "Понижение размерности",
+          "correct": false,
+          "feedback": "Нет."
+        }
+      ]
+    },
+    {
+      "question": "Какие утверждения верны о параметре max_features?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Контролирует число признаков при расщеплении",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Может быть 'sqrt' или 'log2'",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Определяет число деревьев",
+          "correct": false,
+          "feedback": "Нет."
+        },
+        {
+          "answer": "Влияет на время обучения",
+          "correct": false,
+          "feedback": "Незначительно."
+        }
+      ]
+    },
+    {
+      "question": "Какие утверждения верны о случайном лесе?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Не требует масштабирования признаков",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Устойчив к выбросам",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Чувствителен к дисбалансу классов",
+          "correct": false,
+          "feedback": "Менее чувствителен, чем одиночное дерево."
+        },
+        {
+          "answer": "Всегда интерпретируем",
+          "correct": false,
+          "feedback": "Ансамбль — не интерпретируем."
+        }
+      ]
+    },
+    {
+      "question": "Какие параметры есть в RandomForestClassifier?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "n_estimators",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "max_depth",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "learning_rate",
+          "correct": false,
+          "feedback": "Нет."
+        },
+        {
+          "answer": "alpha",
+          "correct": false,
+          "feedback": "Нет — это в XGBoost."
+        }
+      ]
+    },
+    {
+      "question": "Какие методы используются для регуляризации случайного леса?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Ограничение глубины деревьев",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Увеличение min_samples_leaf",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Уменьшение n_estimators",
+          "correct": false,
+          "feedback": "Не рекомендуется."
+        },
+        {
+          "answer": "Использование learning_rate",
+          "correct": false,
+          "feedback": "Не применяется."
+        }
+      ]
+    },
+    {
+      "question": "Какие утверждения верны о важности признаков в случайном лесу?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Основана на снижении неоднородности",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Доступна через атрибут feature_importances_",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Использует p-value",
+          "correct": false,
+          "feedback": "Нет."
+        },
+        {
+          "answer": "Чувствительна к масштабу признаков",
+          "correct": false,
+          "feedback": "Нет."
+        }
+      ]
+    },
+    {
+      "question": "Какие утверждения верны о bootstrap в случайном лесу?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Каждое дерево обучается на случайной подвыборке с возвращением",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Позволяет использовать out-of-bag оценку",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Используется только в бустинге",
+          "correct": false,
+          "feedback": "Нет, в бустинге обычно нет."
+        },
+        {
+          "answer": "Отключается параметром subsample=False",
+          "correct": false,
+          "feedback": "Параметр — bootstrap=False."
+        }
+      ]
+    },
+    {
+      "question": "Какие утверждения верны о параметре n_estimators?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Определяет количество деревьев",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Увеличение обычно улучшает качество до определённого предела",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Влияет на смещение модели",
+          "correct": false,
+          "feedback": "Нет, влияет на дисперсию."
+        },
+        {
+          "answer": "Должен быть нечётным для классификации",
+          "correct": false,
+          "feedback": "Нет."
+        }
+      ]
+    },
+    {
+      "question": "Какие утверждения верны о случайном лесе для регрессии?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Предсказывает среднее значение по деревьям",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Может использовать MAE как критерий расщепления",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Использует Gini",
+          "correct": false,
+          "feedback": "Нет, это для классификации."
+        },
+        {
+          "answer": "Предсказывает вероятности",
+          "correct": false,
+          "feedback": "Нет."
+        }
+      ]
+    },
+    {
+      "question": "Какие утверждения верны о скорости работы случайного леса?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Обучение можно распараллелить",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Предсказание быстрее, чем у градиентного бустинга",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Скорость не зависит от n_estimators",
+          "correct": false,
+          "feedback": "Зависит линейно."
+        },
+        {
+          "answer": "Медленнее одиночного дерева",
+          "correct": false,
+          "feedback": "Да, но вопрос про два верных — выбраны положительные."
+        }
+      ]
+    },
+    {
+      "question": "Какие утверждения верны о параметре min_samples_leaf?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Ограничивает минимальное число объектов в листе",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Помогает избежать переобучения",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Определяет глубину дерева",
+          "correct": false,
+          "feedback": "Нет."
+        },
+        {
+          "answer": "Контролирует число признаков",
+          "correct": false,
+          "feedback": "Нет."
+        }
+      ]
+    },
+    {
+      "question": "Какие утверждения верны о применении случайного леса?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Хорошо работает с числовыми и категориальными признаками (после кодирования)",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Не чувствителен к пропущенным значениям",
+          "correct": false,
+          "feedback": "Требует заполнения пропусков."
+        },
+        {
+          "answer": "Требует нормализации",
+          "correct": false,
+          "feedback": "Нет."
+        },
+        {
+          "answer": "Может оценивать важность признаков",
+          "correct": true,
+          "feedback": "Верно."
+        }
+      ]
+    },
+    {
+      "question": "Какие утверждения верны о сравнении случайного леса и градиентного бустинга?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Случайный лес обучается быстрее",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Градиентный бустинг часто точнее",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Случайный лес чувствителен к шуму",
+          "correct": false,
+          "feedback": "Нет, устойчив."
+        },
+        {
+          "answer": "Градиентный бустинг не переобучается",
+          "correct": false,
+          "feedback": "Наоборот, склонен к переобучению."
+        }
+      ]
+    }
+  ]

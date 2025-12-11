@@ -1,0 +1,1432 @@
+[
+    {
+      "question": "Как называется метод ансамблирования, при котором базовые модели обучаются независимо на случайных подвыборках данных?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "Бэггинг",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Bagging",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Бустинг",
+          "correct": false,
+          "feedback": "Бустинг — последовательный."
+        },
+        {
+          "answer": "Стекинг",
+          "correct": false,
+          "feedback": "Использует мета-модель."
+        }
+      ]
+    },
+    {
+      "question": "Как называется популярный ансамблевый метод, основанный на бэггинге и случайном выборе признаков?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "Случайный лес",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Random Forest",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "AdaBoost",
+          "correct": false,
+          "feedback": "Это бустинг."
+        },
+        {
+          "answer": "XGBoost",
+          "correct": false,
+          "feedback": "Это градиентный бустинг."
+        }
+      ]
+    },
+    {
+      "question": "Какой метод ансамблирования обучает модели последовательно, уделяя больше внимания ошибкам предыдущих моделей?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "Бустинг",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Boosting",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Бэггинг",
+          "correct": false,
+          "feedback": "Параллельный метод."
+        },
+        {
+          "answer": "Voting",
+          "correct": false,
+          "feedback": "Простое голосование."
+        }
+      ]
+    },
+    {
+      "question": "Какой алгоритм бустинга использует градиентный спуск для минимизации функции потерь?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "Градиентный бустинг",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Gradient Boosting",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "AdaBoost",
+          "correct": false,
+          "feedback": "Использует пересчёт весов, не градиент."
+        },
+        {
+          "answer": "Bagging",
+          "correct": false,
+          "feedback": "Не бустинг."
+        }
+      ]
+    },
+    {
+      "question": "Какой метод ансамблирования использует мета-модель для комбинирования предсказаний базовых моделей?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "Стекинг",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Stacking",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Бэггинг",
+          "correct": false,
+          "feedback": "Не использует мета-модель."
+        },
+        {
+          "answer": "Бустинг",
+          "correct": false,
+          "feedback": "Последовательное обучение, не стекинг."
+        }
+      ]
+    },
+    {
+      "question": "Какой параметр в случайном лесе определяет количество деревьев?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "n_estimators",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "число деревьев",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "max_depth",
+          "correct": false,
+          "feedback": "Это глубина одного дерева."
+        },
+        {
+          "answer": "learning_rate",
+          "correct": false,
+          "feedback": "Это для бустинга."
+        }
+      ]
+    },
+    {
+      "question": "Какой метод уменьшает дисперсию базовой модели?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "Бэггинг",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Bagging",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Бустинг",
+          "correct": false,
+          "feedback": "Уменьшает смещение."
+        },
+        {
+          "answer": "Стекинг",
+          "correct": false,
+          "feedback": "Цель — повышение обобщающей способности, не специфично к дисперсии."
+        }
+      ]
+    },
+    {
+      "question": "Какой метод уменьшает смещение базовой модели?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "Бустинг",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Boosting",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Бэггинг",
+          "correct": false,
+          "feedback": "Уменьшает дисперсию."
+        },
+        {
+          "answer": "Voting",
+          "correct": false,
+          "feedback": "Не обязательно уменьшает смещение."
+        }
+      ]
+    },
+    {
+      "question": "Как называется весовой коэффициент, используемый в AdaBoost для коррекции ошибок предыдущих моделей?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "Веса объектов",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Sample weights",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Learning rate",
+          "correct": false,
+          "feedback": "Это коэффициент шага в градиентном бустинге."
+        },
+        {
+          "answer": "Alpha",
+          "correct": false,
+          "feedback": "Alpha — вес самой модели, но вопрос про объекты."
+        }
+      ]
+    },
+    {
+      "question": "Какой коэффициент в градиентном бустинге контролирует вклад каждой новой модели?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "Скорость обучения",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Learning rate",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "n_estimators",
+          "correct": false,
+          "feedback": "Число моделей."
+        },
+        {
+          "answer": "max_depth",
+          "correct": false,
+          "feedback": "Глубина деревьев."
+        }
+      ]
+    },
+    {
+      "question": "Какая формула описывает предсказание ансамбля при голосовании по большинству (hard voting)?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "\\hat{y} = \\text{mode}(\\hat{y}_1, \\hat{y}_2, \\ldots, \\hat{y}_T)",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "mode of predictions",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "\\frac{1}{T} \\sum \\hat{y}_t",
+          "correct": false,
+          "feedback": "Это soft voting или усреднение для регрессии."
+        },
+        {
+          "answer": "\\sum w_t \\hat{y}_t",
+          "correct": false,
+          "feedback": "Это взвешенное голосование."
+        }
+      ]
+    },
+    {
+      "question": "Какая формула описывает предсказание ансамбля при усреднении (для регрессии)?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "\\hat{y} = \\frac{1}{T} \\sum_{t=1}^{T} \\hat{y}_t",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "среднее предсказаний",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "\\text{mode}(\\hat{y}_1, \\ldots, \\hat{y}_T)",
+          "correct": false,
+          "feedback": "Это для классификации."
+        },
+        {
+          "answer": "\\max(\\hat{y}_t)",
+          "correct": false,
+          "feedback": "Нет."
+        }
+      ]
+    },
+    {
+      "question": "Какой метод требует, чтобы базовые модели были слабыми (чуть лучше случайного угадывания)?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "AdaBoost",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Адаптивный бустинг",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Случайный лес",
+          "correct": false,
+          "feedback": "Может использовать сильные модели."
+        },
+        {
+          "answer": "Стекинг",
+          "correct": false,
+          "feedback": "Не обязательно."
+        }
+      ]
+    },
+    {
+      "question": "Какой метод использует out-of-bag (OOB) оценку для оценки качества?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "Случайный лес",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Random Forest",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "AdaBoost",
+          "correct": false,
+          "feedback": "Не использует OOB."
+        },
+        {
+          "answer": "XGBoost",
+          "correct": false,
+          "feedback": "Не использует OOB."
+        }
+      ]
+    },
+    {
+      "question": "Как называется подвыборка объектов, используемая при обучении одной базовой модели в бэггинге?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "Bootstrap sample",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Бутстрап-выборка",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Test sample",
+          "correct": false,
+          "feedback": "Нет."
+        },
+        {
+          "answer": "Validation set",
+          "correct": false,
+          "feedback": "Нет."
+        }
+      ]
+    },
+    {
+      "question": "Какой параметр в XGBoost регулирует сложность модели и помогает избежать переобучения?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "регуляризация",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "lambda and alpha",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "learning_rate",
+          "correct": false,
+          "feedback": "Контролирует шаг, но не напрямую сложность."
+        },
+        {
+          "answer": "n_estimators",
+          "correct": false,
+          "feedback": "Число деревьев."
+        }
+      ]
+    },
+    {
+      "question": "Какой метод ансамблирования наиболее подвержен переобучению при большом числе итераций?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "Бустинг",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Boosting",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Бэггинг",
+          "correct": false,
+          "feedback": "Устойчив к переобучению."
+        },
+        {
+          "answer": "Voting",
+          "correct": false,
+          "feedback": "Менее подвержен."
+        }
+      ]
+    },
+    {
+      "question": "Какой тип голосования использует усреднение вероятностей классов?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "Soft voting",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Мягкое голосование",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Hard voting",
+          "correct": false,
+          "feedback": "Это по меткам классов."
+        },
+        {
+          "answer": "Majority voting",
+          "correct": false,
+          "feedback": "Это hard voting."
+        }
+      ]
+    },
+    {
+      "question": "Какой параметр в градиентном бустинге ограничивает глубину деревьев для регуляризации?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "max_depth",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "максимальная глубина",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "n_estimators",
+          "correct": false,
+          "feedback": "Число деревьев."
+        },
+        {
+          "answer": "subsample",
+          "correct": false,
+          "feedback": "Доля объектов, не глубина."
+        }
+      ]
+    },
+    {
+      "question": "Какой алгоритм использует вторые производные функции потерь для ускорения обучения?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "XGBoost",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "eXtreme Gradient Boosting",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "AdaBoost",
+          "correct": false,
+          "feedback": "Не использует градиенты."
+        },
+        {
+          "answer": "Random Forest",
+          "correct": false,
+          "feedback": "Не бустинг."
+        }
+      ]
+    },
+    {
+      "question": "Какой метод ансамблирования использует bootstrap-агрегирование?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "Бэггинг",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Случайный лес",
+          "correct": false,
+          "feedback": "Использует, но вопрос на один — бэггинг основной."
+        },
+        {
+          "answer": "Бустинг",
+          "correct": false,
+          "feedback": "Не использует bootstrap."
+        },
+        {
+          "answer": "Стекинг",
+          "correct": false,
+          "feedback": "Не использует bootstrap."
+        }
+      ]
+    },
+    {
+      "question": "Какой алгоритм бустинга наиболее чувствителен к выбросам?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "AdaBoost",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Gradient Boosting",
+          "correct": false,
+          "feedback": "Менее чувствителен благодаря функции потерь."
+        },
+        {
+          "answer": "XGBoost",
+          "correct": false,
+          "feedback": "Регуляризация снижает чувствительность."
+        },
+        {
+          "answer": "Случайный лес",
+          "correct": false,
+          "feedback": "Устойчив к выбросам."
+        }
+      ]
+    },
+    {
+      "question": "Какой метод требует меньше настройки гиперпараметров на практике?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "Случайный лес",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "AdaBoost",
+          "correct": false,
+          "feedback": "Чувствителен к шуму и параметрам."
+        },
+        {
+          "answer": "XGBoost",
+          "correct": false,
+          "feedback": "Много гиперпараметров."
+        },
+        {
+          "answer": "Стекинг",
+          "correct": false,
+          "feedback": "Требует выбора базовых и мета-моделей."
+        }
+      ]
+    },
+    {
+      "question": "Какой параметр контролирует долю объектов, используемых для обучения каждого дерева в XGBoost?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "subsample",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "colsample_bytree",
+          "correct": false,
+          "feedback": "Это про признаки, а не объекты."
+        },
+        {
+          "answer": "max_depth",
+          "correct": false,
+          "feedback": "Глубина."
+        },
+        {
+          "answer": "learning_rate",
+          "correct": false,
+          "feedback": "Скорость обучения."
+        }
+      ]
+    },
+    {
+      "question": "Какой метод ансамблирования не снижает смещение, но сильно снижает дисперсию?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "Бэггинг",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Бустинг",
+          "correct": false,
+          "feedback": "Снижает смещение."
+        },
+        {
+          "answer": "Стекинг",
+          "correct": false,
+          "feedback": "Может снижать и то, и другое."
+        },
+        {
+          "answer": "AdaBoost",
+          "correct": false,
+          "feedback": "Снижает смещение."
+        }
+      ]
+    },
+    {
+      "question": "Какой алгоритм использует функцию потерь, отличную от экспоненциальной?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "Градиентный бустинг",
+          "correct": true,
+          "feedback": "Верно — может использовать любую дифференцируемую функцию потерь."
+        },
+        {
+          "answer": "AdaBoost",
+          "correct": false,
+          "feedback": "Использует экспоненциальную функцию потерь."
+        },
+        {
+          "answer": "Случайный лес",
+          "correct": false,
+          "feedback": "Не использует функцию потерь в том же смысле."
+        },
+        {
+          "answer": "KNN",
+          "correct": false,
+          "feedback": "Не ансамблевый метод."
+        }
+      ]
+    },
+    {
+      "question": "Какой метод наиболее эффективен при наличии большого числа слабых признаков?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "Случайный лес",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Бустинг",
+          "correct": false,
+          "feedback": "Лучше с сильными признаками."
+        },
+        {
+          "answer": "Логистическая регрессия",
+          "correct": false,
+          "feedback": "Требует сильных признаков."
+        },
+        {
+          "answer": "K-means",
+          "correct": false,
+          "feedback": "Не классификация."
+        }
+      ]
+    },
+    {
+      "question": "Какой параметр в случайном лесе ограничивает число признаков, рассматриваемых при разделении узла?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "max_features",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "n_features",
+          "correct": false,
+          "feedback": "Такого параметра нет."
+        },
+        {
+          "answer": "max_depth",
+          "correct": false,
+          "feedback": "Глубина."
+        },
+        {
+          "answer": "min_samples_split",
+          "correct": false,
+          "feedback": "Минимум объектов."
+        }
+      ]
+    },
+    {
+      "question": "Какой метод ансамблирования наиболее чувствителен к шуму в данных?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "AdaBoost",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Случайный лес",
+          "correct": false,
+          "feedback": "Устойчив к шуму."
+        },
+        {
+          "answer": "Бэггинг",
+          "correct": false,
+          "feedback": "Устойчив."
+        },
+        {
+          "answer": "Стекинг",
+          "correct": false,
+          "feedback": "Зависит от моделей, но в целом менее чувствителен."
+        }
+      ]
+    },
+    {
+      "question": "Какой метод ансамблирования масштабируется лучше всего на больших данных?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "Случайный лес",
+          "correct": true,
+          "feedback": "Верно — параллельное обучение."
+        },
+        {
+          "answer": "AdaBoost",
+          "correct": false,
+          "feedback": "Последовательное обучение."
+        },
+        {
+          "answer": "Градиентный бустинг",
+          "correct": false,
+          "feedback": "Последователен."
+        },
+        {
+          "answer": "Стекинг",
+          "correct": false,
+          "feedback": "Требует обучения мета-модели."
+        }
+      ]
+    },
+    {
+      "question": "Какой параметр в AdaBoost определяет вклад каждой модели в финальное предсказание?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "Alpha",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Beta",
+          "correct": false,
+          "feedback": "Не используется."
+        },
+        {
+          "answer": "Learning rate",
+          "correct": false,
+          "feedback": "Влияет, но не определяет напрямую."
+        },
+        {
+          "answer": "n_estimators",
+          "correct": false,
+          "feedback": "Число моделей."
+        }
+      ]
+    },
+    {
+      "question": "Какой метод использует кросс-валидацию внутри себя для оценки качества?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "Стекинг",
+          "correct": true,
+          "feedback": "Верно — чтобы избежать переобучения мета-модели."
+        },
+        {
+          "answer": "Случайный лес",
+          "correct": false,
+          "feedback": "Использует OOB, не CV."
+        },
+        {
+          "answer": "Бэггинг",
+          "correct": false,
+          "feedback": "Нет."
+        },
+        {
+          "answer": "AdaBoost",
+          "correct": false,
+          "feedback": "Нет."
+        }
+      ]
+    },
+    {
+      "question": "Какой алгоритм реализует регуляризацию деревьев решений в бустинге?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "XGBoost",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "AdaBoost",
+          "correct": false,
+          "feedback": "Нет регуляризации."
+        },
+        {
+          "answer": "Случайный лес",
+          "correct": false,
+          "feedback": "Регуляризация через параметры, но не в бустинге."
+        },
+        {
+          "answer": "KNN",
+          "correct": false,
+          "feedback": "Не относится."
+        }
+      ]
+    },
+    {
+      "question": "Какой метод ансамблирования лучше всего работает с сильно коррелированными признаками?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "Случайный лес",
+          "correct": true,
+          "feedback": "Верно — благодаря случайному выбору признаков."
+        },
+        {
+          "answer": "AdaBoost",
+          "correct": false,
+          "feedback": "Чувствителен к корреляциям."
+        },
+        {
+          "answer": "Логистическая регрессия",
+          "correct": false,
+          "feedback": "Плохо с корреляциями."
+        },
+        {
+          "answer": "PCA",
+          "correct": false,
+          "feedback": "Не ансамблевый метод."
+        }
+      ]
+    },
+    {
+      "question": "Какой параметр в градиентном бустинге определяет количество моделей в ансамбле?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "n_estimators",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "max_depth",
+          "correct": false,
+          "feedback": "Глубина деревьев."
+        },
+        {
+          "answer": "learning_rate",
+          "correct": false,
+          "feedback": "Скорость обучения."
+        },
+        {
+          "answer": "subsample",
+          "correct": false,
+          "feedback": "Доля объектов."
+        }
+      ]
+    },
+    {
+      "question": "Какой метод ансамблирования не подходит для онлайн-обучения?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "Бустинг",
+          "correct": true,
+          "feedback": "Верно — требует полного переобучения."
+        },
+        {
+          "answer": "Бэггинг",
+          "correct": false,
+          "feedback": "Можно адаптировать."
+        },
+        {
+          "answer": "Случайный лес",
+          "correct": false,
+          "feedback": "Есть онлайн-версии."
+        },
+        {
+          "answer": "KNN",
+          "correct": false,
+          "feedback": "Не ансамблевый метод, но подходит для онлайн."
+        }
+      ]
+    },
+    {
+      "question": "Какой алгоритм ансамблирования используется по умолчанию в конкурентных задачах на Kaggle?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "XGBoost",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Случайный лес",
+          "correct": false,
+          "feedback": "Реже, чем XGBoost."
+        },
+        {
+          "answer": "AdaBoost",
+          "correct": false,
+          "feedback": "Устарел для сложных задач."
+        },
+        {
+          "answer": "Логистическая регрессия",
+          "correct": false,
+          "feedback": "Не ансамблевый метод."
+        }
+      ]
+    },
+    {
+      "question": "Какой метод ансамблирования требует, чтобы базовые модели были разнородными?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "Стекинг",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Бэггинг",
+          "correct": false,
+          "feedback": "Модели однородны."
+        },
+        {
+          "answer": "Случайный лес",
+          "correct": false,
+          "feedback": "Однородные деревья."
+        },
+        {
+          "answer": "Бустинг",
+          "correct": false,
+          "feedback": "Однородные модели."
+        }
+      ]
+    },
+    {
+      "question": "Какой метод ансамблирования наименее интерпретируем?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "Случайный лес",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Бэггинг одного дерева",
+          "correct": false,
+          "feedback": "Более интерпретируем."
+        },
+        {
+          "answer": "Одиночное дерево",
+          "correct": false,
+          "feedback": "Наиболее интерпретируемо."
+        },
+        {
+          "answer": "Логистическая регрессия",
+          "correct": false,
+          "feedback": "Интерпретируема."
+        }
+      ]
+    },
+    {
+      "question": "Какие из следующих утверждений верны для бэггинга?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Снижает дисперсию",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Обучает модели параллельно",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Снижает смещение",
+          "correct": false,
+          "feedback": "Нет."
+        },
+        {
+          "answer": "Чувствителен к шуму",
+          "correct": false,
+          "feedback": "Устойчив к шуму."
+        }
+      ]
+    },
+    {
+      "question": "Какие из следующих утверждений верны для бустинга?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Снижает смещение",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Обучает модели последовательно",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Снижает дисперсию",
+          "correct": false,
+          "feedback": "Нет, может увеличивать."
+        },
+        {
+          "answer": "Устойчив к выбросам",
+          "correct": false,
+          "feedback": "Нет, чувствителен."
+        }
+      ]
+    },
+    {
+      "question": "Какие алгоритмы относятся к ансамблевым методам?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Случайный лес",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "XGBoost",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Логистическая регрессия",
+          "correct": false,
+          "feedback": "Одиночная модель."
+        },
+        {
+          "answer": "K-means",
+          "correct": false,
+          "feedback": "Не ансамблевый метод."
+        }
+      ]
+    },
+    {
+      "question": "Какие параметры есть в Random Forest?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "n_estimators",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "max_features",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "learning_rate",
+          "correct": false,
+          "feedback": "Это для бустинга."
+        },
+        {
+          "answer": "alpha",
+          "correct": false,
+          "feedback": "Это регуляризация в XGBoost."
+        }
+      ]
+    },
+    {
+      "question": "Какие методы используют деревья решений как базовые модели?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Случайный лес",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Градиентный бустинг",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "KNN",
+          "correct": false,
+          "feedback": "Не дерево."
+        },
+        {
+          "answer": "Логистическая регрессия",
+          "correct": false,
+          "feedback": "Не дерево."
+        }
+      ]
+    },
+    {
+      "question": "Какие методы ансамблирования могут использовать любые базовые модели?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Стекинг",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Voting",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Случайный лес",
+          "correct": false,
+          "feedback": "Только деревья."
+        },
+        {
+          "answer": "AdaBoost",
+          "correct": false,
+          "feedback": "Требует слабых моделей, часто деревьев глубины 1."
+        }
+      ]
+    },
+    {
+      "question": "Какие гиперпараметры характерны для XGBoost?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "learning_rate",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "max_depth",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "n_neighbors",
+          "correct": false,
+          "feedback": "Это для KNN."
+        },
+        {
+          "answer": "C",
+          "correct": false,
+          "feedback": "Это для SVM."
+        }
+      ]
+    },
+    {
+      "question": "Какие утверждения верны о случайном лесе?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Не требует нормализации признаков",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Устойчив к выбросам",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Чувствителен к переобучению",
+          "correct": false,
+          "feedback": "Нет, устойчив."
+        },
+        {
+          "answer": "Требует масштабирования",
+          "correct": false,
+          "feedback": "Нет."
+        }
+      ]
+    },
+    {
+      "question": "Какие методы позволяют оценить важность признаков?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Случайный лес",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "XGBoost",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "AdaBoost с деревьями",
+          "correct": false,
+          "feedback": "Можно, но редко используется."
+        },
+        {
+          "answer": "KNN",
+          "correct": false,
+          "feedback": "Не напрямую."
+        }
+      ]
+    },
+    {
+      "question": "Какие параметры помогают бороться с переобучением в градиентном бустинге?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "learning_rate",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "max_depth",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "n_estimators",
+          "correct": false,
+          "feedback": "Увеличение может ухудшить переобучение."
+        },
+        {
+          "answer": "subsample",
+          "correct": false,
+          "feedback": "Тоже помогает, но в формате 2 ответа — выбраны основные."
+        }
+      ]
+    },
+    {
+      "question": "Какие методы используют голосование для комбинирования предсказаний?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Hard voting",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Soft voting",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Бэггинг",
+          "correct": false,
+          "feedback": "Использует усреднение или мажоритарное правило, но не голосование в классическом виде."
+        },
+        {
+          "answer": "Бустинг",
+          "correct": false,
+          "feedback": "Взвешенная сумма, не голосование."
+        }
+      ]
+    },
+    {
+      "question": "Какие утверждения верны о стекинге?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Использует мета-модель",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Требует кросс-валидации для избежания переобучения",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Обучает модели параллельно",
+          "correct": false,
+          "feedback": "Базовые — да, но мета-модель — отдельно."
+        },
+        {
+          "answer": "Всегда лучше бэггинга",
+          "correct": false,
+          "feedback": "Не всегда."
+        }
+      ]
+    },
+    {
+      "question": "Какие утверждения верны о AdaBoost?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Чувствителен к шуму",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Использует пересчёт весов объектов",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Использует градиентный спуск",
+          "correct": false,
+          "feedback": "Нет."
+        },
+        {
+          "answer": "Устойчив к выбросам",
+          "correct": false,
+          "feedback": "Нет."
+        }
+      ]
+    },
+    {
+      "question": "Какие параметры характерны для бустинга?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "learning_rate",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "n_estimators",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "max_features",
+          "correct": false,
+          "feedback": "Это для случайного леса."
+        },
+        {
+          "answer": "bootstrap",
+          "correct": false,
+          "feedback": "Это для бэггинга."
+        }
+      ]
+    },
+    {
+      "question": "Какие методы являются примерами параллельного ансамблирования?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Бэггинг",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Случайный лес",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Бустинг",
+          "correct": false,
+          "feedback": "Последовательный."
+        },
+        {
+          "answer": "Стекинг",
+          "correct": false,
+          "feedback": "Базовые параллельны, но мета-модель — нет."
+        }
+      ]
+    },
+    {
+      "question": "Какие методы являются примерами последовательного ансамблирования?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "AdaBoost",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Градиентный бустинг",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Случайный лес",
+          "correct": false,
+          "feedback": "Параллельный."
+        },
+        {
+          "answer": "Бэггинг",
+          "correct": false,
+          "feedback": "Параллельный."
+        }
+      ]
+    }
+  ]

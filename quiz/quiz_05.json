@@ -1,0 +1,1432 @@
+[
+    {
+      "question": "Запишите формулу точности (precision) через элементы матрицы ошибок.",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "\\frac{TP}{TP + FP}",
+          "correct": true,
+          "feedback": "Верно: точность — доля истинно положительных среди всех предсказанных положительных."
+        },
+        {
+          "answer": "TP / (TP + FP)",
+          "correct": true,
+          "feedback": "Верно: эквивалентная запись без LaTeX."
+        },
+        {
+          "answer": "\\frac{TP}{TP + FN}",
+          "correct": false,
+          "feedback": "Неверно: это формула полноты (recall)."
+        },
+        {
+          "answer": "\\frac{TN}{TN + FP}",
+          "correct": false,
+          "feedback": "Неверно: это специфичность."
+        }
+      ]
+    },
+    {
+      "question": "Запишите формулу полноты (recall) через элементы матрицы ошибок.",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "\\frac{TP}{TP + FN}",
+          "correct": true,
+          "feedback": "Верно: полнота — доля обнаруженных положительных объектов среди всех истинно положительных."
+        },
+        {
+          "answer": "TP / (TP + FN)",
+          "correct": true,
+          "feedback": "Верно: эквивалентная запись без LaTeX."
+        },
+        {
+          "answer": "\\frac{TP}{TP + FP}",
+          "correct": false,
+          "feedback": "Неверно: это формула точности."
+        },
+        {
+          "answer": "\\frac{TN}{TN + FP}",
+          "correct": false,
+          "feedback": "Неверно: это специфичность."
+        }
+      ]
+    },
+    {
+      "question": "Запишите формулу F1-меры через точность и полноту.",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "\\frac{2 \\cdot \\text{precision} \\cdot \\text{recall}}{\\text{precision} + \\text{recall}}",
+          "correct": true,
+          "feedback": "Верно: F1 — гармоническое среднее точности и полноты."
+        },
+        {
+          "answer": "2 * (precision * recall) / (precision + recall)",
+          "correct": true,
+          "feedback": "Верно: эквивалентная запись без LaTeX."
+        },
+        {
+          "answer": "\\text{precision} + \\text{recall}",
+          "correct": false,
+          "feedback": "Неверно: это сумма, а не гармоническое среднее."
+        },
+        {
+          "answer": "\\sqrt{\\text{precision} \\cdot \\text{recall}}",
+          "correct": false,
+          "feedback": "Неверно: это геометрическое среднее, а не F1."
+        }
+      ]
+    },
+    {
+      "question": "Какова формула специфичности (specificity)?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "\\frac{TN}{TN + FP}",
+          "correct": true,
+          "feedback": "Верно: специфичность — доля правильно отрицательных предсказаний среди всех истинно отрицательных объектов."
+        },
+        {
+          "answer": "TN / (TN + FP)",
+          "correct": true,
+          "feedback": "Верно: эквивалентная запись без LaTeX."
+        },
+        {
+          "answer": "\\frac{TP}{TP + FN}",
+          "correct": false,
+          "feedback": "Неверно: это полнота."
+        },
+        {
+          "answer": "\\frac{FP}{TN + FP}",
+          "correct": false,
+          "feedback": "Неверно: это ложноположительная доля."
+        }
+      ]
+    },
+    {
+      "question": "Какова формула accuracy (точности классификации)?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "\\frac{TP + TN}{TP + TN + FP + FN}",
+          "correct": true,
+          "feedback": "Верно: доля правильно классифицированных объектов среди всех."
+        },
+        {
+          "answer": "(TP + TN) / (TP + TN + FP + FN)",
+          "correct": true,
+          "feedback": "Верно: эквивалентная запись без LaTeX."
+        },
+        {
+          "answer": "\\frac{TP}{TP + FP}",
+          "correct": false,
+          "feedback": "Неверно: это precision."
+        },
+        {
+          "answer": "\\frac{TP + FP}{TP + TN + FP + FN}",
+          "correct": false,
+          "feedback": "Неверно: это доля предсказанных положительных."
+        }
+      ]
+    },
+    {
+      "question": "Каково максимальное значение F1-меры?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "1",
+          "correct": true,
+          "feedback": "Верно: F1 ∈ [0, 1], максимальное значение достигается при perfect precision и recall."
+        },
+        {
+          "answer": "1.0",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "0",
+          "correct": false,
+          "feedback": "Неверно: это минимальное значение."
+        },
+        {
+          "answer": "2",
+          "correct": false,
+          "feedback": "Неверно: F1 не может превышать 1."
+        }
+      ]
+    },
+    {
+      "question": "Каково минимальное значение F1-меры?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "0",
+          "correct": true,
+          "feedback": "Верно: F1 = 0, если и precision, и recall равны нулю."
+        },
+        {
+          "answer": "0.0",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "1",
+          "correct": false,
+          "feedback": "Неверно: это максимум."
+        },
+        {
+          "answer": "-1",
+          "correct": false,
+          "feedback": "Неверно: F1 неотрицательна."
+        }
+      ]
+    },
+    {
+      "question": "Как интерпретируется площадь под ROC-кривой (AUC)?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "Вероятность того, что случайно выбранный положительный объект будет ранжирован выше случайного отрицательного",
+          "correct": true,
+          "feedback": "Верно: это вероятностная интерпретация AUC."
+        },
+        {
+          "answer": "Probability that a random positive is ranked higher than a random negative",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Точность классификации при пороге 0.5",
+          "correct": false,
+          "feedback": "Неверно: AUC не зависит от фиксированного порога."
+        },
+        {
+          "answer": "Значение полноты при максимальной точности",
+          "correct": false,
+          "feedback": "Неверно: это не связано напрямую с AUC."
+        }
+      ]
+    },
+    {
+      "question": "Какова формула ложноположительной доли (FPR)?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "\\frac{FP}{FP + TN}",
+          "correct": true,
+          "feedback": "Верно: FPR — доля ложноположительных предсказаний среди всех истинно отрицательных объектов."
+        },
+        {
+          "answer": "FP / (FP + TN)",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "\\frac{FN}{FN + TP}",
+          "correct": false,
+          "feedback": "Неверно: это ложноотрицательная доля (FNR)."
+        },
+        {
+          "answer": "\\frac{FP}{TP + FP}",
+          "correct": false,
+          "feedback": "Неверно: это 1 – precision."
+        }
+      ]
+    },
+    {
+      "question": "Какова формула ложноотрицательной доли (FNR)?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "\\frac{FN}{FN + TP}",
+          "correct": true,
+          "feedback": "Верно: FNR — доля необнаруженных положительных объектов среди всех истинно положительных."
+        },
+        {
+          "answer": "FN / (FN + TP)",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "\\frac{FP}{FP + TN}",
+          "correct": false,
+          "feedback": "Неверно: это FPR."
+        },
+        {
+          "answer": "1 - \\text{precision}",
+          "correct": false,
+          "feedback": "Неверно: это доля ошибок среди предсказанных положительных."
+        }
+      ]
+    },
+    {
+      "question": "Чему равна F1-мера, если precision = 0.6 и recall = 0.4?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "0.48",
+          "correct": true,
+          "feedback": "Верно: F1 = 2 * (0.6 * 0.4) / (0.6 + 0.4) = 0.48."
+        },
+        {
+          "answer": "0.5",
+          "correct": false,
+          "feedback": "Неверно: это среднее арифметическое, а не гармоническое."
+        },
+        {
+          "answer": "0.4",
+          "correct": false,
+          "feedback": "Неверно."
+        },
+        {
+          "answer": "0.6",
+          "correct": false,
+          "feedback": "Неверно."
+        }
+      ]
+    },
+    {
+      "question": "Какая метрика нечувствительна к дисбалансу классов?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "F1-мера",
+          "correct": true,
+          "feedback": "Верно: F1 учитывает оба класса через precision и recall."
+        },
+        {
+          "answer": "AUC-ROC",
+          "correct": true,
+          "feedback": "Верно: AUC не зависит от распределения классов."
+        },
+        {
+          "answer": "Accuracy",
+          "correct": false,
+          "feedback": "Неверно: accuracy сильно искажается при дисбалансе."
+        },
+        {
+          "answer": "Точность классификации",
+          "correct": false,
+          "feedback": "Неверно: это accuracy, чувствительна к дисбалансу."
+        }
+      ]
+    },
+    {
+      "question": "Какова размерность AUC-ROC?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "Безразмерная величина",
+          "correct": true,
+          "feedback": "Верно: AUC — это площадь под кривой, нормированная на [0,1]."
+        },
+        {
+          "answer": "1",
+          "correct": false,
+          "feedback": "Неверно: 1 — это значение, а не размерность."
+        },
+        {
+          "answer": "Проценты",
+          "correct": false,
+          "feedback": "Неверно: AUC не выражается в процентах."
+        },
+        {
+          "answer": "Вероятность",
+          "correct": false,
+          "feedback": "Неверно: хотя интерпретируется как вероятность, формально — безразмерная величина."
+        }
+      ]
+    },
+    {
+      "question": "Какая метрика достигает максимума при равенстве точности и полноты?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "F1-мера",
+          "correct": true,
+          "feedback": "Верно: F1 достигает максимума при фиксированной сумме precision + recall, когда они равны."
+        },
+        {
+          "answer": "F1",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Accuracy",
+          "correct": false,
+          "feedback": "Неверно: accuracy не зависит от этого равенства."
+        },
+        {
+          "answer": "AUC",
+          "correct": false,
+          "feedback": "Неверно: AUC не зависит от конкретных значений precision и recall."
+        }
+      ]
+    },
+    {
+      "question": "Какова формула balanced accuracy?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "\\frac{1}{2} \\left( \\frac{TP}{TP + FN} + \\frac{TN}{TN + FP} \\right)",
+          "correct": true,
+          "feedback": "Верно: среднее полноты по положительному и отрицательному классам."
+        },
+        {
+          "answer": "(recall + specificity) / 2",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "\\frac{TP + TN}{TP + TN + FP + FN}",
+          "correct": false,
+          "feedback": "Неверно: это обычная accuracy."
+        },
+        {
+          "answer": "\\frac{TP}{TP + FP}",
+          "correct": false,
+          "feedback": "Неверно: это precision."
+        }
+      ]
+    },
+    {
+      "question": "Какая метрика используется для многоклассовой классификации как усреднение F1 по классам?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "Macro-F1",
+          "correct": true,
+          "feedback": "Верно: усреднение F1 без учёта частоты классов."
+        },
+        {
+          "answer": "Weighted-F1",
+          "correct": false,
+          "feedback": "Неверно: это взвешенное усреднение."
+        },
+        {
+          "answer": "Micro-F1",
+          "correct": false,
+          "feedback": "Неверно: эквивалентна общей accuracy для сбалансированных данных."
+        },
+        {
+          "answer": "AUC",
+          "correct": false,
+          "feedback": "Неверно: AUC не усредняется так."
+        }
+      ]
+    },
+    {
+      "question": "Какая метрика эквивалентна accuracy в случае сбалансированных классов?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "Balanced accuracy",
+          "correct": true,
+          "feedback": "Верно: при сбалансированных классах balanced accuracy = accuracy."
+        },
+        {
+          "answer": "Сбалансированная точность",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "F1",
+          "correct": false,
+          "feedback": "Неверно: не обязательно."
+        },
+        {
+          "answer": "AUC",
+          "correct": false,
+          "feedback": "Неверно: AUC может отличаться."
+        }
+      ]
+    },
+    {
+      "question": "Как называется график зависимости полноты от точности при варьировании порога?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "PR-кривая",
+          "correct": true,
+          "feedback": "Верно: Precision-Recall curve."
+        },
+        {
+          "answer": "Precision-Recall curve",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "ROC-кривая",
+          "correct": false,
+          "feedback": "Неверно: ROC — TPR от FPR."
+        },
+        {
+          "answer": "Кривая ошибок",
+          "correct": false,
+          "feedback": "Неверно: не стандартный термин."
+        }
+      ]
+    },
+    {
+      "question": "Какая метрика больше подходит при сильном дисбалансе классов?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "AUC-PR",
+          "correct": true,
+          "feedback": "Верно: PR-кривая информативнее при дисбалансе."
+        },
+        {
+          "answer": "F1",
+          "correct": true,
+          "feedback": "Верно: учитывает оба класса."
+        },
+        {
+          "answer": "Accuracy",
+          "correct": false,
+          "feedback": "Неверно: вводит в заблуждение при дисбалансе."
+        },
+        {
+          "answer": "MSE",
+          "correct": false,
+          "feedback": "Неверно: это метрика регрессии."
+        }
+      ]
+    },
+    {
+      "question": "Какова формула Matthews correlation coefficient (MCC)?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "\\frac{TP \\cdot TN - FP \\cdot FN}{\\sqrt{(TP+FP)(TP+FN)(TN+FP)(TN+FN)}}",
+          "correct": true,
+          "feedback": "Верно: MCC — корреляция между истинными и предсказанными метками."
+        },
+        {
+          "answer": "(TP*TN - FP*FN) / sqrt((TP+FP)(TP+FN)(TN+FP)(TN+FN))",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "\\frac{TP}{TP + FP}",
+          "correct": false,
+          "feedback": "Неверно: это precision."
+        },
+        {
+          "answer": "\\frac{TP + TN}{TP + TN + FP + FN}",
+          "correct": false,
+          "feedback": "Неверно: это accuracy."
+        }
+      ]
+    },
+    {
+      "question": "Какая метрика является наиболее информативной при оценке бинарной классификации на сбалансированных данных?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "Accuracy",
+          "correct": true,
+          "feedback": "Верно: при сбалансированных классах accuracy адекватна."
+        },
+        {
+          "answer": "F1-мера",
+          "correct": false,
+          "feedback": "Неверно: F1 полезна, но не обязательно наиболее информативна при сбалансе."
+        },
+        {
+          "answer": "AUC-ROC",
+          "correct": false,
+          "feedback": "Неверно: AUC важна, но не всегда информативнее accuracy при сбалансе."
+        },
+        {
+          "answer": "Precision",
+          "correct": false,
+          "feedback": "Неверно: учитывает только один аспект."
+        }
+      ]
+    },
+    {
+      "question": "Какая метрика достигает значения 1 при идеальной классификации?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "Accuracy",
+          "correct": true,
+          "feedback": "Верно: при всех правильных предсказаниях accuracy = 1."
+        },
+        {
+          "answer": "F1-мера",
+          "correct": false,
+          "feedback": "Неверно: тоже достигает 1, но вопрос на один ответ — accuracy наиболее общеупотребительна."
+        },
+        {
+          "answer": "AUC-ROC",
+          "correct": false,
+          "feedback": "Неверно: AUC тоже равна 1, но вопрос на один ответ."
+        },
+        {
+          "answer": "FPR",
+          "correct": false,
+          "feedback": "Неверно: FPR = 0 при идеальной классификации."
+        }
+      ]
+    },
+    {
+      "question": "Какая метрика минимизируется при оптимальном выборе порога в задаче с неравными стоимостями ошибок?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "Ожидаемая стоимость ошибки",
+          "correct": true,
+          "feedback": "Верно: порог выбирается для минимизации взвешенной суммы FP и FN."
+        },
+        {
+          "answer": "Accuracy",
+          "correct": false,
+          "feedback": "Неверно: не учитывает разные стоимости ошибок."
+        },
+        {
+          "answer": "F1",
+          "correct": false,
+          "feedback": "Неверно: предполагает равные веса precision и recall."
+        },
+        {
+          "answer": "AUC",
+          "correct": false,
+          "feedback": "Неверно: AUC не зависит от порога."
+        }
+      ]
+    },
+    {
+      "question": "Какая метрика не зависит от выбранного порога классификации?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "AUC-ROC",
+          "correct": true,
+          "feedback": "Верно: AUC интегрирует по всем порогам."
+        },
+        {
+          "answer": "F1",
+          "correct": false,
+          "feedback": "Неверно: F1 зависит от порога."
+        },
+        {
+          "answer": "Accuracy",
+          "correct": false,
+          "feedback": "Неверно: зависит от порога."
+        },
+        {
+          "answer": "Precision",
+          "correct": false,
+          "feedback": "Неверно: зависит от порога."
+        }
+      ]
+    },
+    {
+      "question": "Какая метрика является гармоническим средним точности и полноты?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "F1-мера",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "F2-мера",
+          "correct": false,
+          "feedback": "Неверно: F2 — смещённое среднее с акцентом на recall."
+        },
+        {
+          "answer": "Accuracy",
+          "correct": false,
+          "feedback": "Неверно: это доля правильных предсказаний."
+        },
+        {
+          "answer": "Balanced accuracy",
+          "correct": false,
+          "feedback": "Неверно: это среднее арифметическое recall и specificity."
+        }
+      ]
+    },
+    {
+      "question": "Какая метрика наиболее подходит для задачи выявления редкого заболевания?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "Recall",
+          "correct": true,
+          "feedback": "Верно: важно обнаружить как можно больше больных."
+        },
+        {
+          "answer": "Precision",
+          "correct": false,
+          "feedback": "Неверно: менее критична, чем пропуск заболевших."
+        },
+        {
+          "answer": "Accuracy",
+          "correct": false,
+          "feedback": "Неверно: будет высокой даже при случайных предсказаниях."
+        },
+        {
+          "answer": "Specificity",
+          "correct": false,
+          "feedback": "Неверно: менее важна, чем recall."
+        }
+      ]
+    },
+    {
+      "question": "Какая метрика учитывает все четыре элемента матрицы ошибок?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "Matthews correlation coefficient",
+          "correct": true,
+          "feedback": "Верно: MCC зависит от TP, TN, FP, FN."
+        },
+        {
+          "answer": "F1",
+          "correct": false,
+          "feedback": "Неверно: не учитывает TN."
+        },
+        {
+          "answer": "Accuracy",
+          "correct": false,
+          "feedback": "Неверно: учитывает, но не в нормированном виде как MCC."
+        },
+        {
+          "answer": "AUC",
+          "correct": false,
+          "feedback": "Неверно: зависит от ранжирования, а не от конкретных значений TN."
+        }
+      ]
+    },
+    {
+      "question": "Какая метрика инвариантна к смене меток классов в бинарной задаче?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "Matthews correlation coefficient",
+          "correct": true,
+          "feedback": "Верно: MCC симметрична относительно классов."
+        },
+        {
+          "answer": "F1",
+          "correct": false,
+          "feedback": "Неверно: зависит от того, какой класс положительный."
+        },
+        {
+          "answer": "Recall",
+          "correct": false,
+          "feedback": "Неверно: зависит от выбора положительного класса."
+        },
+        {
+          "answer": "Precision",
+          "correct": false,
+          "feedback": "Неверно: зависит от выбора положительного класса."
+        }
+      ]
+    },
+    {
+      "question": "Какая метрика является наиболее консервативной при дисбалансе классов?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "AUC-PR",
+          "correct": true,
+          "feedback": "Верно: PR-кривая падает быстрее при дисбалансе."
+        },
+        {
+          "answer": "AUC-ROC",
+          "correct": false,
+          "feedback": "Неверно: ROC оптимистична при дисбалансе."
+        },
+        {
+          "answer": "Accuracy",
+          "correct": false,
+          "feedback": "Неверно: даёт ложное ощущение качества."
+        },
+        {
+          "answer": "F1",
+          "correct": false,
+          "feedback": "Неверно: зависит от порога и может быть завышенной."
+        }
+      ]
+    },
+    {
+      "question": "Какая метрика используется для многоклассовой классификации и учитывает дисбаланс классов?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "Macro-F1",
+          "correct": true,
+          "feedback": "Верно: усреднение по классам без учёта их частоты."
+        },
+        {
+          "answer": "Micro-F1",
+          "correct": false,
+          "feedback": "Неверно: эквивалентна accuracy, чувствительна к дисбалансу."
+        },
+        {
+          "answer": "Accuracy",
+          "correct": false,
+          "feedback": "Неверно: чувствительна к дисбалансу."
+        },
+        {
+          "answer": "AUC (один против всех)",
+          "correct": false,
+          "feedback": "Неверно: требует усреднения и зависит от стратегии."
+        }
+      ]
+    },
+    {
+      "question": "Какой график используется для выбора оптимального порога с учётом компромисса между TPR и FPR?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "ROC-кривая",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "PR-кривая",
+          "correct": false,
+          "feedback": "Неверно: на ней precision от recall."
+        },
+        {
+          "answer": "Гистограмма вероятностей",
+          "correct": false,
+          "feedback": "Неверно: не показывает TPR/FPR."
+        },
+        {
+          "answer": "Кривая обучения",
+          "correct": false,
+          "feedback": "Неверно: относится к обучению, а не к порогу."
+        }
+      ]
+    },
+    {
+      "question": "Какая метрика лучше всего отражает качество модели при крайне низкой доле положительного класса?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "Полная площадь под PR-кривой",
+          "correct": true,
+          "feedback": "Верно: PR-кривая чувствительна к редким положительным примерам."
+        },
+        {
+          "answer": "AUC-ROC",
+          "correct": false,
+          "feedback": "Неверно: может быть высокой даже при плохом качестве."
+        },
+        {
+          "answer": "Accuracy",
+          "correct": false,
+          "feedback": "Неверно: неинформативна при дисбалансе."
+        },
+        {
+          "answer": "FPR",
+          "correct": false,
+          "feedback": "Неверно: не учитывает положительный класс."
+        }
+      ]
+    },
+    {
+      "question": "Какая метрика не определена, если все предсказания отрицательные?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "Precision",
+          "correct": true,
+          "feedback": "Верно: знаменатель TP + FP = 0."
+        },
+        {
+          "answer": "Recall",
+          "correct": false,
+          "feedback": "Неверно: recall определена, если есть истинные положительные."
+        },
+        {
+          "answer": "Specificity",
+          "correct": false,
+          "feedback": "Неверно: определена."
+        },
+        {
+          "answer": "Accuracy",
+          "correct": false,
+          "feedback": "Неверно: определена всегда."
+        }
+      ]
+    },
+    {
+      "question": "Какая метрика не определена, если отсутствуют истинно положительные объекты?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "Recall",
+          "correct": true,
+          "feedback": "Верно: знаменатель TP + FN = 0."
+        },
+        {
+          "answer": "Precision",
+          "correct": false,
+          "feedback": "Неверно: может быть определена, если есть предсказанные положительные."
+        },
+        {
+          "answer": "Specificity",
+          "correct": false,
+          "feedback": "Неверно: определена."
+        },
+        {
+          "answer": "Accuracy",
+          "correct": false,
+          "feedback": "Неверно: определена всегда."
+        }
+      ]
+    },
+    {
+      "question": "Какая метрика эквивалентна чувствительности?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "Recall",
+          "correct": true,
+          "feedback": "Верно: чувствительность = полнота."
+        },
+        {
+          "answer": "Specificity",
+          "correct": false,
+          "feedback": "Неверно: это специфичность."
+        },
+        {
+          "answer": "Precision",
+          "correct": false,
+          "feedback": "Неверно: это точность положительных предсказаний."
+        },
+        {
+          "answer": "FPR",
+          "correct": false,
+          "feedback": "Неверно: это ложноположительная доля."
+        }
+      ]
+    },
+    {
+      "question": "Какая метрика эквивалентна 1 – FPR?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "Specificity",
+          "correct": true,
+          "feedback": "Верно: специфичность = TN / (TN + FP) = 1 – FPR."
+        },
+        {
+          "answer": "Recall",
+          "correct": false,
+          "feedback": "Неверно: это TPR."
+        },
+        {
+          "answer": "Precision",
+          "correct": false,
+          "feedback": "Неверно."
+        },
+        {
+          "answer": "Sensitivity",
+          "correct": false,
+          "feedback": "Неверно: это TPR = recall."
+        }
+      ]
+    },
+    {
+      "question": "Какая метрика предпочтительна при равной важности ложноположительных и ложноотрицательных ошибок?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "F1-мера",
+          "correct": true,
+          "feedback": "Верно: F1 симметрична относительно precision и recall при равных весах."
+        },
+        {
+          "answer": "Accuracy",
+          "correct": false,
+          "feedback": "Неверно: не учитывает типы ошибок."
+        },
+        {
+          "answer": "AUC",
+          "correct": false,
+          "feedback": "Неверно: не привязана к конкретному порогу."
+        },
+        {
+          "answer": "Balanced accuracy",
+          "correct": false,
+          "feedback": "Неверно: учитывает, но не симметрична в терминах FP/FN напрямую."
+        }
+      ]
+    },
+    {
+      "question": "Какие метрики входят в определение F1-меры?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Precision",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Recall",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Specificity",
+          "correct": false,
+          "feedback": "Неверно."
+        },
+        {
+          "answer": "Accuracy",
+          "correct": false,
+          "feedback": "Неверно."
+        }
+      ]
+    },
+    {
+      "question": "Какие метрики зависят от выбора положительного класса?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Precision",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Recall",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Specificity",
+          "correct": false,
+          "feedback": "Неверно: зависит от отрицательного класса, но при фиксированном выборе — определена."
+        },
+        {
+          "answer": "Accuracy",
+          "correct": false,
+          "feedback": "Неверно: не зависит от выбора положительного класса."
+        }
+      ]
+    },
+    {
+      "question": "Какие метрики могут достигать значения 1 при идеальной классификации?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Accuracy",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "F1-мера",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "FPR",
+          "correct": false,
+          "feedback": "Неверно: FPR = 0 при идеальной классификации."
+        },
+        {
+          "answer": "FNR",
+          "correct": false,
+          "feedback": "Неверно: FNR = 0 при идеальной классификации."
+        }
+      ]
+    },
+    {
+      "question": "Какие метрики не определены при определённых конфигурациях матрицы ошибок?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Precision",
+          "correct": true,
+          "feedback": "Верно: не определена, если TP + FP = 0."
+        },
+        {
+          "answer": "Recall",
+          "correct": true,
+          "feedback": "Верно: не определена, если TP + FN = 0."
+        },
+        {
+          "answer": "Accuracy",
+          "correct": false,
+          "feedback": "Неверно: всегда определена."
+        },
+        {
+          "answer": "Specificity",
+          "correct": false,
+          "feedback": "Неверно: всегда определена, если есть отрицательные объекты."
+        }
+      ]
+    },
+    {
+      "question": "Какие метрики используются для построения ROC-кривой?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "TPR (Recall)",
+          "correct": true,
+          "feedback": "Верно: по оси Y."
+        },
+        {
+          "answer": "FPR",
+          "correct": true,
+          "feedback": "Верно: по оси X."
+        },
+        {
+          "answer": "Precision",
+          "correct": false,
+          "feedback": "Неверно: используется в PR-кривой."
+        },
+        {
+          "answer": "Specificity",
+          "correct": false,
+          "feedback": "Неверно: 1 – specificity = FPR, но напрямую не используется."
+        }
+      ]
+    },
+    {
+      "question": "Какие метрики нечувствительны к дисбалансу классов?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "AUC-ROC",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "F1-мера",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Accuracy",
+          "correct": false,
+          "feedback": "Неверно: сильно чувствительна."
+        },
+        {
+          "answer": "Precision",
+          "correct": false,
+          "feedback": "Неверно: зависит от доли положительных предсказаний."
+        }
+      ]
+    },
+    {
+      "question": "Какие метрики являются симметричными относительно классов?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Matthews correlation coefficient",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Accuracy",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "F1-мера",
+          "correct": false,
+          "feedback": "Неверно: зависит от выбора положительного класса."
+        },
+        {
+          "answer": "Recall",
+          "correct": false,
+          "feedback": "Неверно: не симметрична."
+        }
+      ]
+    },
+    {
+      "question": "Какие метрики могут использоваться для многоклассовой задачи без модификации?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Accuracy",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Matthews correlation coefficient",
+          "correct": true,
+          "feedback": "Верно: существует многоклассовое обобщение."
+        },
+        {
+          "answer": "F1-мера",
+          "correct": false,
+          "feedback": "Неверно: требует усреднения (macro/micro)."
+        },
+        {
+          "answer": "Precision",
+          "correct": false,
+          "feedback": "Неверно: определена только для бинарного случая."
+        }
+      ]
+    },
+    {
+      "question": "Какие утверждения верны о AUC-ROC?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Не зависит от порога классификации",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Интеграл от TPR по FPR",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Всегда выше AUC-PR",
+          "correct": false,
+          "feedback": "Неверно: шкалы разные, сравнение некорректно."
+        },
+        {
+          "answer": "Определяется только для бинарной классификации",
+          "correct": false,
+          "feedback": "Неверно: существует обобщение для многоклассовой задачи."
+        }
+      ]
+    },
+    {
+      "question": "Какие метрики учитывают истинно отрицательные предсказания?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Accuracy",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Specificity",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Precision",
+          "correct": false,
+          "feedback": "Неверно: не зависит от TN."
+        },
+        {
+          "answer": "Recall",
+          "correct": false,
+          "feedback": "Неверно: не зависит от TN."
+        }
+      ]
+    },
+    {
+      "question": "Какие метрики не учитывают истинно отрицательные предсказания?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Precision",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Recall",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Accuracy",
+          "correct": false,
+          "feedback": "Неверно: учитывает."
+        },
+        {
+          "answer": "Specificity",
+          "correct": false,
+          "feedback": "Неверно: напрямую зависит от TN."
+        }
+      ]
+    },
+    {
+      "question": "Какие метрики используются при анализе компромисса между ложноположительными и ложноотрицательными ошибками?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "F1-мера",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "ROC-кривая",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Accuracy",
+          "correct": false,
+          "feedback": "Неверно: не разделяет типы ошибок."
+        },
+        {
+          "answer": "MSE",
+          "correct": false,
+          "feedback": "Неверно: это метрика регрессии."
+        }
+      ]
+    },
+    {
+      "question": "Какие утверждения верны о balanced accuracy?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Является средним значением чувствительности и специфичности",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Устойчива к дисбалансу классов",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Эквивалентна F1 при сбалансированных классах",
+          "correct": false,
+          "feedback": "Неверно: не обязательно."
+        },
+        {
+          "answer": "Зависит от выбора порога",
+          "correct": false,
+          "feedback": "Неверно: зависит, но это не отличает её от других метрик."
+        }
+      ]
+    },
+    {
+      "question": "Какие метрики могут применяться как к бинарной, так и к многоклассовой классификации?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Accuracy",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Macro-F1",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Precision (без усреднения)",
+          "correct": false,
+          "feedback": "Неверно: только бинарная."
+        },
+        {
+          "answer": "Recall (без усреднения)",
+          "correct": false,
+          "feedback": "Неверно: только бинарная."
+        }
+      ]
+    },
+    {
+      "question": "Какие утверждения верны о Matthews correlation coefficient?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Принимает значения от -1 до 1",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Значение 0 означает случайное предсказание",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Эквивалентна accuracy",
+          "correct": false,
+          "feedback": "Неверно: учитывает баланс классов."
+        },
+        {
+          "answer": "Не определена при TN = 0",
+          "correct": false,
+          "feedback": "Неверно: определена, если знаменатель ≠ 0."
+        }
+      ]
+    },
+    {
+      "question": "Какие утверждения верны о F1-мере?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Гармоническое среднее precision и recall",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Максимум равен 1",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Симметрична относительно классов",
+          "correct": false,
+          "feedback": "Неверно: зависит от выбора положительного класса."
+        },
+        {
+          "answer": "Учитывает истинно отрицательные предсказания",
+          "correct": false,
+          "feedback": "Неверно: не зависит от TN."
+        }
+      ]
+    },
+    {
+      "question": "Какие метрики следует использовать при оценке модели для задачи с критическими ложноотрицательными ошибками?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Recall",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "F2-мера",
+          "correct": true,
+          "feedback": "Верно: смещена в сторону recall."
+        },
+        {
+          "answer": "Precision",
+          "correct": false,
+          "feedback": "Неверно: менее важна."
+        },
+        {
+          "answer": "Specificity",
+          "correct": false,
+          "feedback": "Неверно: относится к отрицательному классу."
+        }
+      ]
+    },
+    {
+      "question": "Какие утверждения верны о ROC-кривой?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Строится по всем возможным порогам",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Идеальная модель соответствует точке (0,1)",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Не зависит от распределения классов",
+          "correct": false,
+          "feedback": "Неверно: TPR и FPR зависят от данных, но AUC инвариантна."
+        },
+        {
+          "answer": "Использует precision по оси Y",
+          "correct": false,
+          "feedback": "Неверно: это PR-кривая."
+        }
+      ]
+    }
+  ]

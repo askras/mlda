@@ -1,0 +1,1458 @@
+[
+    {
+      "question": "Запишите формулу инерции (within-cluster sum of squares) для кластера $C_k$.",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "\\sum_{x_i \\in C_k} \\|x_i - \\mu_k\\|^2",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "сумма квадратов расстояний от точек до центроида кластера",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "\\sum_{x_i \\in C_k} (x_i - \\mu_k)",
+          "correct": false,
+          "feedback": "Нет, нужно возвести в квадрат и взять норму."
+        },
+        {
+          "answer": "Неверно",
+          "correct": false,
+          "feedback": "Неверная формула."
+        }
+      ]
+    },
+    {
+      "question": "Как называется метод кластеризации, основанный на минимизации суммы квадратов расстояний до центроидов?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "K-means",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "К-средних",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "DBSCAN",
+          "correct": false,
+          "feedback": "Это плотностной метод."
+        },
+        {
+          "answer": "Иерархическая кластеризация",
+          "correct": false,
+          "feedback": "Другой метод."
+        }
+      ]
+    },
+    {
+      "question": "Какой параметр задаёт количество кластеров в методе K-means?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "k",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "n_clusters",
+          "correct": true,
+          "feedback": "Верно — в sklearn."
+        },
+        {
+          "answer": "eps",
+          "correct": false,
+          "feedback": "Это для DBSCAN."
+        },
+        {
+          "answer": "min_samples",
+          "correct": false,
+          "feedback": "Это для DBSCAN."
+        }
+      ]
+    },
+    {
+      "question": "Какой алгоритм кластеризации не требует задания числа кластеров заранее?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "DBSCAN",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Иерархическая кластеризация",
+          "correct": true,
+          "feedback": "Верно — можно выбрать по dendrogram."
+        },
+        {
+          "answer": "K-means",
+          "correct": false,
+          "feedback": "Требует задать k."
+        },
+        {
+          "answer": "PCA",
+          "correct": false,
+          "feedback": "Это не кластеризация."
+        }
+      ]
+    },
+    {
+      "question": "Как называется метод, строящий дерево вложенных кластеров?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "Иерархическая кластеризация",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Agglomerative clustering",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "K-means",
+          "correct": false,
+          "feedback": "Нет."
+        },
+        {
+          "answer": "PCA",
+          "correct": false,
+          "feedback": "Нет."
+        }
+      ]
+    },
+    {
+      "question": "Какой метод кластеризации чувствителен к выбросам?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "K-means",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "К-средних",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "DBSCAN",
+          "correct": false,
+          "feedback": "Устойчив к выбросам."
+        },
+        {
+          "answer": "Иерархическая кластеризация",
+          "correct": false,
+          "feedback": "Зависит от меры, но в целом менее чувствительна."
+        }
+      ]
+    },
+    {
+      "question": "Какой метод кластеризации может находить кластеры произвольной формы?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "DBSCAN",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Плотностная кластеризация",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "K-means",
+          "correct": false,
+          "feedback": "Только выпуклые, сферические кластеры."
+        },
+        {
+          "answer": "Логистическая регрессия",
+          "correct": false,
+          "feedback": "Это классификация."
+        }
+      ]
+    },
+    {
+      "question": "Какой параметр в DBSCAN определяет радиус окрестности точки?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "eps",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "\\varepsilon",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "k",
+          "correct": false,
+          "feedback": "Это для K-means или kNN."
+        },
+        {
+          "answer": "min_samples",
+          "correct": false,
+          "feedback": "Это минимальное число соседей."
+        }
+      ]
+    },
+    {
+      "question": "Какой параметр в DBSCAN задаёт минимальное число точек в окрестности для того, чтобы точка была ядром?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "min_samples",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "minPts",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "eps",
+          "correct": false,
+          "feedback": "Это радиус."
+        },
+        {
+          "answer": "k",
+          "correct": false,
+          "feedback": "Это не параметр DBSCAN."
+        }
+      ]
+    },
+    {
+      "question": "Какой метод кластеризации использует матрицу попарных расстояний?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "Иерархическая кластеризация",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Agglomerative clustering",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "K-means",
+          "correct": false,
+          "feedback": "Работает с центроидами, не с полной матрицей."
+        },
+        {
+          "answer": "PCA",
+          "correct": false,
+          "feedback": "Нет."
+        }
+      ]
+    },
+    {
+      "question": "Какой метрикой качества кластеризации является отношение межкластерного расстояния к внутрикластерному?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "Силуэт",
+          "correct": false,
+          "feedback": "Силуэт использует другую формулу."
+        },
+        {
+          "answer": "Коэффициент Кэлинского",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Calinski-Harabasz index",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Инерция",
+          "correct": false,
+          "feedback": "Инерция — только внутрикластерная."
+        }
+      ]
+    },
+    {
+      "question": "Как называется метрика, вычисляемая как среднее значение силуэтов для всех точек?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "Средний силуэт",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Silhouette score",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Инерция",
+          "correct": false,
+          "feedback": "Нет."
+        },
+        {
+          "answer": "Davies-Bouldin index",
+          "correct": false,
+          "feedback": "Другая метрика."
+        }
+      ]
+    },
+    {
+      "question": "Какой метод инициализации центроидов используется по умолчанию в K-means в scikit-learn?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "k-means++",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "K-means plus plus",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Случайная инициализация",
+          "correct": false,
+          "feedback": "Это не по умолчанию в sklearn."
+        },
+        {
+          "answer": "Forgy",
+          "correct": false,
+          "feedback": "Это альтернатива, но не по умолчанию."
+        }
+      ]
+    },
+    {
+      "question": "Какие точки в DBSCAN называются шумом?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "Точки, не являющиеся ядрами и не достижимые от ядер",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Выбросы",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Центроиды",
+          "correct": false,
+          "feedback": "Нет."
+        },
+        {
+          "answer": "Граничные точки",
+          "correct": false,
+          "feedback": "Граничные точки — часть кластеров."
+        }
+      ]
+    },
+    {
+      "question": "Какой тип связи в иерархической кластеризации использует максимальное расстояние между точками двух кластеров?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "Complete linkage",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Полная связь",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Single linkage",
+          "correct": false,
+          "feedback": "Это минимальное расстояние."
+        },
+        {
+          "answer": "Average linkage",
+          "correct": false,
+          "feedback": "Это среднее расстояние."
+        }
+      ]
+    },
+    {
+      "question": "Какой алгоритм кластеризации масштабируется плохо на больших данных из-за квадратичной сложности?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "Иерархическая кластеризация",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Agglomerative clustering",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "K-means",
+          "correct": false,
+          "feedback": "Масштабируется хорошо."
+        },
+        {
+          "answer": "DBSCAN",
+          "correct": false,
+          "feedback": "Масштабируется умеренно, особенно с индексами."
+        }
+      ]
+    },
+    {
+      "question": "Какой метод кластеризации требует нормализации признаков?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "K-means",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "К-средних",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "DBSCAN",
+          "correct": false,
+          "feedback": "Тоже желательно, но вопрос про один метод — K-means критичнее."
+        },
+        {
+          "answer": "PCA",
+          "correct": false,
+          "feedback": "Это не кластеризация."
+        }
+      ]
+    },
+    {
+      "question": "Какой график используется для выбора оптимального $k$ в K-means по методу «локтя»?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "График инерции от k",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Elbow plot",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Dendrogram",
+          "correct": false,
+          "feedback": "Это для иерархической кластеризации."
+        },
+        {
+          "answer": "Silhouette plot",
+          "correct": false,
+          "feedback": "Это для силуэта."
+        }
+      ]
+    },
+    {
+      "question": "Какой метод кластеризации не может работать с категориальными данными без модификации?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "K-means",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "К-средних",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "DBSCAN",
+          "correct": false,
+          "feedback": "Может с подходящей метрикой."
+        },
+        {
+          "answer": "K-modes",
+          "correct": false,
+          "feedback": "Это специально для категориальных данных."
+        }
+      ]
+    },
+    {
+      "question": "Какой метод кластеризации основан на предположении, что кластеры — это области высокой плотности, отделённые областями низкой плотности?",
+      "type": "string",
+      "answers": [
+        {
+          "answer": "DBSCAN",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Плотностная кластеризация",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "K-means",
+          "correct": false,
+          "feedback": "Нет."
+        },
+        {
+          "answer": "Иерархическая кластеризация",
+          "correct": false,
+          "feedback": "Нет."
+        }
+      ]
+    },
+    {
+      "question": "Какой из следующих алгоритмов кластеризации минимизирует внутрикластерную сумму квадратов?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "K-means",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "DBSCAN",
+          "correct": false,
+          "feedback": "Не минимизирует эту величину."
+        },
+        {
+          "answer": "Иерархическая кластеризация",
+          "correct": false,
+          "feedback": "Зависит от критерия слияния."
+        },
+        {
+          "answer": "PCA",
+          "correct": false,
+          "feedback": "Это не кластеризация."
+        }
+      ]
+    },
+    {
+      "question": "Какой параметр определяет количество кластеров в K-means?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "k",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "eps",
+          "correct": false,
+          "feedback": "Это для DBSCAN."
+        },
+        {
+          "answer": "min_samples",
+          "correct": false,
+          "feedback": "Это для DBSCAN."
+        },
+        {
+          "answer": "linkage",
+          "correct": false,
+          "feedback": "Это для иерархической кластеризации."
+        }
+      ]
+    },
+    {
+      "question": "Какой метод кластеризации наиболее чувствителен к масштабу признаков?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "K-means",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "DBSCAN",
+          "correct": false,
+          "feedback": "Тоже, но K-means критичнее."
+        },
+        {
+          "answer": "Иерархическая кластеризация",
+          "correct": false,
+          "feedback": "Зависит, но не так критично."
+        },
+        {
+          "answer": "K-medoids",
+          "correct": false,
+          "feedback": "Менее чувствителен."
+        }
+      ]
+    },
+    {
+      "question": "Какой метод кластеризации автоматически определяет число кластеров?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "K-means",
+          "correct": false,
+          "feedback": "Требует задать k."
+        },
+        {
+          "answer": "DBSCAN",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "PCA",
+          "correct": false,
+          "feedback": "Не кластеризация."
+        },
+        {
+          "answer": "Линейная регрессия",
+          "correct": false,
+          "feedback": "Не относится."
+        }
+      ]
+    },
+    {
+      "question": "Какой метод использует dendrogram для визуализации результатов?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "Иерархическая кластеризация",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "K-means",
+          "correct": false,
+          "feedback": "Нет."
+        },
+        {
+          "answer": "DBSCAN",
+          "correct": false,
+          "feedback": "Нет."
+        },
+        {
+          "answer": "Логистическая регрессия",
+          "correct": false,
+          "feedback": "Не относится."
+        }
+      ]
+    },
+    {
+      "question": "Какой из следующих методов не является алгоритмом кластеризации?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "K-means",
+          "correct": false,
+          "feedback": "Это кластеризация."
+        },
+        {
+          "answer": "DBSCAN",
+          "correct": false,
+          "feedback": "Это кластеризация."
+        },
+        {
+          "answer": "PCA",
+          "correct": true,
+          "feedback": "Верно — это снижение размерности."
+        },
+        {
+          "answer": "Agglomerative clustering",
+          "correct": false,
+          "feedback": "Это кластеризация."
+        }
+      ]
+    },
+    {
+      "question": "Какой метод кластеризации может игнорировать шумовые точки?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "K-means",
+          "correct": false,
+          "feedback": "Нет, все точки в кластерах."
+        },
+        {
+          "answer": "DBSCAN",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Иерархическая кластеризация",
+          "correct": false,
+          "feedback": "Нет."
+        },
+        {
+          "answer": "K-medoids",
+          "correct": false,
+          "feedback": "Нет."
+        }
+      ]
+    },
+    {
+      "question": "Какая метрика качества кластеризации достигает максимума при оптимальном числе кластеров?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "Инерция",
+          "correct": false,
+          "feedback": "Минимум — лучше."
+        },
+        {
+          "answer": "Силуэт",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "MSE",
+          "correct": false,
+          "feedback": "Не для кластеризации."
+        },
+        {
+          "answer": "Accuracy",
+          "correct": false,
+          "feedback": "Нет меток в кластеризации."
+        }
+      ]
+    },
+    {
+      "question": "Какой метод кластеризации предполагает, что кластеры имеют сферическую форму?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "K-means",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "DBSCAN",
+          "correct": false,
+          "feedback": "Нет."
+        },
+        {
+          "answer": "Иерархическая кластеризация",
+          "correct": false,
+          "feedback": "Зависит от меры."
+        },
+        {
+          "answer": "K-modes",
+          "correct": false,
+          "feedback": "Для категориальных данных."
+        }
+      ]
+    },
+    {
+      "question": "Какой алгоритм кластеризации использует центроиды?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "K-means",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "DBSCAN",
+          "correct": false,
+          "feedback": "Нет центроидов."
+        },
+        {
+          "answer": "Иерархическая кластеризация",
+          "correct": false,
+          "feedback": "Нет."
+        },
+        {
+          "answer": "PCA",
+          "correct": false,
+          "feedback": "Не кластеризация."
+        }
+      ]
+    },
+    {
+      "question": "Какой метод кластеризации лучше всего подходит для данных с кластерами разной плотности?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "K-means",
+          "correct": false,
+          "feedback": "Плохо справляется."
+        },
+        {
+          "answer": "DBSCAN",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Иерархическая кластеризация",
+          "correct": false,
+          "feedback": "Зависит, но не оптимально."
+        },
+        {
+          "answer": "K-medoids",
+          "correct": false,
+          "feedback": "Аналогично K-means."
+        }
+      ]
+    },
+    {
+      "question": "Какой метод кластеризации требует задания двух гиперпараметров?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "K-means",
+          "correct": false,
+          "feedback": "Только k (и, возможно, init)."
+        },
+        {
+          "answer": "DBSCAN",
+          "correct": true,
+          "feedback": "Верно: eps и min_samples."
+        },
+        {
+          "answer": "Иерархическая кластеризация",
+          "correct": false,
+          "feedback": "Задаётся тип связи и, возможно, количество кластеров."
+        },
+        {
+          "answer": "PCA",
+          "correct": false,
+          "feedback": "Не кластеризация."
+        }
+      ]
+    },
+    {
+      "question": "Какой метод кластеризации использует жадный подход слияния кластеров?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "Agglomerative clustering",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "K-means",
+          "correct": false,
+          "feedback": "Нет."
+        },
+        {
+          "answer": "DBSCAN",
+          "correct": false,
+          "feedback": "Нет."
+        },
+        {
+          "answer": "K-medoids",
+          "correct": false,
+          "feedback": "Нет."
+        }
+      ]
+    },
+    {
+      "question": "Какой метод кластеризации масштабируется линейно от числа объектов?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "K-means",
+          "correct": true,
+          "feedback": "Верно (при фиксированном k и итерациях)."
+        },
+        {
+          "answer": "Иерархическая кластеризация",
+          "correct": false,
+          "feedback": "Квадратичная сложность."
+        },
+        {
+          "answer": "DBSCAN",
+          "correct": false,
+          "feedback": "В худшем случае квадратичен."
+        },
+        {
+          "answer": "PCA",
+          "correct": false,
+          "feedback": "Не кластеризация."
+        }
+      ]
+    },
+    {
+      "question": "Какой метод кластеризации наиболее устойчив к выбросам?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "K-means",
+          "correct": false,
+          "feedback": "Чувствителен."
+        },
+        {
+          "answer": "DBSCAN",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Иерархическая кластеризация",
+          "correct": false,
+          "feedback": "Зависит, но не так устойчив."
+        },
+        {
+          "answer": "K-medoids",
+          "correct": false,
+          "feedback": "Более устойчив, но DBSCAN лучше."
+        }
+      ]
+    },
+    {
+      "question": "Какой метод кластеризации не работает с несвязными кластерами одной плотности?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "DBSCAN",
+          "correct": true,
+          "feedback": "Верно — если плотность одинаковая и расстояние большое, может объединить."
+        },
+        {
+          "answer": "K-means",
+          "correct": false,
+          "feedback": "Работает, если кластеры сферические."
+        },
+        {
+          "answer": "Иерархическая кластеризация",
+          "correct": false,
+          "feedback": "Может работать."
+        },
+        {
+          "answer": "K-medoids",
+          "correct": false,
+          "feedback": "Аналогично K-means."
+        }
+      ]
+    },
+    {
+      "question": "Какой метод кластеризации можно использовать с произвольной функцией расстояния?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "K-means",
+          "correct": false,
+          "feedback": "Требует среднего, поэтому — только l2."
+        },
+        {
+          "answer": "K-medoids",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "PCA",
+          "correct": false,
+          "feedback": "Не кластеризация."
+        },
+        {
+          "answer": "Линейная регрессия",
+          "correct": false,
+          "feedback": "Не относится."
+        }
+      ]
+    },
+    {
+      "question": "Какой метод кластеризации гарантирует сходимость?",
+      "type": "multiple_choice",
+      "answers": [
+        {
+          "answer": "K-means",
+          "correct": true,
+          "feedback": "Верно — к локальному минимуму."
+        },
+        {
+          "answer": "DBSCAN",
+          "correct": false,
+          "feedback": "Нет итераций, но результат детерминирован при фиксированных параметрах."
+        },
+        {
+          "answer": "Иерархическая кластеризация",
+          "correct": false,
+          "feedback": "Нет оптимизации."
+        },
+        {
+          "answer": "K-medoids",
+          "correct": false,
+          "feedback": "Зависит от алгоритма (PAM — да, CLARA — нет)."
+        }
+      ]
+    },
+    {
+      "question": "Какие из следующих утверждений верны для K-means?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Минимизирует сумму квадратов расстояний до центроидов",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Требует задания числа кластеров",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Устойчив к выбросам",
+          "correct": false,
+          "feedback": "Нет, чувствителен."
+        },
+        {
+          "answer": "Работает с категориальными данными",
+          "correct": false,
+          "feedback": "Нет."
+        }
+      ]
+    },
+    {
+      "question": "Какие из следующих утверждений верны для DBSCAN?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Автоматически определяет число кластеров",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Может обнаруживать шум",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Требует задания числа кластеров",
+          "correct": false,
+          "feedback": "Нет."
+        },
+        {
+          "answer": "Предполагает сферические кластеры",
+          "correct": false,
+          "feedback": "Нет, наоборот."
+        }
+      ]
+    },
+    {
+      "question": "Какие из следующих параметров используются в DBSCAN?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "eps",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "min_samples",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "k",
+          "correct": false,
+          "feedback": "Нет."
+        },
+        {
+          "answer": "linkage",
+          "correct": false,
+          "feedback": "Это для иерархической кластеризации."
+        }
+      ]
+    },
+    {
+      "question": "Какие из следующих методов являются алгоритмами кластеризации?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "K-means",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "DBSCAN",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "PCA",
+          "correct": false,
+          "feedback": "Нет."
+        },
+        {
+          "answer": "Логистическая регрессия",
+          "correct": false,
+          "feedback": "Нет."
+        }
+      ]
+    },
+    {
+      "question": "Какие из следующих утверждений верны для иерархической кластеризации?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Использует матрицу расстояний",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Строит dendrogram",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Требует задания числа кластеров заранее",
+          "correct": false,
+          "feedback": "Можно выбрать после построения."
+        },
+        {
+          "answer": "Масштабируется линейно",
+          "correct": false,
+          "feedback": "Нет, квадратично."
+        }
+      ]
+    },
+    {
+      "question": "Какие метрики качества кластеризации не требуют истинных меток?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Инерция",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Силуэт",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Accuracy",
+          "correct": false,
+          "feedback": "Требует меток."
+        },
+        {
+          "answer": "F1-score",
+          "correct": false,
+          "feedback": "Требует меток."
+        }
+      ]
+    },
+    {
+      "question": "Какие методы кластеризации чувствительны к масштабу признаков?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "K-means",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Иерархическая кластеризация с евклидовым расстоянием",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "DBSCAN с евклидовым расстоянием",
+          "correct": false,
+          "feedback": "Тоже чувствителен, но в формате 2 ответа — выбраны основные."
+        },
+        {
+          "answer": "K-modes",
+          "correct": false,
+          "feedback": "Для категориальных данных — нечувствителен."
+        }
+      ]
+    },
+    {
+      "question": "Какие типы связи используются в иерархической кластеризации?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Single linkage",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Complete linkage",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "kNN",
+          "correct": false,
+          "feedback": "Это не тип связи."
+        },
+        {
+          "answer": "Centroid linkage",
+          "correct": false,
+          "feedback": "Существует, но не входит в два основных."
+        }
+      ]
+    },
+    {
+      "question": "Какие из следующих утверждений верны о методе K-means?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Решающая граница между кластерами — часть гиперплоскости",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Использует итеративную оптимизацию",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Гарантирует глобальный минимум",
+          "correct": false,
+          "feedback": "Только локальный."
+        },
+        {
+          "answer": "Работает с пропущенными значениями",
+          "correct": false,
+          "feedback": "Нет."
+        }
+      ]
+    },
+    {
+      "question": "Какие из следующих утверждений верны о DBSCAN?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Может находить кластеры произвольной формы",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Чувствителен к выбору eps",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Всегда находит все кластеры",
+          "correct": false,
+          "feedback": "Нет, зависит от параметров."
+        },
+        {
+          "answer": "Требует нормализации данных",
+          "correct": false,
+          "feedback": "Желательно, но не обязательно."
+        }
+      ]
+    },
+    {
+      "question": "Какие методы кластеризации используют понятие плотности?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "DBSCAN",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "OPTICS",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "K-means",
+          "correct": false,
+          "feedback": "Нет."
+        },
+        {
+          "answer": "Иерархическая кластеризация",
+          "correct": false,
+          "feedback": "Нет."
+        }
+      ]
+    },
+    {
+      "question": "Какие из следующих утверждений верны о силуэте?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Значение силуэта лежит в [-1, 1]",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Чем ближе к 1 — тем лучше кластеризация",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Используется только с метками",
+          "correct": false,
+          "feedback": "Нет, без меток."
+        },
+        {
+          "answer": "Зависит от числа признаков",
+          "correct": false,
+          "feedback": "Нет, от структуры кластеров."
+        }
+      ]
+    },
+    {
+      "question": "Какие методы можно использовать для кластеризации текстов?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "K-means с TF-IDF",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "DBSCAN с косинусным расстоянием",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "K-means с евклидовым расстоянием без предобработки",
+          "correct": false,
+          "feedback": "Без TF-IDF не будет работать."
+        },
+        {
+          "answer": "PCA",
+          "correct": false,
+          "feedback": "Не кластеризация."
+        }
+      ]
+    },
+    {
+      "question": "Какие из следующих утверждений верны о методе «локтя»?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Использует график инерции от k",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Помогает выбрать оптимальное k",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Гарантирует оптимальный выбор",
+          "correct": false,
+          "feedback": "Нет, субъективен."
+        },
+        {
+          "answer": "Работает для DBSCAN",
+          "correct": false,
+          "feedback": "Нет, только для методов с k."
+        }
+      ]
+    },
+    {
+      "question": "Какие методы кластеризации являются детерминированными при фиксированных параметрах?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "DBSCAN",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Иерархическая кластеризация",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "K-means",
+          "correct": false,
+          "feedback": "Зависит от инициализации."
+        },
+        {
+          "answer": "K-medoids",
+          "correct": false,
+          "feedback": "Зависит от алгоритма."
+        }
+      ]
+    },
+    {
+      "question": "Какие из следующих утверждений верны о K-means++?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Улучшает инициализацию центроидов",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Снижает вероятность плохой сходимости",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Гарантирует глобальный минимум",
+          "correct": false,
+          "feedback": "Нет."
+        },
+        {
+          "answer": "Используется только в DBSCAN",
+          "correct": false,
+          "feedback": "Нет, в K-means."
+        }
+      ]
+    },
+    {
+      "question": "Какие расстояния можно использовать в иерархической кластеризации?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Евклидово",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Манхэттенское",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Косинусное",
+          "correct": false,
+          "feedback": "Можно, но не входит в два основных."
+        },
+        {
+          "answer": "Хэмминга",
+          "correct": false,
+          "feedback": "Для категориальных, но не основные."
+        }
+      ]
+    },
+    {
+      "question": "Какие из следующих утверждений верны о центроидах в K-means?",
+      "type": "many_choice",
+      "answers": [
+        {
+          "answer": "Это средние значения точек кластера",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Минимизируют сумму квадратов расстояний",
+          "correct": true,
+          "feedback": "Верно."
+        },
+        {
+          "answer": "Всегда совпадают с реальными точками данных",
+          "correct": false,
+          "feedback": "Нет, это усреднённые значения."
+        },
+        {
+          "answer": "Используются в DBSCAN",
+          "correct": false,
+          "feedback": "Нет."
+        }
+      ]
+    }
+  ]
