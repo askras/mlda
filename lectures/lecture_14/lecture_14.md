@@ -750,14 +750,14 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score
 
 # Определяем список значений для параметра n_estimators (количество деревьев)
-n_estimators = [int(i) for i in range(1, 200)]
+n_estimators = [int(i) for i in range(1, 201)]
 
 # Определяем список значений для параметра max_depth (максимальная глубина дерева)
 max_depth = [100, 150, 200, 250, 300, 350, 400, 450, 500]
 max_depth.append(None)  # Добавляем значение None для отсутствия ограничения глубины
 
 # Определяем список значений для параметра max_leaf_nodes (максимальное количество листьев)
-max_leaf_nodes = [int(i) for i in range(1, 100)]
+max_leaf_nodes = [int(i) for i in range(1, 101)]
 
 # Создаем словарь с параметрами для перебора в GridSearchCV
 params_grid = {
@@ -828,3 +828,5 @@ print(classification_report(y_test, y_pred))
 5. Оценка точности модели при подборе параметров с помощью GridSearchCV : **0.9370**
 - Лучшие параметры: {'max_depth': 100, 'max_leaf_nodes': 19, 'n_estimators': 147}
 <!-- #endregion -->
+
+
