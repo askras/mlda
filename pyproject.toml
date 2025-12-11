@@ -28,7 +28,8 @@ dependencies = [
     "seaborn (>=0.13.2,<0.14.0)",
     "xgboost (>=3.1.2,<4.0.0)",
     "imblearn (>=0.0,<0.1)",
-    "lightgbm (>=4.6.0,<5.0.0)"
+    "lightgbm (>=4.6.0,<5.0.0)",
+    "jupyterquiz (>=2.9.6.2,<3.0.0.0)"
 ]
 
 
