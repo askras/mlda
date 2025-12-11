@@ -5,7 +5,7 @@ jupyter:
       extension: .md
       format_name: markdown
       format_version: '1.3'
-      jupytext_version: 1.16.4
+      jupytext_version: 1.18.1
   kernelspec:
     display_name: Python 3 (ipykernel)
     language: python
@@ -19,9 +19,9 @@ jupyter:
 
 Красников Александр Сергеевич
 
-https://github.com/askras/bmstu_machinelearning/
+https://github.com/askras/mlda/
 
-2024
+2024-2025
 <!-- #endregion -->
 
 ```python editable=true slideshow={"slide_type": "skip"}
@@ -326,9 +326,9 @@ plt.xticks(())
 _ = plt.yticks(())
 ```
 
-```python editable=true slideshow={"slide_type": "fragment"}
+<!-- #region editable=true slideshow={"slide_type": "fragment"} -->
 Теперь найдем главные компоненты
-```
+<!-- #endregion -->
 
 ```python editable=true slideshow={"slide_type": "fragment"}
 model_pca = PCA()
