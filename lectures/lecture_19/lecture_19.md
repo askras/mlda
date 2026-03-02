@@ -5,7 +5,7 @@ jupyter:
       extension: .md
       format_name: markdown
       format_version: '1.3'
-      jupytext_version: 1.16.7
+      jupytext_version: 1.19.1
   kernelspec:
     display_name: Python 3 (ipykernel)
     language: python
@@ -19,9 +19,9 @@ jupyter:
 
 Красников Александр Сергеевич
 
-https://github.com/askras/bmstu_machinelearning/
+https://github.com/askras/mlda/
 
-2024-2025
+2024-2026
 <!-- #endregion -->
 
 <!-- #region editable=true slideshow={"slide_type": "slide"} -->
