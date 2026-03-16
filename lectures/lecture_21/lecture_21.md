@@ -5,7 +5,7 @@ jupyter:
       extension: .md
       format_name: markdown
       format_version: '1.3'
-      jupytext_version: 1.16.7
+      jupytext_version: 1.19.1
   kernelspec:
     display_name: Python 3 (ipykernel)
     language: python
@@ -19,9 +19,9 @@ jupyter:
 
 Красников Александр Сергеевич
 
-https://github.com/askras/bmstu_machinelearning/
+https://github.com/askras/mlda/
 
-2024-2025
+2024-2026
 <!-- #endregion -->
 
 <!-- #region editable=true slideshow={"slide_type": "slide"} -->
@@ -31,7 +31,7 @@ https://github.com/askras/bmstu_machinelearning/
 - Для предотвращения переобучения используется регуляризация, например, дроп-аут.
 <!-- #endregion -->
 
-<!-- #region editable=true slideshow={"slide_type": "slide"} -->
+<!-- #region editable=true slideshow={"slide_type": "slide"} jp-MarkdownHeadingCollapsed=true -->
 ## Свёрточные сети для текста
 
 Свёрточные сети используются для обработки текстов и других последовательностей. Каждое слово кодируется эмбеддингом — вектором фиксированного размера.
@@ -64,54 +64,31 @@ CNN также применяется для обработки звуков, т
 <!-- #endregion -->
 
 <!-- #region editable=true slideshow={"slide_type": "slide"} -->
-
-<!-- #endregion -->
-
-<!-- #region editable=true slideshow={"slide_type": "slide"} -->
-
-<!-- #endregion -->
-
-<!-- #region editable=true slideshow={"slide_type": "slide"} -->
-
-<!-- #endregion -->
-
-<!-- #region editable=true slideshow={"slide_type": "slide"} -->
-
-<!-- #endregion -->
-
-<!-- #region editable=true slideshow={"slide_type": "slide"} -->
-
-<!-- #endregion -->
-
-<!-- #region editable=true slideshow={"slide_type": "slide"} -->
-
-<!-- #endregion -->
-
-<!-- #region editable=true slideshow={"slide_type": "slide"} -->
-
-<!-- #endregion -->
-
-<!-- #region editable=true slideshow={"slide_type": ""} -->
 ## Интерпретация прогнозов в CNN
 
 ### Методы визуализации
 <!-- #endregion -->
 
-<!-- #region editable=true slideshow={"slide_type": ""} -->
+<!-- #region editable=true slideshow={"slide_type": "slide"} -->
 #### Анализ закрасок (Occlusion Analysis)
 - Закрашивание участков изображения и анализ изменения вероятности класса
 - Карта показывает важные регионы для классификации  
 ![Occlusion Analysis](./img/occlusion-analysis.jpg)
 <!-- #endregion -->
 
-<!-- #region editable=true slideshow={"slide_type": ""} -->
+<!-- #region editable=true slideshow={"slide_type": "slide"} -->
 #### Градиентные методы
+<!-- #endregion -->
+
+<!-- #region editable=true slideshow={"slide_type": "slide"} -->
 **Карта выраженности (Saliency Map):**
 - Вычисление градиентов по пикселям:  
 $$W = \frac{\partial g_c(\mathbf{x})}{\partial \mathbf{x}}$$
 - Максимизация градиентов по цветовым каналам  
 ![Saliency Map](./img/gradient-saliency-map.jpg)
+<!-- #endregion -->
 
+<!-- #region editable=true slideshow={"slide_type": "slide"} -->
 **Grad-CAM:**
 - Анализ градиентов последнего сверточного слоя
 - Формула значимости каналов:  
@@ -119,21 +96,21 @@ $$\alpha^c_k = \frac{1}{hw}\sum_{i,j} \frac{\partial g_c}{\partial A^k_{ij}}$$
 ![Grad-CAM](./img/Grad-CAM.jpg)
 <!-- #endregion -->
 
-<!-- #region editable=true slideshow={"slide_type": ""} -->
+<!-- #region editable=true slideshow={"slide_type": "slide"} -->
 ##### Визуализация характерных изображений
 - Оптимизация входного изображения для максимизации класса:  
 $$\hat{\mathbf{x}}_c = \arg\max_\mathbf{x} \{ g_c(\mathbf{x})-\lambda \|\mathbf{x}\|^2_2\}$$  
 ![Class Visualization](./img/class-image-visualization.jpg)
 <!-- #endregion -->
 
-<!-- #region editable=true slideshow={"slide_type": ""} -->
+<!-- #region editable=true slideshow={"slide_type": "slide"} -->
 #### Другие подходы
 - Визуализация рецептивных полей сверток
 - Декодирование активаций (Deconv Net)  
 ![Conv Visualization](./img/conv-visualization-diff-layers.jpg)
 <!-- #endregion -->
 
-<!-- #region editable=true slideshow={"slide_type": ""} -->
+<!-- #region editable=true slideshow={"slide_type": "slide"} -->
 ### Преимущества методов
 - Объяснение решений модели
 - Выявление ошибок в данных
@@ -258,7 +235,7 @@ $$\hat{\mathbf{x}}_c = \arg\max_\mathbf{x} \{ g_c(\mathbf{x})-\lambda \|\mathbf{
 
 <!-- #region editable=true slideshow={"slide_type": "slide"} -->
 #### ZFNet: Основные отличия
-![Архитектура ZFNet](./img/ZFnet-d4f148594fe7f04ce37790b949a45501.png)
+![Архитектура ZFNet](./img/ZFnet.png)
 - Модификации AlexNet:
   - Уменьшение ядер первого слоя: **7×7** (вместо 11×11).
   - Увеличение числа фильтров в промежуточных слоях.
