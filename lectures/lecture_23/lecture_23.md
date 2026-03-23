@@ -19,9 +19,9 @@ jupyter:
 
 Красников Александр Сергеевич
 
-https://github.com/askras/bmstu_machinelearning/
+https://github.com/askras/mlda/
 
-2024-2025
+2024-2026
 <!-- #endregion -->
 
 <!-- #region editable=true slideshow={"slide_type": "slide"} -->
