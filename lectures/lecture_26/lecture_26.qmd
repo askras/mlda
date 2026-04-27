@@ -2,7 +2,7 @@
 title: 'Лекция 26: Трансформеры'
 subtitle: Машинное обучение и анализ данных
 author: Красников А. С.
-date: '2025-04-17'
+date: '2026-04-27'
 date-modified: last-modified
 institute: МГТУ им. Н.Э. Баумана
 
