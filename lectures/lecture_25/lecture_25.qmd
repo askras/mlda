@@ -2,7 +2,7 @@
 title: 'Лекция 25: Рекуррентные нейронные сети (RNN)'
 subtitle: Машинное обучение и анализ данных
 author: Красников А. С.
-date: '2026-04-20'
+date: '2026-04-27'
 date-modified: last-modified
 institute: МГТУ им. Н.Э. Баумана
 
