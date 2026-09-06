@@ -23,7 +23,8 @@ jupyter:
 
 Красников Александр Сергеевич
 
-2024-2025
+2026-2027
+
 <!-- #endregion -->
 
 ```python editable=true slideshow={"slide_type": "skip"} tags=["hide-input"]

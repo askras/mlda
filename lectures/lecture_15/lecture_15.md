@@ -19,9 +19,8 @@ jupyter:
 
 Красников Александр Сергеевич
 
-https://github.com/askras/mlda/
+2026-2027
 
-2024-2025
 <!-- #endregion -->
 
 ```python editable=true slideshow={"slide_type": "skip"}
